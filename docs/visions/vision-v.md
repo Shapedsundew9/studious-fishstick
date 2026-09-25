@@ -51,6 +51,19 @@ This objective spans five distinct operational timescales:
 5. **Fleet-Wide Baseline Distribution (Evolutionary Inheritance — Days to Weeks):**  
    Periodically compress, stabilize, and broadcast updated baseline architectural priors and minimal seed configurations back to the consumer edge fleet, lifting the general capability ceiling of all terminal instances across operational lifecycles.
 
+### Operationalizing Autopoiesis
+
+To ground "autopoiesis" as a rigorous engineering specification rather than a biological metaphor, the system satisfies three foundational cybernetic criteria:
+
+1. **Self-Production of Components (Somatic Budding & Apoptosis):**  
+   The system does not rely on static topology or manual architecture search. Instead, internal dynamical stress (local prediction error density, entropy saturation, attractor collapse) triggers the endogenous generation and integration of new computational units (micro-cores, lateral pathways). Conversely, unreinforced or energetically wasteful units undergo metabolic decay and apoptosis, recycling allocated substrate.
+
+2. **Organizational Closure:**  
+   While the physical components (weights, dynamical sub-graphs, active cores) are continually produced, rewired, and pruned through real-time experiential plasticity, the overarching *system organization* remains invariant. The continuous, closed-loop cycle—ingesting raw bytes, settling into attractors, computing local credit residuals, maintaining homeostasis, and emitting actions—is dynamically self-sustaining and conserved across all structural transformations.
+
+3. **Dynamic Boundary Generation (Operational Membrane):**  
+   The boundary separating the agent from its environment—and separating the local edge terminal from the central collective—is not merely an arbitrary API contract. It is an endogenously generated operational membrane: an active Markov blanket formed by predictive attractor basins and lateral quorum consensus. Incoming raw byte streams act as external perturbations across this membrane, which the agent actively assimilates or filters; interactions crossing into the collective upstream are strictly constrained to invariant attractor summaries, preserving internal sovereign state.
+
 ---
 
 ## 3. Environmental & Interface Constraints
@@ -161,9 +174,9 @@ flowchart TB
 2. **Local Lateral Quorum:**  
    Ambiguous inputs and immediate multi-step reasoning are evaluated locally across redundant micro-experts via lateral consensus and debate before any emission occurs.
 3. **Tiered Deliberative Escalation:**  
-   Consumer silicon is structurally bounded in thermal dissipation and memory bandwidth. While routine interaction, rapid adaptation, and immediate sensory processing remain strictly local, complex cross-domain relational abstraction and high-entropy deliberation naturally escalate via `QueryFallback` to the central collective's specialized functional modules. This tiered escalation preserves thermodynamic viability and prevents gold-plating the edge runtime, all while maintaining an order-of-magnitude cost advantage over traditional hyperscaler inference.
+   Consumer silicon is structurally bounded in thermal dissipation and memory bandwidth. The architecture establishes a clear effort distribution: the edge runtime absorbs the overwhelming majority (>99%) of continuous temporal byte ingestion, habitual reflex, and localized experiential plasticity. High-entropy, cross-domain relational abstraction escalates via `QueryFallback` to the central collective's specialized functional modules as an exception rather than a continuous stream. This asymmetry preserves thermodynamic viability, avoids linear infrastructure cost scaling with user streaming time, and prevents gold-plating the edge runtime.
 4. **Zero-Knowledge Upstream Synchronization:**  
-   Personal keystrokes, raw observations, and private context *never leave the edge device*. Only verified structural deltas (topological additions, rewiring graphs, invariant attractors) or ephemeral, privacy-preserving deliberative queries are transmitted across the boundary interface.
+   Personal keystrokes, raw observations, and private context *never leave the edge device*. Only verified structural deltas (topological additions, rewiring graphs, invariant attractors) or ephemeral deliberative queries adhering to formal non-invertibility criteria cross the boundary interface into the collective.
 5. **Decoupled Central Synthesis & Broadcast:**  
    The central collective reconciles time-lagged, heterogeneous structural deltas into modular functional domains. Periodically, the synthesis engine distills these into compressed baseline seeds (`DownPriors`) broadcast to elevate the general capability floor of all devices.
 
@@ -177,8 +190,8 @@ To prevent the engineering effort from defaulting to traditional coupled deep le
   The computational cost and working memory footprint required to process incoming byte $N$ must remain strictly independent of the total accumulated historical lifetime $T$. State is embodied entirely within persistent dynamical attractors and structural topology—never accumulated in an expanding history log, replay buffer, or KV cache.
 
 * **Locality of Credit Assignment Invariant:**  
-  Internal parameter updates and state adaptations must depend exclusively on locally accessible signals within the immediate computational neighborhood (presynaptic activations, postsynaptic responses, and local predictive residuals or diffuse scalar modulators). Global backward passes requiring layer-synchronized execution locks, reverse-order graph traversals, or global gradient evaluations are strictly prohibited.  
-  *Candidate mechanisms include, but are not limited too:* Three-factor predictive coding, local contrastive energy minimization, and localized topological rewiring.
+  Internal parameter updates and state adaptations must depend exclusively on locally accessible signals within the immediate computational neighborhood (presynaptic activations, postsynaptic responses, and local predictive residuals or diffuse scalar modulators). Global backward passes requiring layer-synchronized execution locks, reverse-order graph traversals, or global gradient evaluations are strictly prohibited—both across distributed nodes and within individual micro-cores. Intra-core continuous temporal streaming requires true local credit assignment: reverse-mode backpropagation necessitates storing intermediate forward activations proportional to sequence depth (violating $O(1)$ memory lifetime invariance under continuous streaming) and imposes synchronous forward-backward locks that disrupt dynamic relaxation.  
+  *Candidate mechanisms include, but are not limited to:* Three-factor predictive coding, local contrastive energy minimization, equilibrium propagation, feedback alignment, and localized topological rewiring.
 
 * **Elastic Pacing & Bounded Relaxation:**  
   The core is not slaved to a rigid wall-clock tick. It interfaces via an elastic pull/backpressure mechanism, consuming variable internal relaxation cycles ($\tau$) per byte depending on input entropy and structural reorganization demands.
@@ -190,7 +203,7 @@ To prevent the engineering effort from defaulting to traditional coupled deep le
   The core independently decides *if* and *when* to emit bytes back into the stream. It may absorb multiple input bytes during internal contemplation before emitting, or stream an emission sequence across continuous observations.
 
 * **Client Resilience & Absolute Privacy Boundary:**  
-  A terminal agent must maintain operational resilience in an air-gapped environment, executing local sensorimotor and habituated reasoning loops without crashing, blocking, or stalling. Air-gapped autonomy functions as an operational fail-safe floor, not a ceiling of parity with the collective. When deliberative queries are escalated upstream to resolve complex abstract states, the boundary interface permits only zero-knowledge invariant representations, structural queries, or ephemeral latent states—never raw user logs, keystroke streams, or uncompressed private observations.
+  A terminal agent must maintain operational resilience in an air-gapped environment, executing local sensorimotor and habituated reasoning loops without crashing, blocking, or stalling. Air-gapped autonomy functions as an operational fail-safe floor, not a ceiling of parity with the collective. When deliberative queries or structural updates cross the boundary interface into the collective, they must satisfy formal mathematical privacy constraints: structural deltas and query representations must be non-invertible with bounded mutual information with respect to private inputs ($I(X; \Delta) \le \epsilon$) and satisfy differential privacy ($\epsilon, \delta$-DP) bounds against reconstruction or membership inference attacks—never transmitting raw user logs, keystroke streams, or uncompressed private observations.
 
 * **WAN-Native Interconnect & Latency Tolerance:**  
   The system must remain computationally stable and functional under arbitrary network latency, high packet loss, and intermittent device dropouts. Decentralized nodes communicate through sparse behavioral activations, structural deltas, or consensus votes—never through synchronous, high-bandwidth all-reduce tensor synchronization.
@@ -201,18 +214,36 @@ To prevent the engineering effort from defaulting to traditional coupled deep le
 * **Asymmetric Economic Scaling:**  
   Total infrastructure hosting costs scale with the rate of *macro-deliberative reasoning and collective capability synthesis*, not with *continuous raw stream ingestion*. Because edge devices absorb the overwhelming volume of temporal byte streaming, interactive pacing, and continuous local adaptation, the economic burden of routine, high-cadence operation remains decentralized—delivering an order-of-magnitude efficiency advantage over monolithic hyperscaler architectures.
 
+### Foundational Safety, Alignment & Homeostatic Invariants
+
+To guarantee that open-ended plasticity, structural budding, and decentralized execution remain bounded, secure, and aligned:
+
+* **Homeostatic Bounding & Metabolic Quotas:**  
+  Structural budding and capacity expansion are strictly bounded by hardware metabolic constraints (enforcing hard upper limits on memory footprint and thermal dissipation). Unreinforced pathways and idle micro-cores undergo homeostatic decay and apoptosis, guaranteeing that autonomous growth cannot induce memory exhaustion, resource monopolization, or runaway execution loops.
+
+* **Byzantine & Adversarial Delta Sanitization:**  
+  The central collective operates on a zero-trust model regarding distributed structural contributions. Incoming structural deltas and topological invariants undergo statistical anomaly filtering, topological outlier rejection, and multi-party quorum verification before baseline synthesis, preventing compromised, corrupted, or adversarially poisoned edge updates from destabilizing the collective priors.
+
+* **Attractor Stability & Supervisory Containment (Deterministic Failsafe):**  
+  Every edge agent incorporates an unalterable deterministic supervisory watchdog decoupled from experiential learning dynamics. If internal state trajectories enter pathological limit cycles, chaotic divergences, or exceed operational halting budgets ($\tau > \tau_{\max}$), the supervisor immediately clamps the core into a verified quiescent ground state or triggers local core re-initialization, ensuring deterministic containment without requiring external intervention.
+
 ---
 
 ## 6. Progression Roadmap: Staged Multi-Axis Progression
 
-System advancement is measured along a rigorous multi-axis progression combining **Representational Complexity (Levels I–IV)**, **Dynamical Resilience (Nodes 0–D)**, and **Deployment Topology (Phases 0–3)**. Advancement requires earning passage through empirical gating invariants and commercial gating criteria.
+System advancement is measured along a rigorous multi-axis progression combining **Dynamical & Structural Complexity (Levels I–IV)**, **Dynamical Resilience (Nodes 0–D)**, and **Deployment Topology (Phases −1–3)**. Advancement requires earning passage through empirical gating invariants, minimum viable demonstrations, and operational gating criteria.
 
 ```text
-Representation Axis (The Information Ladder):
+Information Axis (Dynamical & Structural Complexity):
   Level I (Regular Grammars) ──► Level II (Hierarchical) ──► Level III (Context-Sensitive) ──► Level IV (Natural UTF-8)
+  [Cross-cut by: Temporal Depth, Adaptation Velocity, Compositional Depth, Relational Binding]
 
 Operational & Topological Staged Progression:
-  [Phase 0: Isolated Core & Dynamical Resilience] (Single Device / Laptop)
+  [Phase −1: Foundational Existence Proof] (Isolated Micro-Core Substrate)
+    ↳ Validates core mechanism: local credit assignment, O(1) memory, and bounded settling on raw bytes
+         │
+         ▼
+  [Phase 0: Isolated Swarm & Dynamical Resilience] (Single Device / Laptop)
     ↳ Validates Node 0 (Streaming), Node A (Temporal Depth), Node B (Shift), Node AB (Compound), Node C (Expansion)
          │
          ▼
@@ -228,11 +259,27 @@ Operational & Topological Staged Progression:
     ↳ Validates Node D (Collective Agency & Seed Distillation), fleet-wide broadcast, and asymmetric economics
 ```
 
-### The Information Axis: Representational Complexity Ladder
+### The Information Axis: Dynamical Learning Phenomena & Structural Regimes
 
-* **Level I: Regular & Markovian Grammars ($\vert{}V\vert{} \le 8$):**  
+Rather than treating representational complexity purely as formal static grammar classes, the evaluation framework evaluates four orthogonal, incrementally composable dynamical learning phenomena:
+
+1. **Temporal Dependency Depth ($K$):**  
+   The capacity to maintain, retrieve, and bind past state across intervening distractor streams from short-range ($1\text{--}8$ bytes) to intermediate ($10^2\text{--}10^3$ bytes) and long-range ($10^4\text{--}10^5+$ bytes) horizons without token buffers or KV caches.
+
+2. **Non-Stationarity & Adaptation Velocity ($\Delta E$ / $T_{\text{recover}}$):**  
+   The ability of local plasticity mechanisms to detect unannounced distributional shifts and re-settle into optimal attractor paths with minimal sample complexity, bounded degradation of prior attractors, and zero catastrophic forgetting.
+
+3. **Compositional Depth & Hierarchy:**  
+   The transition from local Markovian $n$-grams to nested recursive bracket structures (Dyck languages) and multi-level compositional semantics, formed endogenously without push/pop stack instructions.
+
+4. **Relational Variable Binding:**  
+   The dynamic binding of operational roles to arbitrary arguments ($w w$ patterns, symbol-to-address mapping, and pseudo-code execution traces) without global all-to-all cross-attention matrices.
+
+These dynamical phenomena are progressively evaluated across four structural regimes:
+
+* **Level I: Regular & Markovian Sequences ($\vert{}V\vert{} \le 8$):**  
   Micro-alphabets, local $n$-grams, parity checks, periodic and finite-state regular languages.  
-  *Core Challenge:* Establishing fundamental state persistence and deterministic attractor transitions.
+  *Core Challenge:* Establishing fundamental state persistence, deterministic attractor transitions, and basic non-stationarity recovery under local credit rules.
 * **Level II: Hierarchical & Context-Free Languages ($\vert{}V\vert{} \sim 8\text{--}32$):**  
   Nested byte sequences, Dyck languages, balanced bracket expressions, recursive syntax trees.  
   *Core Challenge:* Autonomous formation of internal counter- or stack-like attractor dynamics without hardcoded push/pop primitives.
@@ -249,7 +296,8 @@ Operational & Topological Staged Progression:
 
 | Stage & Topology | Level I: Regular Grammars ($\vert{}V\vert{} \le 8$) | Level II: Hierarchical ($\vert{}V\vert{} \le 32$) | Level III: Context-Sensitive ($\vert{}V\vert{} \sim 128$) | Level IV: Open Natural UTF-8 ($\vert{}V\vert{} = 256$) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Phase 0: Isolated Core**<br>*(Nodes 0–C on Single Device)* | Stream micro-tokens; establish settling ceiling $\tau_{\max}$; verify $O(1)$ memory; recall delayed trigger signals across distractor bytes (Node A); adapt to shifted Markov rules (Node B); allocate nodes upon regular state saturation (Node C). | Stream nested byte streams; confirm stack-free stability; Dyck-path resolution separated by long distractor streams; recursive matching with shifting grammar modes; grow dynamic attractor depth when nesting exceeds initial bounds. | Continuous stream of code execution traces; variable binding with distant operational calls; algorithmic execution with mid-stream protocol changes; allocate isolated parallel sub-graphs for disjoint variable scopes. | Sustained multi-gigabyte ingestion of raw UTF-8 text on commodity CPU/GPU; long-range context resolution across thousands of intervening UTF-8 bytes; fluid domain adaptation; expand structural parameter footprint under open-domain entropy. |
+| **Phase −1: Foundational Proof**<br>*(Single Micro-Core Substrate)* | Stream raw periodic byte sequences with noise; demonstrate convergent next-byte prediction using strictly local credit assignment; verify flat $O(1)$ memory over $10^7$ bytes and bounded settling $\tau \le \tau_{\max}$. | [Empirical prerequisite gate for Phase 0 entry; establishes core substrate viability before hierarchical scaling.] | [N/A at Phase −1] | [N/A at Phase −1] |
+| **Phase 0: Isolated Swarm**<br>*(Nodes 0–C on Single Device)* | Stream micro-tokens; establish settling ceiling $\tau_{\max}$; verify $O(1)$ memory; recall delayed trigger signals across distractor bytes (Node A); adapt to shifted Markov rules (Node B); allocate nodes upon regular state saturation (Node C). | Stream nested byte streams; confirm stack-free stability; Dyck-path resolution separated by long distractor streams; recursive matching with shifting grammar modes; grow dynamic attractor depth when nesting exceeds initial bounds. | Continuous stream of code execution traces; variable binding with distant operational calls; algorithmic execution with mid-stream protocol changes; allocate isolated parallel sub-graphs for disjoint variable scopes. | Sustained multi-gigabyte ingestion of raw UTF-8 text on commodity CPU/GPU; long-range context resolution across thousands of intervening UTF-8 bytes; fluid domain adaptation; expand structural parameter footprint under open-domain entropy. |
 | **Phase 1: Divergent Sandbox**<br>*(Node C+ on Multi-Instance Host)* | Multiple local instances adapt to mutually exclusive Markov transition rules without baseline degradation; lateral majority voting across redundant micro-cores resolves noisy Markov streams (Node C+). | Instances diverge on conflicting delimiter/syntax systems; verify structural isolation; consensus resolution between competing stack-like attractors on ambiguous brackets. | Instances independently debug disjoint code traces; confirm zero cross-contamination; multi-expert quorum resolves branching variable bindings and conflicting execution traces. | Standalone terminal agent demonstrates real-time personal context adaptation on edge hardware ($<4$ GB RAM); dynamic consensus, debate, and verification across decoupled micro-experts synthesize complex text. |
 | **Phase 2: Asymmetric Link**<br>*(WAN/LAN Client-Server)* | Local instance executes high-cadence stream; escalates unresolved state transitions to emulated central module; WAN latency tolerance verified. | Central module resolves ambiguous recursive branches; validates fluid, low-overhead deliberative escalation and re-absorption without edge stalls. | Client emits local structural deltas; escalates multi-step variable binding traces to central collective; central engine merges functional graphs without retraining. | Central collective absorbs time-lagged deltas from multiple edge instances and arbitrates complex reasoning queries; validates absence of catastrophic interference under asynchronous updates. |
 | **Phase 3: Collective Fleet**<br>*(Node D at Commercial Scale)* | Distributed fleet maps disjoint state spaces; collective unifies them into a minimal baseline seed; generator steering across low-entropy Markov states (Node D). | Central engine extracts common grammar invariants from a fleet exposed to diverse synthetic dialects; active querying resolves grammatical ambiguities. | Distributed fleet resolves large-scale programmatic suites; collective synthesizes optimal execution paths; interactive debugging across distributed worker nodes. | Full autonomous agent dialogue: steering environments; edge executes high-bandwidth routine inference and continuous adaptation, escalating deep abstract reasoning to the central collective; collective distills global capabilities; asymmetric hosting economics verified. |
@@ -262,16 +310,44 @@ Advancement across operational nodes and topological deployment phases requires 
 
 ### Tier 1: Mathematical & Dynamical Gating Invariants
 
-* **Homeostatic Invariant:**  
-  Flat physical memory allocation, zero resource leakage, and bounded internal settling ($\tau \le \tau_{\max}$) across statistically significant sequences of consecutive streaming bytes.
-* **Retention Invariant:**  
-  Mutual information between an early trigger signal $S_{t_0}$ and a conditional response at $t_0 + K$ remains strictly above threshold $\gamma$ across distractor intervals without historical caches, replay buffers, or token re-ingestion.
-* **Plasticity Recovery Invariant:**  
-  Upon an unannounced environmental distribution shift ($\Delta E$), the time-to-recovery ($T_{\text{recover}}$) settles into an optimal asymptotic bound, proving active dynamic reconfiguration.
-* **Backward Non-Interference Invariant:**  
-  Adapting to novel environmental dynamics $B$ induces performance degradation on previously mastered dynamics $A$ bounded strictly by $\Delta \le \epsilon$.
-* **Consensus Coherence Invariant:**  
-  When evaluated across a distributed ensemble of heterogeneous micro-experts receiving out-of-order, time-lagged updates, collective voting must maintain accuracy and calibration within bounded error $\delta$ relative to an un-lagged reference.
+To eliminate ambiguity, passage through operational gates is governed by concrete numerical criteria:
+
+* **Homeostatic Invariant ($O(1)$ Memory & Settling Ceiling):**  
+  Flat physical memory allocation ($\sigma^2_M = 0$, zero resource leakage) and bounded internal settling ($\tau \le 32$ relaxation cycles per byte) sustained across $\ge 10^7$ consecutive streaming bytes.
+* **Retention Invariant ($\gamma$ Retention across Distractors):**  
+  Mutual information between an early trigger signal $S_{t_0}$ and a conditional response at $t_0 + K$ must satisfy $I(S_{t_0}; R_{t_0+K}) \ge 0.95$ across distractor intervals of $K \ge 10^4$ bytes without historical caches, replay buffers, or token re-ingestion.
+* **Plasticity Recovery Invariant ($T_{\text{recover}}$ Bound):**  
+  Upon an unannounced environmental distribution shift ($\Delta E$), the time-to-recovery ($T_{\text{recover}}$) settles into an optimal asymptotic bound ($\le 500$ bytes on Level I benchmarks), demonstrating rapid active dynamic reconfiguration.
+* **Backward Non-Interference Invariant ($\epsilon$ Degradation Ceiling):**  
+  Adapting to novel environmental dynamics $B$ induces performance degradation on previously mastered dynamics $A$ bounded strictly by $\Delta \le 0.05$ (maximum 5% relative accuracy loss).
+* **Consensus Coherence Invariant ($\delta$ Calibration Bound):**  
+  When evaluated across a distributed ensemble of heterogeneous micro-experts receiving out-of-order, time-lagged updates, collective voting must maintain accuracy and calibration within bounded error $\delta \le 0.05$ relative to an un-lagged reference.
+* **Information-Theoretic Privacy Invariant ($I(X; \Delta) \le \epsilon$):**  
+  Structural deltas and upstream queries must have provably bounded mutual information with private observation streams ($I(X; \Delta) \le 10^{-4}$ bits) and satisfy $(\epsilon, \delta)$-differential privacy guarantees against reconstruction.
+
+### Minimum Viable Demonstrations (MVD) by Phase Gate
+
+Each phase transition requires a concrete, observable behavioral demonstration:
+
+* **Phase −1 $\rightarrow$ Phase 0 MVD (Substrate Existence Proof):**  
+  A single isolated micro-core, given a raw continuous byte stream of a periodic 4-to-8 symbol grammar injected with noise, demonstrates monotonic loss convergence to accurate next-byte prediction using strictly local credit assignment, with zero memory growth over $10^7$ streaming bytes and relaxation settling $\tau \le 32$.
+* **Phase 0 $\rightarrow$ Phase 1 MVD (Edge Swarm & Budding):**  
+  A single-device micro-core swarm running on commodity hardware ($<4$ GB RAM) absorbs competing non-stationary streams; individual cores specialize without cross-interference ($\Delta \le 0.05$); lateral quorum resolves ambiguous test sequences with $\ge 90\%$ accuracy; and capacity saturation autonomously triggers somatic budding of a new micro-core without stalling execution.
+* **Phase 1 $\rightarrow$ Phase 2 MVD (Asymmetric Structural Sync):**  
+  Two independent edge instances connected via an emulated 200ms-latency WAN link exchange structural invariant deltas. Device B demonstrably masters a task distribution it has never directly observed, utilizing synthesized deltas from Device A. Zero raw tokens or reconstructible private contexts cross the boundary link.
+* **Phase 2 $\rightarrow$ Phase 3 MVD (Collective Scale & Asymmetry):**  
+  A deployed network of 100+ heterogeneous edge nodes and a central collective proves: (a) collective model accuracy on multi-step reasoning exceeds any isolated edge node by $\ge 25\%$; (b) central infrastructure compute scales sublinearly ($O(\log N)$ or $O(1)$) with active fleet size $N$; and (c) a newly initialized edge node bootstraps from broadcast priors (`DownPriors`) to fleet-average competence within hours.
+
+### Empirical Falsification & Termination Criteria
+
+A rigorous scientific vision establishes clear conditions under which foundational premises are considered falsified:
+
+1. **Substrate Viability Falsification (Phase −1):**  
+   If an isolated micro-core cannot achieve convergent next-byte prediction on Level I regular grammars under local credit assignment constraints with $O(1)$ memory after exhaustive exploration of local learning rules, the local-plasticity core thesis is falsified, halting multi-core architectural composition.
+2. **Dynamic Isolation Falsification (Phase 0/1):**  
+   If continuous online adaptation inevitably induces catastrophic forgetting ($\Delta > 0.05$) across isolated cores despite structural budding and modular compartmentalization, the premise of non-interfering localized plasticity is falsified.
+3. **Information Leakage Falsification (Phase 2):**  
+   If structural invariants or deliberative queries transmitted over the WAN link permit non-trivial reconstruction of private input byte streams under adversarial auditing, upstream synchronization is immediately halted.
 
 ### Tier 2: Commercial & Operational Gating Criteria
 
