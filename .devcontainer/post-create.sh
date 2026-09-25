@@ -21,6 +21,34 @@ if [[ -f pyproject.toml ]]; then
     .venv/bin/python -m pip install --editable .
 fi
 
+ANTIGRAVITY_SETTINGS="$HOME/.gemini/antigravity-cli/settings.json"
+if [[ ! -f "$ANTIGRAVITY_SETTINGS" ]]; then
+        mkdir -p "$(dirname "$ANTIGRAVITY_SETTINGS")"
+        cat > "$ANTIGRAVITY_SETTINGS" <<'EOF'
+{
+    "colorScheme": "solarized dark",
+    "trustedWorkspaces": [
+        "/workspaces"
+    ],
+    "executionMode": "accept-edits",
+    "model": "Gemini 3.8 Flash (High)",
+    "permissions": {
+        "allow": [
+            "write_file(*)",
+            "command(*)"
+        ],
+        "deny": [
+            "command(rm -rf)",
+            "command(sudo)"
+        ],
+        "ask": [
+            "plan"
+        ]
+    }
+}
+EOF
+fi
+
 if ! command -v agy >/dev/null 2>&1 && ! command -v antigravity >/dev/null 2>&1; then
     curl --proto '=https' --tlsv1.2 -fsSL https://antigravity.google/cli/install.sh | bash
 fi
