@@ -78,7 +78,39 @@ To prevent accidental solutioning via arbitrary data representations, the enviro
 The architecture decouples immediate interactive experience from collective planetary generalization via a hierarchical, asymmetric topology:
 
 ```mermaid
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'darkMode': true,
+    'background': '#161922',
+    'mainBkg': '#1e2230',
+    'nodeBorder': '#434c5e',
+    'textColor': '#e2e8f0',
+    'fontFamily': 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    'fontSize': '14px',
+    'lineColor': '#8892b0',
+    'primaryColor': '#422026',
+    'primaryTextColor': '#fde8ec',
+    'primaryBorderColor': '#e06c75',
+    'secondaryColor': '#1b3528',
+    'secondaryTextColor': '#e6f7ee',
+    'secondaryBorderColor': '#73c991',
+    'tertiaryColor': '#1d2c44',
+    'tertiaryTextColor': '#e4f0fc',
+    'tertiaryBorderColor': '#61afef',
+    'clusterBkg': '#13161f',
+    'clusterBorder': '#373e51',
+    'noteBkgColor': '#2e271a',
+    'noteTextColor': '#fdf4db',
+    'noteBorderColor': '#e5c07b',
+    'edgeLabelBackground': '#1a1d27'
+  }
+}}%%
 flowchart TB
+    classDef primary fill:#422026,stroke:#e06c75,stroke-width:1.5px,color:#fde8ec;
+    classDef secondary fill:#1b3528,stroke:#73c991,stroke-width:1.5px,color:#e6f7ee;
+    classDef tertiary fill:#1d2c44,stroke:#61afef,stroke-width:1.5px,color:#e4f0fc;
+    classDef note fill:#2e271a,stroke:#e5c07b,stroke-width:1.5px,color:#fdf4db;
     subgraph Fleet ["Consumer Edge Fleet: Divergent Local Agents"]
         direction TB
         subgraph EdgeA ["Device A (Personal Terminal)"]
@@ -129,9 +161,9 @@ flowchart TB
 
     subgraph Channel ["Asynchronous Boundary Interface (WAN)"]
         direction TB
-        UpDeltas["Abstract Structural Invariants & Topological Deltas\n(Zero Raw Context / Zero Keystrokes)"]
-        DownPriors["Hardened Architectural Baselines & Seeds\n(Broadcast Priors)"]
-        QueryFallback["Tiered Deliberative Escalation\n(High-Entropy / Abstract Reasoning Fallback)"]
+        UpDeltas["Abstract Structural Invariants & Topological Deltas<br/>(Zero Raw Context / Zero Keystrokes)"]
+        DownPriors["Hardened Architectural Baselines & Seeds<br/>(Broadcast Priors)"]
+        QueryFallback["Tiered Deliberative Escalation<br/>(High-Entropy / Abstract Reasoning Fallback)"]
     end
 
     subgraph Central ["Decoupled Central Collective"]

@@ -24,7 +24,9 @@ In Version VIII, all items from `docs/visions/response-vii.md` have been triaged
 ## 2. Rebuttal & First-Principles Resolution: Reframing Credit Assignment — Global Optimization Coupling vs. Localized Micro-Updates (Challenges 1 & 2)
 
 ### Stakeholder Critique & Project Initiator Guidance
+
 The Stakeholder Council, informed by the Project Initiator's reflection that *"The North Star is [not] intended to be dogmatic about backpropagation [but uses] it as an example of the issue with global optimisation,"* presented two intertwined challenges:
+
 1. **Challenge 1:** Reframing the Locality of Credit Assignment Invariant from an algorithm-specific ban to a property-based prohibition targeting global coupling, synchronous execution locks, and stream-scaling memory.
 2. **Challenge 2:** Acknowledging that bounded local micro-gradients evaluated over static local windows ($W \ll \tau_{\max}$) with fixed memory ($O(W)$) satisfy all stated architectural invariants and should not be excluded by name.
 
@@ -52,6 +54,7 @@ We embrace the property-based reframing unreservedly, but we firmly rebut any in
 ## 3. Rebuttal & Scope Defense: Worst-Case Saturated Invariance vs. Quiescent Exploitation (Challenge 3)
 
 ### Stakeholder Critique Summary
+
 The Stakeholder Council noted that real-world deployment (human typing at 5–10 keystrokes/second, reading pauses, machine-to-machine flow control) creates abundant temporal gaps. Treating continuous streaming exclusively as an unbroken, wire-speed adversarial torrent over-engineers the common case, understates practical feasibility, and ignores natural opportunities for background maintenance.
 
 ### First-Principles Scope Demarcation & Rebuttal
@@ -71,6 +74,7 @@ We enthusiastically adopt quiescent exploitation as an engineering optimization,
 ## 4. Rebuttal & Scope Defense: Architectural Quorum Primitive vs. Execution Sizing & Evolutionary Mechanics (Challenge 4)
 
 ### Stakeholder Critique & Initiator Proposal Summary
+
 The Project Initiator proposed that micro-cores within a swarm could temporarily rotate out of active quorum duty to perform deeper internal adaptation in parallel while remaining cores sustain stream ingestion, using evolutionary expansion and pruning approaches. The Council formalized this as Quorum-Rotation Micro-Learning (QRML) and proposed adding both an architectural description to Vision §4 and a tactical backlog item (SPB-12).
 
 ### First-Principles Scope Demarcation & Rebuttal
@@ -93,6 +97,7 @@ QRML represents an elegant topological resolution to the scheduling tension betw
 ## 5. Rebuttal & Scope Defense: Foundational Substrate Viability vs. Premature Adversarial Escalation Hardening (Recommendation 1)
 
 ### Stakeholder Recommendation Summary
+
 The Stakeholder Council recommended addressing adversarial manipulation of the escalation calibration mechanism (specifically escalation flooding attacks and calibration drift attacks targeting the self-calibrating threshold $\Theta_t$) at Phase 2+.
 
 ### First-Principles Scope Demarcation & Rebuttal

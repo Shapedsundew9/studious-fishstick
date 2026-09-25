@@ -93,8 +93,10 @@ The Attractor Stability watchdog ($\tau \le \tau_{\max}$) and homeostatic memory
 If the initiator accepts the demotion of Categories B and C as proposed above, we recommend the following new backlog item:
 
 > ### SPB-XX: Safety, Alignment & Privacy Architecture Review
+>
 > **Trigger:** Phase 1→Phase 2 gate readiness (prior to any edge-to-collective communication).
 > **Scope:** Design and validate:
+>
 > - Byzantine-resilient delta aggregation protocol for the central collective.
 > - Information-theoretic privacy bounds ($I(X; \Delta) \le \epsilon$) and differential privacy mechanisms for upstream structural deltas and deliberative queries.
 > - Adversarial model-inversion and membership-inference audit methodology.

@@ -23,6 +23,7 @@ I write this as someone who *wants this to succeed*. The vision is intellectuall
 The document presupposes that local credit assignment (three-factor predictive coding, local contrastive energy minimization), autopoietic structural budding, quorum-based inference, and zero-knowledge invariant extraction can all be made to work *and then composed together*. Each of these is an open research problem in its own right. Composing four or five open research problems into a single system multiplies risk — it doesn't average it.
 
 **Challenge:** Before Phase 0 even begins, a single micro-core must demonstrate:
+
 1. That it can learn *anything at all* from a raw byte stream using only local credit assignment.
 2. That what it learns is retained with O(1) memory under continued streaming.
 3. That its settling time is empirically bounded.
@@ -111,12 +112,14 @@ The Tier 1 gating invariants reference thresholds ($\gamma$, $\epsilon$, $\delta
 ### 8. No Mention of Safety, Alignment, or Failure Modes
 
 The document describes a system that:
+
 - Adapts autonomously and continuously.
 - Grows its own structure without human intervention.
 - Makes autonomous decisions about when to emit and when to remain silent.
 - Distributes across millions of edge devices outside centralized control.
 
 And yet there is no discussion of:
+
 - What happens when a micro-core learns something pathological.
 - How autonomous structural growth is bounded (beyond $\tau_{\max}$, which bounds computation, not growth).
 - How the collective prevents adversarial or corrupted deltas from poisoning the baseline.
@@ -131,6 +134,7 @@ And yet there is no discussion of:
 ### 9. Talent & Team Risk Is Entirely Absent
 
 This vision requires simultaneous deep expertise in:
+
 - Dynamical systems theory and attractor networks
 - Computational neuroscience (predictive coding, Hebbian learning)
 - Distributed systems engineering (WAN protocols, consensus algorithms)
@@ -152,6 +156,7 @@ Before any architecture is built, validate the foundational hypothesis:
 > **Can a local-learning-only dynamical system learn to predict non-trivial temporal structure in a raw byte stream with O(1) memory and bounded settling time?**
 
 This is a 3-month, single-researcher experiment. It requires:
+
 - A single micro-core implementation (can be a simple recurrent network trained with a local rule).
 - A battery of synthetic byte streams at Level I complexity.
 - Empirical measurement of: learning curve, memory footprint over time, settling time distribution, retention under continued streaming.
@@ -179,7 +184,7 @@ Example: If local credit assignment cannot learn compositional byte-level struct
 Each phase gate should define not just abstract invariants but a **concrete, demonstrable scenario** that a stakeholder can observe:
 
 | Phase Gate | Minimum Viable Demonstration |
-|:---|:---|
+| :--- | :--- |
 | Phase −1 → 0 | A single micro-core, given a raw byte stream of a periodic pattern with noise, converges to accurate next-byte prediction with flat memory usage over 10M bytes. |
 | Phase 0 → 1 | A single-device swarm of 4 micro-cores, each exposed to a different non-stationary byte grammar, (a) retains per-core specialization, (b) resolves ambiguous test streams via quorum voting with >90% accuracy, and (c) buds a new core when input entropy exceeds capacity — all within a 4 GB memory envelope on commodity hardware. |
 | Phase 1 → 2 | Two devices connected over a simulated 200ms-latency WAN link exchange structural deltas. Device B demonstrably improves on a task it has never seen locally, using only deltas from Device A. Zero raw bytes cross the link. |
@@ -190,7 +195,7 @@ Each phase gate should define not just abstract invariants but a **concrete, dem
 ### Addition 4: An Explicit Risk Register
 
 | Risk | Likelihood | Impact | Mitigation |
-|:---|:---|:---|:---|
+| :--- | :--- | :--- | :--- |
 | Local credit assignment cannot learn compositional structure | High | Fatal | Phase −1 existence proof; hybrid learning escape hatch |
 | O(1) memory constraint forces catastrophic forgetting | Medium | Critical | Empirical study of memory/retention tradeoff; explore sparse persistent state |
 | Quorum consensus degrades under heterogeneous core quality | Medium | High | Weighted voting; core quality scoring; empirical quorum size studies |
@@ -214,6 +219,7 @@ The vision is infrastructure-first. It describes the engine but not the car. Thi
 **Proposed first product hypothesis:**
 
 > A **privacy-preserving, on-device writing assistant** that:
+>
 > - Runs entirely on-device for routine text prediction and completion.
 > - Adapts continuously to the user's personal vocabulary and writing style.
 > - Escalates complex compositional queries (e.g., "restructure this paragraph") to the central collective.
@@ -232,7 +238,7 @@ The vision roadmap describes phases but assigns no durations, team sizes, or bud
 **Proposed skeleton:**
 
 | Phase | Duration | Team Size | Primary Expense | Key Deliverable |
-|:---|:---|:---|:---|:---|
+| :--- | :--- | :--- | :--- | :--- |
 | Phase −1 | 3 months | 1–2 researchers | Researcher salaries | Existence proof paper/report |
 | Phase 0 | 6–12 months | 3–5 engineers + 1 researcher | Salaries + commodity hardware | Single-device micro-core swarm with Phase 0 MVD |
 | Phase 1 | 6–12 months | 5–8 engineers | Salaries + multi-device test rig | Multi-instance quorum with Phase 1 MVD |
@@ -261,27 +267,60 @@ Every ambitious project needs pre-committed kill criteria — conditions under w
 ## Summary Assessment
 
 ```mermaid
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'darkMode': true,
+    'background': '#161922',
+    'mainBkg': '#1e2230',
+    'nodeBorder': '#434c5e',
+    'textColor': '#e2e8f0',
+    'fontFamily': 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    'fontSize': '14px',
+    'lineColor': '#8892b0',
+    'primaryColor': '#422026',
+    'primaryTextColor': '#fde8ec',
+    'primaryBorderColor': '#e06c75',
+    'secondaryColor': '#1b3528',
+    'secondaryTextColor': '#e6f7ee',
+    'secondaryBorderColor': '#73c991',
+    'tertiaryColor': '#1d2c44',
+    'tertiaryTextColor': '#e4f0fc',
+    'tertiaryBorderColor': '#61afef',
+    'clusterBkg': '#13161f',
+    'clusterBorder': '#373e51',
+    'noteBkgColor': '#2e271a',
+    'noteTextColor': '#fdf4db',
+    'noteBorderColor': '#e5c07b',
+    'edgeLabelBackground': '#1a1d27'
+  }
+}}%%
 flowchart LR
+    classDef primary fill:#422026,stroke:#e06c75,stroke-width:1.5px,color:#fde8ec;
+    classDef secondary fill:#1b3528,stroke:#73c991,stroke-width:1.5px,color:#e6f7ee;
+    classDef tertiary fill:#1d2c44,stroke:#61afef,stroke-width:1.5px,color:#e4f0fc;
+    classDef note fill:#2e271a,stroke:#e5c07b,stroke-width:1.5px,color:#fdf4db;
+
     subgraph Strengths ["✅ Strengths"]
-        S1["Architecturally coherent\nend-state vision"]
-        S2["Clear separation of\ntimescales"]
-        S3["Privacy-first design\nphilosophy"]
-        S4["Commodity hardware\ntargeting"]
-        S5["Rigorous gating\nframework structure"]
+        S1["Architecturally coherent<br/>end-state vision"]:::secondary
+        S2["Clear separation of<br/>timescales"]:::secondary
+        S3["Privacy-first design<br/>philosophy"]:::secondary
+        S4["Commodity hardware<br/>targeting"]:::secondary
+        S5["Rigorous gating<br/>framework structure"]:::secondary
     end
 
     subgraph Gaps ["⚠️ Critical Gaps"]
-        G1["No existence proof\nfor core mechanism"]
-        G2["No product\nhypothesis"]
-        G3["No cost model\nor economics"]
-        G4["No safety or\nalignment framework"]
-        G5["No timeline or\nresource plan"]
+        G1["No existence proof<br/>for core mechanism"]:::tertiary
+        G2["No product<br/>hypothesis"]:::tertiary
+        G3["No cost model<br/>or economics"]:::tertiary
+        G4["No safety or<br/>alignment framework"]:::tertiary
+        G5["No timeline or<br/>resource plan"]:::tertiary
     end
 
     subgraph Risks ["🔴 Top Risks"]
-        R1["Local learning\nmay not work"]
-        R2["Unforced constraints\nkill progress"]
-        R3["Indefinite R&D\nwithout revenue"]
+        R1["Local learning<br/>may not work"]:::primary
+        R2["Unforced constraints<br/>kill progress"]:::primary
+        R3["Indefinite R&D<br/>without revenue"]:::primary
     end
 
     S1 --> G1
@@ -307,4 +346,4 @@ The path from here is not to dilute the vision — it is to *earn it*, one empir
 
 ---
 
-*"Plans are worthless, but planning is everything." — Dwight D. Eisenhower*
+> *"Plans are worthless, but planning is everything." — Dwight D. Eisenhower*

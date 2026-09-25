@@ -112,28 +112,53 @@ Level I: Regular & Markovian Grammars
 
 ### The Dynamical Resilience Ladder (The Operational Axis)
 
-```text
-\[Node 0: Streaming Baseline\]  
-  ↳ Validates continuous ingestion, elastic backpressure, bounded settling (tau \<= tau\_max), and homeostatic stability.  
-       /                                      \\  
-      /                                        \\  
-\[Node A: Temporal Depth\]                  \[Node B: Non-Stationary Shift\]  
-  ↳ Long-range temporal contingencies;      ↳ Unannounced rule regime switches;  
-    gated by Retention Invariant.             gated by Plasticity Recovery Invariant.  
-      \\                                        /  
-       \\                                      /  
-\[Node AB: Compound Latency & Shift\]  
-  ↳ Long-delay dependencies embedded inside non-stationary rule regimes;  
-    gated by Non-Interference Invariant.  
-       |  
-\[Node C: Capacity Exhaustion & Structural Expansion\]  
-  ↳ Environmental entropy deliberately exceeds the core's initial parametric capacity;  
-    forces autonomous structural expansion without sacrificing SIMD/SIMT throughput.  
-       |  
-\[Node D: Asynchronous Agency & State Persistence\]  
-  ↳ Full closed-loop cybernetic feedback; emissions actively steer the generator;  
-  ↳ Full closed-loop cybernetic feedback; emissions actively steer the generator;  
-    multi-stage selection distills successful configuration rules into compact initialization seeds.  
+```mermaid
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'darkMode': true,
+    'background': '#161922',
+    'mainBkg': '#1e2230',
+    'nodeBorder': '#434c5e',
+    'textColor': '#e2e8f0',
+    'fontFamily': 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    'fontSize': '14px',
+    'lineColor': '#8892b0',
+    'primaryColor': '#422026',
+    'primaryTextColor': '#fde8ec',
+    'primaryBorderColor': '#e06c75',
+    'secondaryColor': '#1b3528',
+    'secondaryTextColor': '#e6f7ee',
+    'secondaryBorderColor': '#73c991',
+    'tertiaryColor': '#1d2c44',
+    'tertiaryTextColor': '#e4f0fc',
+    'tertiaryBorderColor': '#61afef',
+    'clusterBkg': '#13161f',
+    'clusterBorder': '#373e51',
+    'noteBkgColor': '#2e271a',
+    'noteTextColor': '#fdf4db',
+    'noteBorderColor': '#e5c07b',
+    'edgeLabelBackground': '#1a1d27'
+  }
+}}%%
+flowchart TD
+    classDef primary fill:#422026,stroke:#e06c75,stroke-width:1.5px,color:#fde8ec;
+    classDef secondary fill:#1b3528,stroke:#73c991,stroke-width:1.5px,color:#e6f7ee;
+    classDef tertiary fill:#1d2c44,stroke:#61afef,stroke-width:1.5px,color:#e4f0fc;
+
+    N0["🎯 Node 0: Streaming Baseline<br/><i>Continuous ingestion, elastic backpressure, bounded settling, homeostatic stability</i>"]:::primary
+    NA["⚙️ Node A: Temporal Depth<br/><i>Long-range temporal contingencies; gated by Retention Invariant</i>"]:::secondary
+    NB["⚙️ Node B: Non-Stationary Shift<br/><i>Unannounced rule regime switches; gated by Plasticity Recovery Invariant</i>"]:::secondary
+    NAB["⚙️ Node AB: Compound Latency & Shift<br/><i>Long-delay dependencies in non-stationary regimes; gated by Non-Interference Invariant</i>"]:::secondary
+    NC["⚙️ Node C: Capacity Exhaustion & Structural Expansion<br/><i>Autonomous structural expansion under entropy saturation without sacrificing throughput</i>"]:::secondary
+    ND["📦 Node D: Asynchronous Agency & State Persistence<br/><i>Closed-loop cybernetic feedback, active generator steering, compact initialization seeds</i>"]:::tertiary
+
+    N0 --> NA
+    N0 --> NB
+    NA --> NAB
+    NB --> NAB
+    NAB --> NC
+    NC --> ND
 ```
 
 ---

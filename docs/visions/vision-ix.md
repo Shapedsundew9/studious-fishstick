@@ -95,20 +95,53 @@ To prevent accidental solutioning via arbitrary data representations, the enviro
 The architecture decouples immediate interactive experience from collective planetary generalization via a hierarchical, asymmetric topology:
 
 ```mermaid
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'darkMode': true,
+    'background': '#161922',
+    'mainBkg': '#1e2230',
+    'nodeBorder': '#434c5e',
+    'textColor': '#e2e8f0',
+    'fontFamily': 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    'fontSize': '14px',
+    'lineColor': '#8892b0',
+    'primaryColor': '#422026',
+    'primaryTextColor': '#fde8ec',
+    'primaryBorderColor': '#e06c75',
+    'secondaryColor': '#1b3528',
+    'secondaryTextColor': '#e6f7ee',
+    'secondaryBorderColor': '#73c991',
+    'tertiaryColor': '#1d2c44',
+    'tertiaryTextColor': '#e4f0fc',
+    'tertiaryBorderColor': '#61afef',
+    'clusterBkg': '#13161f',
+    'clusterBorder': '#373e51',
+    'noteBkgColor': '#2e271a',
+    'noteTextColor': '#fdf4db',
+    'noteBorderColor': '#e5c07b',
+    'edgeLabelBackground': '#1a1d27'
+  }
+}}%%
 flowchart TB
+    classDef primary fill:#422026,stroke:#e06c75,stroke-width:1.5px,color:#fde8ec;
+    classDef secondary fill:#1b3528,stroke:#73c991,stroke-width:1.5px,color:#e6f7ee;
+    classDef tertiary fill:#1d2c44,stroke:#61afef,stroke-width:1.5px,color:#e4f0fc;
+    classDef note fill:#2e271a,stroke:#e5c07b,stroke-width:1.5px,color:#fdf4db;
+
     subgraph Fleet ["Consumer Edge Fleet: Divergent Local Agents"]
         direction TB
         subgraph EdgeA ["Device A (Personal Terminal)"]
             direction TB
             subgraph SwarmA ["Local Micro-Core Swarm"]
                 direction TB
-                CoreA1["Micro-Core 1 (Active)"]
-                CoreA2["Micro-Core 2 (Active)"]
-                CoreAK["Micro-Core K (Consolidating / QRML)"]
+                CoreA1["Micro-Core 1 (Active)"]:::secondary
+                CoreA2["Micro-Core 2 (Active)"]:::secondary
+                CoreAK["Micro-Core K (Consolidating / QRML)"]:::secondary
                 CoreA1 <--> CoreA2 <--> CoreAK
             end
-            QuorumA["Lateral Consensus & Quorum Layer\n(Deliberation & Adaptive Rotation)"]
-            StateA["Local Persistent State (Divergent)"]
+            QuorumA["Lateral Consensus & Quorum Layer<br/>(Deliberation & Adaptive Rotation)"]:::secondary
+            StateA["Local Persistent State (Divergent)"]:::primary
             SwarmA <--> QuorumA
             QuorumA <--> StateA
         end
@@ -117,13 +150,13 @@ flowchart TB
             direction TB
             subgraph SwarmB ["Local Micro-Core Swarm"]
                 direction TB
-                CoreB1["Micro-Core 1"]
-                CoreB2["Micro-Core 2"]
-                CoreBK["Micro-Core K"]
+                CoreB1["Micro-Core 1"]:::secondary
+                CoreB2["Micro-Core 2"]:::secondary
+                CoreBK["Micro-Core K"]:::secondary
                 CoreB1 <--> CoreB2 <--> CoreBK
             end
-            QuorumB["Lateral Consensus & Quorum Layer"]
-            StateB["Local Persistent State (Divergent)"]
+            QuorumB["Lateral Consensus & Quorum Layer"]:::secondary
+            StateB["Local Persistent State (Divergent)"]:::primary
             SwarmB <--> QuorumB
             QuorumB <--> StateB
         end
@@ -132,13 +165,13 @@ flowchart TB
             direction TB
             subgraph SwarmN ["Local Micro-Core Swarm"]
                 direction TB
-                CoreN1["Micro-Core 1"]
-                CoreN2["Micro-Core 2"]
-                CoreNK["Micro-Core K"]
+                CoreN1["Micro-Core 1"]:::secondary
+                CoreN2["Micro-Core 2"]:::secondary
+                CoreNK["Micro-Core K"]:::secondary
                 CoreN1 <--> CoreN2 <--> CoreNK
             end
-            QuorumN["Lateral Consensus & Quorum Layer"]
-            StateN["Local Persistent State (Divergent)"]
+            QuorumN["Lateral Consensus & Quorum Layer"]:::secondary
+            StateN["Local Persistent State (Divergent)"]:::primary
             SwarmN <--> QuorumN
             QuorumN <--> StateN
         end
@@ -146,20 +179,20 @@ flowchart TB
 
     subgraph Channel ["Asynchronous Boundary Interface (WAN)"]
         direction TB
-        UpDeltas["Privacy-Bounded Structural Invariants & Topological Deltas\n(I(X; Δ) ≤ ε, Zero Raw Context / Zero Keystrokes)"]
-        DownPriors["Hardened Architectural Baselines & Seeds\n(Broadcast Priors)"]
-        QueryFallback["Self-Calibrating Tiered Escalation\n(High-Entropy / Abstract Reasoning Fallback ≤ 0.1%)"]
+        UpDeltas["Privacy-Bounded Structural Invariants & Topological Deltas<br/>(I(X; Δ) ≤ ε, Zero Raw Context / Zero Keystrokes)"]:::primary
+        DownPriors["Hardened Architectural Baselines & Seeds<br/>(Broadcast Priors)"]:::tertiary
+        QueryFallback["Self-Calibrating Tiered Escalation<br/>(High-Entropy / Abstract Reasoning Fallback ≤ 0.1%)"]:::tertiary
     end
 
     subgraph Central ["Decoupled Central Collective"]
         direction TB
-        Arbiter["Consensus, Arbitration & Routing Layer"]
+        Arbiter["Consensus, Arbitration & Routing Layer"]:::tertiary
         subgraph Modules ["Decoupled Functional Knowledge Domains"]
-            Mod1["Functional Domain Module 1"]
-            Mod2["Functional Domain Module 2"]
-            ModK["Functional Domain Module K"]
+            Mod1["Functional Domain Module 1"]:::secondary
+            Mod2["Functional Domain Module 2"]:::secondary
+            ModK["Functional Domain Module K"]:::secondary
         end
-        Synthesis["Asynchronous Synthesis & Compression Engine"]
+        Synthesis["Asynchronous Synthesis & Compression Engine"]:::primary
         
         Arbiter <--> Modules
         Modules <--> Synthesis
@@ -232,7 +265,7 @@ To prevent the engineering effort from defaulting to traditional coupled deep le
   Total infrastructure hosting costs scale with the rate of *macro-deliberative reasoning and collective capability synthesis*, not with *continuous raw stream ingestion*. Because edge devices absorb the overwhelming volume of temporal byte streaming, interactive pacing, and continuous local adaptation, the economic burden of routine, high-cadence operation remains decentralized—delivering an order-of-magnitude efficiency advantage over monolithic hyperscaler architectures.
 
 * **Escalation Calibration Invariant:**  
-  The deliberative escalation mechanism must be self-calibrating—dynamically adapting its trigger threshold based on empirical local prediction confidence and lateral quorum agreement—such that the escalation rate remains within a target band ($\le 0.1\%$ of total interaction volume under steady-state operation) without manual per-device tuning. If the system cannot maintain the target escalation rate band while preserving output quality above a stated threshold, the asymmetric economic premise is invalidated.
+  The deliberative escalation mechanism must be self-calibrating—dynamically adapting its trigger threshold based on empirical local prediction confidence and lateral quorum agreement—such that the escalation rate remains within a target band ($\le 0.1$% of total interaction volume under steady-state operation) without manual per-device tuning. If the system cannot maintain the target escalation rate band while preserving output quality above a stated threshold, the asymmetric economic premise is invalidated.
 
 ### Operational Correctness & Dynamical Stability Invariants
 
@@ -266,35 +299,64 @@ Substantive architectural design and verification for these capabilities are for
 
 System advancement is measured along a rigorous multi-axis progression combining **Dynamical & Structural Complexity (Levels I–IV)**, **Dynamical Resilience (Nodes 0–D)**, and **Deployment Topology (Phases −1–3)**. Advancement requires earning passage through empirical gating invariants, minimum viable demonstrations, and operational gating criteria.
 
-```text
-Information Axis (Dynamical & Structural Complexity):
-  Level I (Regular Grammars) ──► Level II (Hierarchical) ──► Level III (Context-Sensitive) ──► Level IV (Natural UTF-8)
-  [Cross-cut by: Temporal Depth, Adaptation Velocity, Compositional Depth, Relational Binding]
+```mermaid
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'darkMode': true,
+    'background': '#161922',
+    'mainBkg': '#1e2230',
+    'nodeBorder': '#434c5e',
+    'textColor': '#e2e8f0',
+    'fontFamily': 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    'fontSize': '14px',
+    'lineColor': '#8892b0',
+    'primaryColor': '#422026',
+    'primaryTextColor': '#fde8ec',
+    'primaryBorderColor': '#e06c75',
+    'secondaryColor': '#1b3528',
+    'secondaryTextColor': '#e6f7ee',
+    'secondaryBorderColor': '#73c991',
+    'tertiaryColor': '#1d2c44',
+    'tertiaryTextColor': '#e4f0fc',
+    'tertiaryBorderColor': '#61afef',
+    'clusterBkg': '#13161f',
+    'clusterBorder': '#373e51',
+    'noteBkgColor': '#2e271a',
+    'noteTextColor': '#fdf4db',
+    'noteBorderColor': '#e5c07b',
+    'edgeLabelBackground': '#1a1d27'
+  }
+}}%%
+flowchart TD
+    classDef primary fill:#422026,stroke:#e06c75,stroke-width:1.5px,color:#fde8ec;
+    classDef secondary fill:#1b3528,stroke:#73c991,stroke-width:1.5px,color:#e6f7ee;
+    classDef tertiary fill:#1d2c44,stroke:#61afef,stroke-width:1.5px,color:#e4f0fc;
+    classDef note fill:#2e271a,stroke:#e5c07b,stroke-width:1.5px,color:#fdf4db;
 
-Operational & Topological Staged Progression:
-  [Phase −1: Foundational Existence Proof] (Isolated Micro-Core Substrate)
-    ↳ Validates core mechanism: local credit assignment, bounded memory growth O(T^α, α ≤ 1), bounded settling (τ ≤ 32),
-      short-range temporal recall (K ≥ 64), and single-shift plasticity on raw bytes across auditable systematic sweeps
-         │
-         ▼
-  [Phase 0: Isolated Swarm & Dynamical Resilience] (Single Device / Laptop)
-    ↳ Validates Node 0 (Streaming), Node A (Temporal Depth), Node B (Shift), Node AB (Compound), Node C (Expansion),
-      structural homeostasis, intra-core compaction efficacy (≥20% α reduction), Level II substrate diagnostic (≥70%),
-      quiescent exploitation, and ≥7-day operational lifetime projection within <4 GB envelope
-         │
-         ▼
-  [Phase 1: Divergent Sandbox & Lateral Quorum] (Multi-Instance / Local Swarm)
-    ↳ Validates local multi-agent divergence, modular budding, Quorum-Rotation Micro-Learning (QRML),
-      and Node C+ (Lateral Quorum & Consensus δ_local ≤ 0.05)
-         │
-         ▼
-  [Phase 2: Asymmetric Edge/Core Link & WAN Federation] (Emulated WAN / LAN)
-    ↳ Validates privacy-bounded delta absorption, self-calibrating query offload fallback, adversarial escalation robustness,
-      and collective coherence δ_collective ≤ 0.05
-         │
-         ▼
-  [Phase 3: Decentralized Fleet & Central Collective] (Commercial WAN Scale)
-    ↳ Validates Node D (Collective Agency & Seed Distillation), fleet-wide broadcast, and asymmetric economics
+    subgraph InfoAxis ["Information Axis: Dynamical & Structural Complexity"]
+        direction LR
+        L1["Level I: Regular Grammars<br/><i>(|V| ≤ 8)</i>"]:::secondary
+        L2["Level II: Hierarchical<br/><i>(|V| ≤ 32, Dyck-2)</i>"]:::secondary
+        L3["Level III: Context-Sensitive<br/><i>(|V| ~ 128)</i>"]:::secondary
+        L4["Level IV: Natural UTF-8<br/><i>(|V| = 256)</i>"]:::secondary
+
+        L1 --> L2 --> L3 --> L4
+    end
+
+    subgraph StagedProgression ["Operational & Topological Staged Progression"]
+        direction TB
+        P_Minus1["🎯 Phase −1: Foundational Proof<br/><i>(Isolated Micro-Core Substrate)</i><br/>• Local credit assignment, zero BPTT<br/>• Bounded growth O(T^α), α ≤ 1, settling τ ≤ 32<br/>• Short-range recall K ≥ 64, single-shift plasticity"]:::primary
+        P0["⚙️ Phase 0: Isolated Swarm<br/><i>(Single Device / Laptop &lt;4 GB)</i><br/>• Nodes 0, A, B, AB, C validation<br/>• Compaction efficacy (≥20% α reduction)<br/>• Level II substrate diagnostic (≥70% Dyck-2)<br/>• ≥7-day operational lifetime projection"]:::secondary
+        P1["⚙️ Phase 1: Divergent Sandbox<br/><i>(Multi-Instance / Local Swarm)</i><br/>• Multi-agent divergence & somatic budding<br/>• Quorum-Rotation Micro-Learning (QRML)<br/>• Node C+ Lateral Quorum (δ_local ≤ 0.05)"]:::secondary
+        P2["📦 Phase 2: Asymmetric Link<br/><i>(Emulated WAN / LAN)</i><br/>• Privacy-bounded deltas I(X; Δ) ≤ 10^-4<br/>• Self-calibrating query fallback ≤ 0.1%<br/>• Collective coherence δ_collective ≤ 0.05"]:::tertiary
+        P3["📦 Phase 3: Collective Fleet<br/><i>(Commercial Scale WAN)</i><br/>• Node D collective agency & seed distillation<br/>• Fleet broadcast & asymmetric economics"]:::tertiary
+
+        P_Minus1 -->|"Passes Existence Proof"| P0
+        P0 -->|"Passes Swarm & Level II Gate"| P1
+        P1 -->|"Passes QRML & Isolation"| P2
+        P2 -->|"Passes WAN & Privacy Bound"| P3
+    end
 ```
 
 ### The Information Axis: Dynamical Learning Phenomena & Structural Regimes
@@ -337,9 +399,9 @@ These dynamical phenomena are progressively evaluated across four structural reg
 | Stage & Topology | Level I: Regular Grammars ($\vert{}V\vert{} \le 8$) | Level II: Hierarchical ($\vert{}V\vert{} \le 32$) | Level III: Context-Sensitive ($\vert{}V\vert{} \sim 128$) | Level IV: Open Natural UTF-8 ($\vert{}V\vert{} = 256$) |
 | :--- | :--- | :--- | :--- | :--- |
 | **Phase −1: Foundational Proof**<br>*(Single Micro-Core Substrate)* | Stream raw periodic byte sequences with noise; demonstrate convergent next-byte prediction using strictly local credit assignment; verify bounded memory growth ($O(T^\alpha), \alpha \le 1$, zero unbounded buffer leakage) over $10^7$ bytes, bounded settling $\tau \le 32$, short-range temporal recall ($K \ge 64, I(S; R) \ge 0.90$), and single-shift recovery ($T_{\text{recover}} \le 2000$). | [Empirical prerequisite gate for Phase 0 entry; establishes core substrate viability before hierarchical scaling.] | [N/A at Phase −1] | [N/A at Phase −1] |
-| **Phase 0: Isolated Swarm**<br>*(Nodes 0–C on Single Device)* | Stream micro-tokens; establish settling ceiling $\tau_{\max} \le 32$; verify bounded memory growth within $<4$ GB envelope with $\ge 7$-day projected time-to-ceiling; recall delayed trigger signals across distractor bytes (Node A); adapt to shifted Markov rules (Node B); allocate nodes upon regular state saturation (Node C); verify structural homeostasis, compaction efficacy ($\ge 20\%$ $\alpha$ reduction), and quiescent exploitation. | Stream nested byte streams; confirm stack-free stability; Dyck-path resolution separated by long distractor streams; execute Hierarchical Substrate Diagnostic ($\ge 70\%$ bracket matching on Dyck-2, depth $\le 4$); recursive matching with shifting grammar modes; grow dynamic attractor depth when nesting exceeds initial bounds. | Continuous stream of code execution traces; variable binding with distant operational calls; algorithmic execution with mid-stream protocol changes; allocate isolated parallel sub-graphs for disjoint variable scopes. | Sustained multi-gigabyte ingestion of raw UTF-8 text on commodity CPU/GPU; long-range context resolution across thousands of intervening UTF-8 bytes; fluid domain adaptation; expand structural parameter footprint under open-domain entropy within hardware metabolic limits. |
+| **Phase 0: Isolated Swarm**<br>*(Nodes 0–C on Single Device)* | Stream micro-tokens; establish settling ceiling $\tau_{\max} \le 32$; verify bounded memory growth within $<4$ GB envelope with $\ge 7$-day projected time-to-ceiling; recall delayed trigger signals across distractor bytes (Node A); adapt to shifted Markov rules (Node B); allocate nodes upon regular state saturation (Node C); verify structural homeostasis, compaction efficacy ($\ge 20$% $\alpha$ reduction), and quiescent exploitation. | Stream nested byte streams; confirm stack-free stability; Dyck-path resolution separated by long distractor streams; execute Hierarchical Substrate Diagnostic ($\ge 70$% bracket matching on Dyck-2, depth $\le 4$); recursive matching with shifting grammar modes; grow dynamic attractor depth when nesting exceeds initial bounds. | Continuous stream of code execution traces; variable binding with distant operational calls; algorithmic execution with mid-stream protocol changes; allocate isolated parallel sub-graphs for disjoint variable scopes. | Sustained multi-gigabyte ingestion of raw UTF-8 text on commodity CPU/GPU; long-range context resolution across thousands of intervening UTF-8 bytes; fluid domain adaptation; expand structural parameter footprint under open-domain entropy within hardware metabolic limits. |
 | **Phase 1: Divergent Sandbox**<br>*(Node C+ on Multi-Instance Host)* | Multiple local instances adapt to mutually exclusive Markov transition rules without baseline degradation; lateral majority voting across redundant micro-cores resolves noisy Markov streams with $\delta_{\text{local}} \le 0.05$ (Node C+); Quorum-Rotation Micro-Learning (QRML) duty-cycling validated. | Instances diverge on conflicting delimiter/syntax systems; verify structural isolation; consensus resolution between competing stack-like attractors on ambiguous brackets. | Instances independently debug disjoint code traces; confirm zero cross-contamination; multi-expert quorum resolves branching variable bindings and conflicting execution traces. | Standalone terminal agent demonstrates real-time personal context adaptation on edge hardware ($<4$ GB RAM); dynamic consensus, debate, and verification across decoupled micro-experts synthesize complex text; rotating background cores adapt without stream degradation. |
-| **Phase 2: Asymmetric Link**<br>*(WAN/LAN Client-Server)* | Local instance executes high-cadence stream; escalates unresolved state transitions via self-calibrating trigger to emulated central module; WAN latency tolerance verified; adversarial escalation rate defenses active. | Central module resolves ambiguous recursive branches; validates fluid, low-overhead deliberative escalation ($\le 0.1\%$ volume) and re-absorption without edge stalls. | Client emits local privacy-bounded structural deltas ($I(X; \Delta) \le 10^{-4}$ bits); escalates multi-step variable binding traces to central collective; central engine merges functional graphs without retraining. | Central collective absorbs time-lagged deltas from multiple edge instances and arbitrates complex reasoning queries; validates absence of catastrophic interference under asynchronous updates ($\delta_{\text{collective}} \le 0.05$). |
+| **Phase 2: Asymmetric Link**<br>*(WAN/LAN Client-Server)* | Local instance executes high-cadence stream; escalates unresolved state transitions via self-calibrating trigger to emulated central module; WAN latency tolerance verified; adversarial escalation rate defenses active. | Central module resolves ambiguous recursive branches; validates fluid, low-overhead deliberative escalation ($\le 0.1$% volume) and re-absorption without edge stalls. | Client emits local privacy-bounded structural deltas ($I(X; \Delta) \le 10^{-4}$ bits); escalates multi-step variable binding traces to central collective; central engine merges functional graphs without retraining. | Central collective absorbs time-lagged deltas from multiple edge instances and arbitrates complex reasoning queries; validates absence of catastrophic interference under asynchronous updates ($\delta_{\text{collective}} \le 0.05$). |
 | **Phase 3: Collective Fleet**<br>*(Node D at Commercial Scale)* | Distributed fleet maps disjoint state spaces; collective unifies them into a minimal baseline seed; generator steering across low-entropy Markov states (Node D). | Central engine extracts common grammar invariants from a fleet exposed to diverse synthetic dialects; active querying resolves grammatical ambiguities. | Distributed fleet resolves large-scale programmatic suites; collective synthesizes optimal execution paths; interactive debugging across distributed worker nodes. | Full autonomous agent dialogue: steering environments; edge executes high-bandwidth routine inference and continuous adaptation, escalating deep abstract reasoning to the central collective; collective distills global capabilities; asymmetric hosting economics verified. |
 
 ---
@@ -375,14 +437,14 @@ Each phase transition requires a concrete, observable behavioral demonstration:
   1. **Short-Range Temporal Recall:** Correctly respond to a trigger-distractor-probe sequence across $K \ge 64$ distractor bytes with mutual information $I(S; R) \ge 0.90$ without token buffering or replay; and
   2. **Single Distribution Shift Recovery:** Recover to within 10% of steady-state performance within $T_{\text{recover}} \le 2000$ bytes following an unannounced Markov transition shift.
 * **Phase 0 $\rightarrow$ Phase 1 MVD (Edge Swarm, Budding & Compaction Efficacy):**  
-  A single-device micro-core swarm running on commodity hardware ($<4$ GB RAM) absorbs competing non-stationary streams; individual cores specialize without cross-interference ($\Delta \le 0.05$); lateral quorum resolves ambiguous test sequences with $\ge 90\%$ accuracy; capacity saturation autonomously triggers somatic budding of a new micro-core without stalling execution; structural homeostasis prevents budding-apoptosis limit cycles under stationary streams; and continuous memory telemetry establishes an empirical **time-to-ceiling projection of $\ge 7$ consecutive days** of continuous streaming before exhausting the 4 GB envelope. Furthermore, Phase 0 advancement explicitly requires:
-  1. **Compaction Efficacy Gate:** Empirical telemetry must demonstrate that intra-core attractor compaction reduces the observed growth exponent $\alpha$ by $\ge 20\%$ relative to a compaction-disabled baseline, while preserving Backward Non-Interference ($\Delta \le 0.05$) on previously mastered distributions.
-  2. **Hierarchical Substrate Diagnostic:** In addition to Level I operational gates, a single micro-core must demonstrate $\ge 70\%$ bracket-matching accuracy on a continuous Dyck-2 stream (nesting depth $\le 4$, $|V| \le 8$) under the same local credit constraints, confirming rudimentary hierarchical attractor formation prior to multi-core scaling investment.
+  A single-device micro-core swarm running on commodity hardware ($<4$ GB RAM) absorbs competing non-stationary streams; individual cores specialize without cross-interference ($\Delta \le 0.05$); lateral quorum resolves ambiguous test sequences with $\ge 90$% accuracy; capacity saturation autonomously triggers somatic budding of a new micro-core without stalling execution; structural homeostasis prevents budding-apoptosis limit cycles under stationary streams; and continuous memory telemetry establishes an empirical **time-to-ceiling projection of $\ge 7$ consecutive days** of continuous streaming before exhausting the 4 GB envelope. Furthermore, Phase 0 advancement explicitly requires:
+  1. **Compaction Efficacy Gate:** Empirical telemetry must demonstrate that intra-core attractor compaction reduces the observed growth exponent $\alpha$ by $\ge 20$% relative to a compaction-disabled baseline, while preserving Backward Non-Interference ($\Delta \le 0.05$) on previously mastered distributions.
+  2. **Hierarchical Substrate Diagnostic:** In addition to Level I operational gates, a single micro-core must demonstrate $\ge 70$% bracket-matching accuracy on a continuous Dyck-2 stream (nesting depth $\le 4$, $|V| \le 8$) under the same local credit constraints, confirming rudimentary hierarchical attractor formation prior to multi-core scaling investment.
 * **Phase 1 $\rightarrow$ Phase 2 MVD (Asymmetric Structural Sync & Quorum Rotation):**  
   1. Two independent edge instances connected via an emulated 200ms-latency WAN link exchange structural invariant deltas. Device B demonstrably masters a task distribution it has never directly observed, utilizing synthesized deltas from Device A. Zero raw tokens or reconstructible private contexts cross the boundary link ($I(X; \Delta) \le 10^{-4}$ bits).  
-  2. The multi-core swarm validates Quorum-Rotation Micro-Learning (QRML): while an active quorum $N_{\min}$ sustains continuous, un-stalled byte processing and consensus accuracy ($\ge 90\%$), background cores rotate out, perform deeper internal adaptation, and successfully validate against quorum consensus upon re-integration without inducing latency spikes or prediction drops.
+  2. The multi-core swarm validates Quorum-Rotation Micro-Learning (QRML): while an active quorum $N_{\min}$ sustains continuous, un-stalled byte processing and consensus accuracy ($\ge 90$%), background cores rotate out, perform deeper internal adaptation, and successfully validate against quorum consensus upon re-integration without inducing latency spikes or prediction drops.
 * **Phase 2 $\rightarrow$ Phase 3 MVD (Collective Scale & Asymmetry):**  
-  A deployed network of 100+ heterogeneous edge nodes and a central collective proves: (a) collective model accuracy on multi-step reasoning exceeds any isolated edge node by $\ge 25\%$; (b) central infrastructure compute scales sublinearly ($O(\log N)$ or $O(1)$) with active fleet size $N$; (c) self-calibrating deliberative escalation holds average WAN query offload to $\le 0.1\%$ of total edge interaction volume under benign and adversarial stress tests; and (d) a newly initialized edge node bootstraps from broadcast priors (`DownPriors`) to fleet-average competence within hours.
+  A deployed network of 100+ heterogeneous edge nodes and a central collective proves: (a) collective model accuracy on multi-step reasoning exceeds any isolated edge node by $\ge 25$%; (b) central infrastructure compute scales sublinearly ($O(\log N)$ or $O(1)$) with active fleet size $N$; (c) self-calibrating deliberative escalation holds average WAN query offload to $\le 0.1$% of total edge interaction volume under benign and adversarial stress tests; and (d) a newly initialized edge node bootstraps from broadcast priors (`DownPriors`) to fleet-average competence within hours.
 
 ### Empirical Falsification & Termination Criteria
 
@@ -395,7 +457,7 @@ A rigorous scientific vision establishes clear conditions under which foundation
 3. **Information Leakage Falsification (Phase 2):**  
    If structural invariants or deliberative queries transmitted over the WAN link permit non-trivial reconstruction of private input byte streams ($I(X; \Delta) > 10^{-4}$ bits) under adversarial auditing, upstream synchronization is immediately halted.
 4. **Asymmetric Escalation & Economic Falsification (Phase 2/3):**  
-   If the self-calibrating deliberative escalation mechanism cannot maintain an escalation rate within the target band ($\le 0.1\%$ of interaction volume under steady-state load) while preserving output quality, forcing central infrastructure compute to scale linearly with user streaming hours, the asymmetric economic foundation is falsified.
+   If the self-calibrating deliberative escalation mechanism cannot maintain an escalation rate within the target band ($\le 0.1$% of interaction volume under steady-state load) while preserving output quality, forcing central infrastructure compute to scale linearly with user streaming hours, the asymmetric economic foundation is falsified.
 
 ### Tier 2: Commercial & Operational Gating Criteria
 
@@ -404,4 +466,4 @@ A rigorous scientific vision establishes clear conditions under which foundation
 * **Privacy & Bandwidth Viability (Phase 1 $\rightarrow$ Phase 2 Gate):**  
   Invariant updates and deliberative queries sent over the network must be ultra-sparse, requiring bandwidth orders of magnitude lower than transmitting the raw interaction stream, with formal mathematical guarantees ($I(X; \Delta) \le 10^{-4}$ bits) of zero reconstructible private context or user observations.
 * **Decoupled Infrastructure Economics (Phase 2 $\rightarrow$ Phase 3 Gate):**  
-  The central infrastructure must prove that compute consumption scales with the rate of *macro-deliberative reasoning and collective model synthesis*, maintaining $\le 0.1\%$ routine escalation, and does *not* scale linearly with continuous raw streaming volume or total active edge fleet size.
+  The central infrastructure must prove that compute consumption scales with the rate of *macro-deliberative reasoning and collective model synthesis*, maintaining $\le 0.1$% routine escalation, and does *not* scale linearly with continuous raw streaming volume or total active edge fleet size.

@@ -31,7 +31,7 @@ This creates an implicit dependency: the 7-day gating criterion is not achievabl
 
 ### Proposed Addition (Vision §7, Phase 0 → Phase 1 MVD)
 
-> **Compaction Efficacy Gate:** Empirical telemetry must demonstrate that intra-core attractor compaction reduces the observed growth exponent $\alpha$ by $\ge 20\%$ relative to a compaction-disabled baseline, while preserving Backward Non-Interference ($\Delta \le 0.05$) on previously mastered distributions.
+> **Compaction Efficacy Gate:** Empirical telemetry must demonstrate that intra-core attractor compaction reduces the observed growth exponent $\alpha$ by $\ge 20$% relative to a compaction-disabled baseline, while preserving Backward Non-Interference ($\Delta \le 0.05$) on previously mastered distributions.
 
 ---
 
@@ -81,7 +81,7 @@ However, 50 configurations per family is a relatively shallow sweep for a 3-mont
 
 ### Observation
 
-The Phase 0 → Phase 1 MVD (Vision §7) gates on operational properties: lateral quorum accuracy ($\ge 90\%$), somatic budding without stalls, structural homeostasis, and the 7-day memory projection. The Information Axis places Level II (hierarchical/context-free) and Level III (context-sensitive) within the Phase 0 scope in the Execution Matrix (§6).
+The Phase 0 → Phase 1 MVD (Vision §7) gates on operational properties: lateral quorum accuracy ($\ge 90$%), somatic budding without stalls, structural homeostasis, and the 7-day memory projection. The Information Axis places Level II (hierarchical/context-free) and Level III (context-sensitive) within the Phase 0 scope in the Execution Matrix (§6).
 
 However, the Phase 0 → Phase 1 MVD contains no binding criterion on representational capability beyond Level I. The MVD validates that "competing non-stationary streams" are absorbed with specialization and that "ambiguous test sequences" are resolved by quorum—but these could be satisfied entirely within Level I regular grammars. The matrix shows Level II–IV as Phase 0 objectives, yet the Interpretive Note explicitly states these are "horizon stretch objectives and research directions, not gating requirements."
 
@@ -91,7 +91,7 @@ This means Phase 1 entry could occur with a system that has never demonstrated h
 
 1. **Introduce a Minimal Level II Diagnostic Gate for Phase 0 → Phase 1:** Without requiring full Level II mastery as a hard gate (which could be overly aggressive), the Phase 0 → Phase 1 MVD should include a diagnostic criterion that establishes rudimentary evidence of hierarchical attractor formation. For example:
 
-   > A single micro-core ingesting a continuous Dyck-2 bracket stream (nesting depth $\le 4$, $|V| \le 8$) must demonstrate bracket-matching accuracy $\ge 70\%$ without explicit stack instructions, confirming that the substrate's attractor dynamics can encode at least shallow recursive state.
+   > A single micro-core ingesting a continuous Dyck-2 bracket stream (nesting depth $\le 4$, $|V| \le 8$) must demonstrate bracket-matching accuracy $\ge 70$% without explicit stack instructions, confirming that the substrate's attractor dynamics can encode at least shallow recursive state.
 
    This is not a high bar, but it provides a material signal that the substrate is worth scaling to multi-core composition.
 
@@ -99,7 +99,7 @@ This means Phase 1 entry could occur with a system that has never demonstrated h
 
 ### Proposed Addition (Vision §7, Phase 0 → Phase 1 MVD)
 
-> **Hierarchical Substrate Diagnostic:** In addition to Level I operational gates, a single micro-core must demonstrate $\ge 70\%$ bracket-matching accuracy on a Dyck-2 stream (nesting depth $\le 4$, $|V| \le 8$) under the same local credit constraints, confirming rudimentary hierarchical attractor formation prior to multi-core scaling investment.
+> **Hierarchical Substrate Diagnostic:** In addition to Level I operational gates, a single micro-core must demonstrate $\ge 70$% bracket-matching accuracy on a Dyck-2 stream (nesting depth $\le 4$, $|V| \le 8$) under the same local credit constraints, confirming rudimentary hierarchical attractor formation prior to multi-core scaling investment.
 
 ---
 
@@ -123,10 +123,11 @@ However, the nature of the upstream payload—"topological additions, rewiring g
 ### Proposed Addition (Backlog, SPB-10 — §8.2, Detailed Scope)
 
 > **5. Privacy-Utility Feasibility for Topological Deltas:**
->    * Conduct a formal study characterizing the privacy-utility frontier for graph-structured topological invariants under differential privacy noise injection.
->    * Establish the minimum noise magnitude required to satisfy $I(X; \Delta) \le 10^{-4}$ bits on representative topological deltas extracted from Phase 1 edge agents.
->    * Measure the degradation in collective synthesis quality (downstream predictive accuracy and structural coherence) as a function of privacy noise level.
->    * If the privacy-utility trade-off proves structurally unfavorable (noise required for the bound destroys $\ge 50\%$ of delta utility), evaluate secure multi-party aggregation as an architectural alternative.
+>
+> - Conduct a formal study characterizing the privacy-utility frontier for graph-structured topological invariants under differential privacy noise injection.
+> - Establish the minimum noise magnitude required to satisfy $I(X; \Delta) \le 10^{-4}$ bits on representative topological deltas extracted from Phase 1 edge agents.
+> - Measure the degradation in collective synthesis quality (downstream predictive accuracy and structural coherence) as a function of privacy noise level.
+> - If the privacy-utility trade-off proves structurally unfavorable (noise required for the bound destroys $\ge 50$% of delta utility), evaluate secure multi-party aggregation as an architectural alternative.
 
 ---
 
@@ -152,11 +153,12 @@ During Phases −1 and 0, there are no `DownPriors`—the central collective doe
 
 > **Pre-Collective Recovery Protocol (Phases −1 through 1):**
 > Prior to the availability of collective `DownPriors`, the watchdog recovery target is defined as follows:
+>
 > 1. *Primary:* Isolate the pathological sub-graph (micro-core or lateral pathway) and reset it to its most recent validated checkpoint while preserving all healthy micro-cores and their accumulated state.
 > 2. *Fallback:* If pathological state cannot be isolated, clamp the entire swarm to the last periodic system-wide checkpoint.
 > 3. *Last Resort:* Factory reset to the initial seed configuration.
 >
-> Periodic validated checkpoints must be maintained within a dedicated storage budget of $\le 10\%$ of the total $<4$ GB envelope, with checkpoint frequency governed by structural change rate rather than wall-clock time.
+> Periodic validated checkpoints must be maintained within a dedicated storage budget of $\le 10$% of the total $<4$ GB envelope, with checkpoint frequency governed by structural change rate rather than wall-clock time.
 
 ---
 

@@ -10,7 +10,7 @@
 
 ## 1. Overview & Triage Scope
 
-This document captures vital execution tasks, tactical roadmaps, experimental protocols, governance frameworks, and operational risk registers deferred from the **Vision Document** (`docs/visions/vision-v.md`). 
+This document captures vital execution tasks, tactical roadmaps, experimental protocols, governance frameworks, and operational risk registers deferred from the **Vision Document** (`docs/visions/vision-v.md`).
 
 In strict adherence to **Scope Defense**, the Vision Document defines the destination, non-negotiable invariants, problem boundaries, and mathematical gating criteria. This Strategic Planning Backlog establishes the concrete engineering, research, and organizational tactics required to realize that vision.
 
@@ -21,10 +21,12 @@ Per stakeholder direction, financial cost modeling, currency budgets, and pricin
 ## 2. Phase −1: Foundational Existence Proof (Execution Protocol)
 
 ### 2.1 Research Hypothesis & Objective
+
 Validate the existential premise of the architecture before allocating capital or engineering to distributed infrastructure or multi-core swarms:
 > *Can an isolated dynamical micro-core learn non-trivial temporal structure from a continuous, raw byte stream using strictly local credit assignment, maintaining flat $O(1)$ memory and bounded settling time ($\tau \le 32$)?*
 
 ### 2.2 Experimental Setup & Milestones (3-Month Researcher Sprint)
+
 * **Milestone −1.1 (Month 1): Baseline Micro-Core Substrate**
   * Implement an isolated recurrent dynamical attractor network (e.g., predictive coding recurrent unit, continuous-time recurrent neural network, or local contrastive energy network).
   * Enforce strictly local credit updates: parameter adjustments rely exclusively on pre/postsynaptic signals and immediate local predictive residuals ($e_t = x_t - \hat{x}_t$).
@@ -40,6 +42,7 @@ Validate the existential premise of the architecture before allocating capital o
   * Deliverable: Empirical Technical Report & Benchmark Suite (`Report-PhaseMinus1.pdf` / reproducibility repo).
 
 ### 2.3 Candidate Local Plasticity Mechanisms Matrix
+
 | Mechanism | Spatial Locality | Temporal Locality | Silicon Suitability (SIMD) | Primary Research Risk |
 | :--- | :--- | :--- | :--- | :--- |
 | **Three-Factor Predictive Coding** | High (Layer/Node) | High (Immediate residual) | High (Dense matrix-vector) | Convergence instability under noisy streams |
@@ -54,23 +57,27 @@ Validate the existential premise of the architecture before allocating capital o
 To evaluate the system along true learning gradients rather than static grammar classes, the engineering team will build synthetic data generator pipelines for four orthogonal phenomena:
 
 ### 3.1 Suite A: Temporal Dependency Depth ($K$)
+
 * **Mechanism:** Trigger-Distractor-Probe generator.
 * **Protocol:** Emit an informative trigger symbol $S_{t_0} \in V_{\text{info}}$ at step $t_0$, followed by $K$ distractor bytes generated from an uncorrelated uniform or Markov noise source, followed by a probe symbol $P$. The agent must emit a response $R$ conditioned on $S_{t_0}$.
-* **Evaluation Ladder:** $K \in \{8, 64, 512, 4096, 32768, 65536\}$.
+* **Evaluation Ladder:** $K \in \lbrace 8, 64, 512, 4096, 32768, 65536 \rbrace$.
 * **Pass Metric:** Mutual information $I(S_{t_0}; R) \ge 0.95$ without token replay or history logging.
 
 ### 3.2 Suite B: Non-Stationarity Adaptation Velocity ($\Delta E$ / $T_{\text{recover}}$)
+
 * **Mechanism:** Shifted Markov Transition Matrices.
 * **Protocol:** Stream Markovian sequences under transition dynamics $E_0$. At unannounced intervals $T_{\text{shift}}$, abruptly swap to transition dynamics $E_1$.
-* **Evaluation Ladder:** Measure cumulative prediction cross-entropy error following $T_{\text{shift}}$ until error reaches within $5\%$ of steady-state $E_1$ performance.
+* **Evaluation Ladder:** Measure cumulative prediction cross-entropy error following $T_{\text{shift}}$ until error reaches within 5% of steady-state $E_1$ performance.
 * **Pass Metric:** Recovery time $T_{\text{recover}} \le 500$ bytes on Level I alphabets; zero catastrophic degradation of $E_0$ attractors upon re-exposure (backward non-interference $\le 0.05$).
 
 ### 3.3 Suite C: Compositional & Hierarchical Depth
+
 * **Mechanism:** Balanced Dyck-$N$ languages and nested algebraic bracket expressions.
-* **Protocol:** Stream recursive expressions with nesting depths $D \in \{2, 4, 8, 16, 32\}$.
+* **Protocol:** Stream recursive expressions with nesting depths $D \in \lbrace 2, 4, 8, 16, 32 \rbrace$.
 * **Evaluation Ladder:** Verify that internal attractor trajectories reflect depth state without hardcoded stack data structures or explicit push/pop tokenizers.
 
 ### 3.4 Suite D: Relational Variable Binding
+
 * **Mechanism:** Symbolic copy-task and algorithmic execution traces ($w w$ patterns, key-value retrieval across intervening transforms).
 * **Protocol:** Input variable assignments `[var_name = val]`, followed by variable queries `[var_name ?]`.
 * **Pass Metric:** Exact retrieval without global attention dot-product matrices, isolating variable references into dynamic attractor bindings.
@@ -80,28 +87,32 @@ To evaluate the system along true learning gradients rather than static grammar 
 ## 4. Minimum Viable Demonstration (MVD) Protocols & Test Rigs
 
 ### 4.1 Phase −1 $\rightarrow$ Phase 0 MVD: Single-Core Existence Rig
+
 * **Harness:** Standalone headless process on developer workstation.
 * **Execution:** Continuous 24-hour streaming run of $10^7$ bytes through an isolated micro-core.
 * **Verification:** Flat memory consumption telemetry graph; settling distribution histogram demonstrating 99.9th percentile $\tau \le 32$; predictive perplexity monotonically decreasing to theoretical Markov entropy.
 
 ### 4.2 Phase 0 $\rightarrow$ Phase 1 MVD: Edge Swarm & Somatic Budding Rig
+
 * **Harness:** Standard consumer laptop (e.g., Apple M-series or Intel Core i7, 16 GB host RAM, process constrained to $\le 4$ GB RAM and $\le 25$W CPU package power).
 * **Execution:** 4 micro-cores concurrently ingesting disjoint non-stationary byte streams.
 * **Verification:**
-  1. Lateral quorum arbitration: Core ensemble debates ambiguous input streams, achieving $>90\%$ consensus accuracy.
+  1. Lateral quorum arbitration: Core ensemble debates ambiguous input streams, achieving $>90$% consensus accuracy.
   2. Somatic budding: Injecting high-entropy burst triggers the autonomous allocation and integration of a 5th micro-core without thread stalls, dropping settling times back within budget.
   3. Memory telemetry remains strictly inside 4 GB envelope.
 
 ### 4.3 Phase 1 $\rightarrow$ Phase 2 MVD: Asymmetric Structural Sync Rig
+
 * **Harness:** Two discrete hardware devices connected over an emulated WAN channel (introducing artificial 200ms round-trip latency, 2% packet loss, 20ms jitter).
 * **Execution:** Device A trains on Stream Domain $\alpha$. It extracts and serializes invariant topological deltas ($\Delta \mathcal{G}$) and transmits them upstream. Device B (which has never observed Domain $\alpha$) downloads the aggregated prior and is evaluated on Domain $\alpha$.
-* **Verification:** Device B demonstrates $>75\%$ zero-shot capability on Domain $\alpha$; raw byte capture on the network interface verifies zero keystroke or token transmission.
+* **Verification:** Device B demonstrates $>75$% zero-shot capability on Domain $\alpha$; raw byte capture on the network interface verifies zero keystroke or token transmission.
 
 ### 4.4 Phase 2 $\rightarrow$ Phase 3 MVD: Fleet Scaling & Economic Asymmetry Rig
+
 * **Harness:** 100+ virtualized edge agent nodes (containerized on bare-metal commodity servers) communicating with a central collective instance over WAN.
 * **Execution:** Continuous user interaction emulation across 100 nodes.
 * **Verification:**
-  1. Collective reasoning capability exceeds individual nodes by $\ge 25\%$.
+  1. Collective reasoning capability exceeds individual nodes by $\ge 25$%.
   2. Central server CPU/GPU load scales sublinearly ($O(\log N)$ or $O(1)$) with active node count, proving that edge nodes absorb routine streaming and that central compute handles only macro-synthesis and deliberative fallbacks.
   3. Seed broadcast: Fresh node boots, downloads latest seed, and achieves fleet-baseline accuracy within 2 hours of streaming.
 
@@ -112,6 +123,7 @@ To evaluate the system along true learning gradients rather than static grammar 
 To prevent undisciplined architectural drift while providing structured mechanisms for empirical learning:
 
 ### 5.1 Architecture Decision Record (ADR) Lifecycle
+
 1. **Context & Problem:** The specific empirical roadblock encountered.
 2. **First-Principles Evaluation:** Assessment against the non-negotiable invariants (Lifetime Invariance, Locality of Credit Assignment, Elastic Pacing, Operational Halting, Absolute Privacy).
 3. **Options Considered:** Comparative analysis of proposed solutions.
@@ -119,6 +131,7 @@ To prevent undisciplined architectural drift while providing structured mechanis
 5. **Empirical Review Gate:** Specific numerical test that determines whether the decision stands or reverts.
 
 ### 5.2 Constraint Evaluation Protocol
+
 * Non-negotiable invariants cannot be casually relaxed or circumvented by team consensus.
 * If empirical data indicates that an invariant blocks progress across all known approaches (e.g., local credit assignment across all tested variants failing Phase −1 criteria after 3 months):
   1. The team conducts a formal **Falsification Post-Mortem**.
@@ -146,7 +159,9 @@ To prevent undisciplined architectural drift while providing structured mechanis
 ## 7. Product Hypothesis & Value Distribution Analysis
 
 ### 7.1 First Product Hypothesis: Continuous Sovereign Workspace Companion
+
 To prevent ivory-tower infrastructure development, the architecture will be disciplined by a concrete product hypothesis:
+
 * **Product Archetype:** Privacy-Sovereign On-Device Writing & Code Companion.
 * **Core Value Proposition:**
   * Runs 100% locally on personal laptops/workstations for continuous autocomplete, habitual style adaptation, and immediate code/text synthesis.
@@ -155,10 +170,11 @@ To prevent ivory-tower infrastructure development, the architecture will be disc
   * Escalates macro-architectural synthesis questions (e.g., cross-file structural refactoring) to the central collective via zero-knowledge queries.
 
 ### 7.2 Value & Effort Distribution Modeling
+
 * **Interaction Volume Distribution:**
   * **Tier 1 (Local Reflex & Adaptation):** 99.0%–99.5% of total byte interactions (keystrokes, autocomplete, local syntax check, local style adaptation). Handled entirely on-device by the micro-core swarm at zero cloud infrastructure cost.
   * **Tier 2 (Lateral Quorum Deliberation):** 0.4%–0.9% of interactions (multi-step ambiguous logic, conflict resolution across files). Resolved locally via multi-core debate.
-  * **Tier 3 (Collective Fallback & Synthesis):** $\le 0.1\%$ of interactions (high-entropy cross-domain queries, macro-synthesis). Escalated to the central collective.
+  * **Tier 3 (Collective Fallback & Synthesis):** $\le 0.1$% of interactions (high-entropy cross-domain queries, macro-synthesis). Escalated to the central collective.
 * **Economic Discipline:** Validates that cloud infrastructure hosting requirements scale with macro-deliberative queries rather than user interaction time.
 
 ---
@@ -166,6 +182,7 @@ To prevent ivory-tower infrastructure development, the architecture will be disc
 ## 8. Safety, Alignment & Defensive Engineering Protocols
 
 ### 8.1 Runtime Deterministic Supervisory Watchdog
+
 * **Architecture:** Decoupled, non-learning supervisory thread running in user-space alongside the micro-core swarm.
 * **Telemetry Monitoring:**
   * Tracks relaxation cycle count per byte ($\tau$). If $\tau > \tau_{\max}$, immediately halts relaxation and emits fallback token.
@@ -174,6 +191,7 @@ To prevent ivory-tower infrastructure development, the architecture will be disc
 * **Fail-Safe Recovery:** Clamps diverging network nodes into a verified stable baseline prior (`DownPriors`), ensuring complete system recovery within $<10$ms.
 
 ### 8.2 Byzantine-Resilient Delta Aggregation Protocol
+
 * **Zero-Trust Central Ingestion:** Edge deltas are untrusted external inputs.
 * **Filtering Pipeline:**
   1. *Statistical Outlier Rejection:* Deltas deviating by $>3\sigma$ in parameter manifold distance from the fleet distribution are quarantined.
@@ -185,6 +203,7 @@ To prevent ivory-tower infrastructure development, the architecture will be disc
 ## 9. Interdisciplinary Staffing & Resource Progression
 
 ### 9.1 Required Discipline Profiles
+
 1. **Dynamical Systems & Attractor Theory:** Nonlinear dynamics, energy-based models, stability analysis.
 2. **Computational Neuroscience:** Predictive coding, local Hebbian plasticity, neuromodulation.
 3. **Systems & Low-Level SIMD/SIMT Engineering:** Cache-coherent C++/Rust, AVX-512/NEON/Metal/CUDA optimization, zero-allocation memory architectures.
@@ -193,6 +212,7 @@ To prevent ivory-tower infrastructure development, the architecture will be disc
 6. **Formal Languages & Automata Theory:** Synthetic grammar generators, Dyck languages, automata-to-neural mapping.
 
 ### 9.2 Staged Discipline Staffing Progression (Headcount Effort)
+
 * **Phase −1 (3 Months):** 1 Senior Research Scientist (Dynamical Systems / Computational Neuroscience) + 1 Systems Prototyper (Rust/C++).
 * **Phase 0 (6–12 Months):** 2 Research Scientists + 3 Systems/Performance Engineers (SIMD/GPU kernels, zero-allocation runtime).
 * **Phase 1 (6–12 Months):** Add 2 Distributed Systems Engineers (multi-process IPC, quorum consensus) + 1 QA/Benchmark Engineer.

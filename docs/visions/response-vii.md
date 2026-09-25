@@ -39,6 +39,7 @@ We propose that the invariant should be *reframed upward* toward the deeper prin
 ### Rationale
 
 This reframing:
+
 1. **Aligns the invariant with the North Star's actual intent** (global optimization coupling, not a named algorithm).
 2. **Future-proofs the specification** against novel optimization methods that might not be called "backpropagation" but exhibit the same pathological properties (e.g., hypothetical global forward-mode gradient methods that require full graph traversal).
 3. **Removes the perception of dogmatism** that has fuelled seven iterations of debate, while *strengthening* the actual constraint. The invariant becomes harder to evade, not easier.
@@ -229,13 +230,13 @@ This makes the falsification criterion *empirically auditable* rather than depen
 
 ### Observation
 
-The Escalation Calibration Invariant (Vision §5) and its algorithmic instantiation (Backlog §7.3) are well-formulated for steady-state operation under benign distributional conditions. The self-calibrating threshold $\Theta_t$ adapts via EMA feedback to maintain the $\le 0.1\%$ escalation rate.
+The Escalation Calibration Invariant (Vision §5) and its algorithmic instantiation (Backlog §7.3) are well-formulated for steady-state operation under benign distributional conditions. The self-calibrating threshold $\Theta_t$ adapts via EMA feedback to maintain the $\le 0.1$% escalation rate.
 
 ### Concern
 
 The current formulation does not address adversarial distributional manipulation at Phase 2+, when the edge agent is interacting with potentially untrusted external environments. A sophisticated adversary could craft input distributions specifically designed to exploit the escalation calibration mechanism:
 
-1. **Escalation Flooding Attack:** Inputs designed to maximize local uncertainty ($U(x)$) while being individually legitimate, forcing the edge agent to escalate at rates far exceeding $0.1\%$ and overwhelming the central collective.
+1. **Escalation Flooding Attack:** Inputs designed to maximize local uncertainty ($U(x)$) while being individually legitimate, forcing the edge agent to escalate at rates far exceeding 0.1% and overwhelming the central collective.
 2. **Calibration Drift Attack:** Slowly shifting input distributions to gradually raise $\Theta_t$ until the edge agent fails to escalate genuinely high-entropy inputs, degrading output quality while maintaining the escalation rate band.
 
 ### Proposed Backlog Addition

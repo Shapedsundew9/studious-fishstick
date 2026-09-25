@@ -21,6 +21,7 @@ In strict adherence to **Scope Defense** and **First-Principles Prioritization**
 ## 2. Rebuttal 1: Relaxing the Local Credit Assignment Invariant to Permit Intra-Core Backpropagation
 
 ### Stakeholder Critique Summary (from `response-iv.md`, reviewed in `response-v.md` §2.3)
+
 The stakeholder proposed permitting reverse-mode backpropagation *locally within an individual micro-core* while prohibiting it across the distributed WAN fleet, arguing that rejecting backprop everywhere discards decades of optimization and presents an unforced barrier.
 
 ### First-Principles Rationale for Rebuttal (Updated for Version VI)
@@ -52,6 +53,7 @@ The prohibition of backpropagation—both across the fleet and *within the indiv
 ## 3. Rebuttal 2: Demanding Immediate Financial Cost Models, Revenue Projections, and Monetization Plans
 
 ### Stakeholder Critique Summary
+
 The stakeholder challenged the absence of a financial cost model, query volume pricing, revenue mechanics, and commercial business modeling, arguing that without these, economic claims remain unverified.
 
 ### First-Principles Rationale for Rebuttal
@@ -64,8 +66,8 @@ The stakeholder challenged the absence of a financial cost model, query volume p
 
 3. **Thermodynamic and Effort-Driven Invariance:**  
    The Vision articulates the core **effort distribution invariant**:
-   * The edge runtime absorbs $>99\%$ of continuous temporal byte ingestion, local reflex, and immediate adaptation at zero cloud infrastructure cost.
-   * Deliberative fallback to the central collective is strictly an exception mechanism ($\le 0.1\%$ of interactions), preserving thermodynamic viability and guaranteeing that cloud infrastructure scaling is sublinear with respect to active user fleet size.  
+   * The edge runtime absorbs $>99$% of continuous temporal byte ingestion, local reflex, and immediate adaptation at zero cloud infrastructure cost.
+   * Deliberative fallback to the central collective is strictly an exception mechanism ($\le 0.1$% of interactions), preserving thermodynamic viability and guaranteeing that cloud infrastructure scaling is sublinear with respect to active user fleet size.  
    This establishes the physical and architectural basis for asymmetric economics without premature financial modeling.
 
 *Outcome:* **Rejected for Vision Document.** Quantitative query escalation modeling and commercial product hypotheses are properly housed in the Strategic Planning Backlog (`strategic-planning-backlog-vi.md`, Sections 6 and 7).
@@ -75,6 +77,7 @@ The stakeholder challenged the absence of a financial cost model, query volume p
 ## 4. Rebuttal 3: Embedding Team Sizing, Headcounts, and Organizational Charts in the Vision
 
 ### Stakeholder Critique Summary
+
 The stakeholder described the absence of team sizing, discipline headcounts, budgets, and operational timelines as an existential gap.
 
 ### First-Principles Rationale for Rebuttal
@@ -92,6 +95,7 @@ The stakeholder described the absence of team sizing, discipline headcounts, bud
 ## 5. Rebuttal 4: Pre-emptive Codification of "Escape Hatches" and Constraint Relaxation Protocols
 
 ### Stakeholder Critique Summary
+
 The stakeholder recommended establishing a pre-agreed "Constraint Relaxation Protocol" in the vision to formally permit abandoning core invariants (specifically local credit assignment) if early empirical progress stalls.
 
 ### First-Principles Rationale for Rebuttal
@@ -112,6 +116,7 @@ The stakeholder recommended establishing a pre-agreed "Constraint Relaxation Pro
 ## 6. Rebuttal 5 & Triage: Total Elimination of Operational Stability vs. Category Distinction
 
 ### Directive & Critique Summary
+
 The Project Initiator noted: *"Additionally, I think worrying about designed in safety before we have an architecture and algorithm that works is a distraction. A note in the vision as a consideration feels like enough for now and a strategic planning task when it looks like we are on the a scalable solution is a better place for that discussion."*
 
 ### First-Principles Clarification & Rebuttal Analysis

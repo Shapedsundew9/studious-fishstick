@@ -1,3 +1,5 @@
+# AGY Founder Debate
+
 Execute the prompt @[.github/prompts/founder-debate.prompt.md] with the following inputs from the Project Initiator:
 
 - The documents are in @docs/visions/

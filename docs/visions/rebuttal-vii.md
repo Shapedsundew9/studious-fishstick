@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary & Disposition
 
-We welcome the constructive and rigorous pressure-testing provided in `docs/visions/response-vi.md`. The Stakeholder Council's review has materially strengthened the transition from foundational theory to empirical validation. 
+We welcome the constructive and rigorous pressure-testing provided in `docs/visions/response-vi.md`. The Stakeholder Council's review has materially strengthened the transition from foundational theory to empirical validation.
 
 In Version VII, all eight challenges and recommendations have been triaged in strict accordance with **Scope Defense**, **First-Principles Prioritization**, and **Triage Discipline**:
 
@@ -29,6 +29,7 @@ Where stakeholder critiques conflated vision with tactical implementation, or pr
 ## 2. Rebuttal 1: Relaxing the Local Credit Assignment Invariant to Permit Intra-Core Backpropagation
 
 ### Stakeholder Critique Summary (Preserved from Iterations IV–VI)
+
 The stakeholder proposed permitting reverse-mode backpropagation *locally within an individual micro-core* while prohibiting it across the distributed WAN fleet, arguing that rejecting backprop everywhere discards decades of optimization and presents an unforced barrier.
 
 ### First-Principles Rationale for Rebuttal (Reaffirmed for Version VII)
@@ -58,6 +59,7 @@ The prohibition of backpropagation—both across the fleet and *within the indiv
 ## 3. Rebuttal 2: Demanding Immediate Financial Cost Models, Revenue Projections, and Monetization Plans
 
 ### Stakeholder Critique Summary (Preserved from Iterations V–VI)
+
 The stakeholder challenged the absence of a financial cost model, query volume pricing, revenue mechanics, and commercial business modeling, arguing that without these, economic claims remain unverified.
 
 ### First-Principles Rationale for Rebuttal
@@ -70,8 +72,8 @@ The stakeholder challenged the absence of a financial cost model, query volume p
 
 3. **Thermodynamic and Effort-Driven Invariance:**  
    The Vision articulates the core **effort distribution invariant**:
-   * The edge runtime absorbs $>99\%$ of continuous temporal byte ingestion, local reflex, and immediate adaptation at zero cloud infrastructure cost.
-   * Deliberative fallback to the central collective is strictly an exception mechanism ($\le 0.1\%$ of interactions), preserving thermodynamic viability and guaranteeing that cloud infrastructure scaling is sublinear with respect to active user fleet size.  
+   * The edge runtime absorbs $>99$% of continuous temporal byte ingestion, local reflex, and immediate adaptation at zero cloud infrastructure cost.
+   * Deliberative fallback to the central collective is strictly an exception mechanism ($\le 0.1$% of interactions), preserving thermodynamic viability and guaranteeing that cloud infrastructure scaling is sublinear with respect to active user fleet size.  
    This establishes the physical and architectural basis for asymmetric economics without premature financial modeling.
 
 *Outcome:* **Rejected for Vision Document.** Quantitative query escalation modeling and commercial product hypotheses are properly housed in the Strategic Planning Backlog (`strategic-planning-backlog-vii.md`, Sections 6 and 7).
@@ -81,6 +83,7 @@ The stakeholder challenged the absence of a financial cost model, query volume p
 ## 4. Rebuttal 3: Embedding Team Sizing, Headcounts, and Organizational Charts in the Vision
 
 ### Stakeholder Critique Summary (Preserved from Iterations V–VI)
+
 The stakeholder described the absence of team sizing, discipline headcounts, budgets, and operational timelines as an existential gap.
 
 ### First-Principles Rationale for Rebuttal
@@ -98,6 +101,7 @@ The stakeholder described the absence of team sizing, discipline headcounts, bud
 ## 5. Rebuttal 4: Pre-emptive Codification of "Escape Hatches" and Constraint Relaxation Protocols
 
 ### Stakeholder Critique Summary (Preserved from Iterations V–VI)
+
 The stakeholder recommended establishing a pre-agreed "Constraint Relaxation Protocol" in the vision to formally permit abandoning core invariants (specifically local credit assignment) if early empirical progress stalls.
 
 ### First-Principles Rationale for Rebuttal
@@ -118,6 +122,7 @@ The stakeholder recommended establishing a pre-agreed "Constraint Relaxation Pro
 ## 6. Rebuttal 5 & Triage: Total Elimination of Operational Stability vs. Category Distinction
 
 ### Directive & Critique Summary (Preserved from Iteration VI)
+
 The Project Initiator noted: *"Additionally, I think worrying about designed in safety before we have an architecture and algorithm that works is a distraction. A note in the vision as a consideration feels like enough for now and a strategic planning task when it looks like we are on the a scalable solution is a better place for that discussion."*
 
 ### First-Principles Clarification & Rebuttal Analysis
@@ -139,6 +144,7 @@ However, to maintain intellectual honesty and technical viability, we must disti
 ## 7. Rebuttal 6: The False Dichotomy of Information-Theoretic Privacy vs. Delta Utility
 
 ### Stakeholder Critique Summary (Challenge 4 from `response-vi.md`)
+
 The stakeholder asserted that there is an inherent tension between utility and privacy: for structural deltas to be useful to the collective, they must carry information about the input distribution that generated them. A delta with truly negligible mutual information ($I(X; \Delta) \le 10^{-4}$ bits) would supposedly be uninformative, making the privacy claims impossible or counterproductive.
 
 ### First-Principles Rationale for Rebuttal & Clarification
@@ -147,7 +153,7 @@ The stakeholder's concern rests on a subtle but critical category confusion betw
 
 1. **Attractor Manifolds Compress Out Idiosyncratic State:**  
    In dynamical systems theory, an attractor basin represents the invariant geometric rules governing state transitions (e.g., grammatical syntax, algorithmic loops, functional relations). It does *not* record the transient trajectories or specific token sequences that traversed the basin. When a micro-core extracts a topological delta $\Delta \mathcal{G}$, it transmits changes in transition topology (e.g., a newly stabilized attractor basin for a class of bracket structures). The specific private tokens that perturbed the system into that basin are erased by dynamic relaxation.
-   
+
 2. **Mathematical Precision of Mutual Information ($I(X; \Delta) \le 10^{-4}$ bits):**  
    The bound $I(X; \Delta) \le 10^{-4}$ bits formally constrains the information leakage regarding *private observations* $X$ (e.g., user source code, keystrokes, personal identifiers). By Fano's Inequality, with $I(X; \Delta) \le 10^{-4}$ bits, the probability of error in reconstructing any arbitrary sequence $X$ from $\Delta$ approaches $1 - \frac{1}{\vert{}X\vert{}}$. This information-theoretic bound holds **regardless of the adversary's computational compute budget**—it is a physical law of the channel, not a cryptographic assumption.
 
@@ -166,6 +172,7 @@ The stakeholder's concern rests on a subtle but critical category confusion betw
 ## 8. Rebuttal 7: Scope Defense on Deliberative Escalation Mechanics
 
 ### Stakeholder Critique Summary (Challenge 5 from `response-vi.md`)
+
 The stakeholder noted that the Tiered Deliberative Escalation threshold is load-bearing for the asymmetric economic model, and proposed adding an Escalation Calibration Invariant. However, the stakeholder's commentary urged detailing the mechanism that determines whether an input should be escalated.
 
 ### First-Principles Rationale for Rebuttal & Scope Demarcation
@@ -175,7 +182,7 @@ We wholeheartedly agree with the stakeholder that the deliberative escalation me
 However, in accordance with **Scope Defense**:
 
 1. **The Invariant Belongs in the Vision:**  
-   We have added the **Escalation Calibration Invariant** to Vision §5 and created a matching **Asymmetric Escalation & Economic Falsification Criterion** in Vision §7. This establishes the non-negotiable architectural requirement: the mechanism must be self-calibrating and maintain the escalation rate within the target band ($\le 0.1\%$ of interaction volume) without manual per-device tuning.
+   We have added the **Escalation Calibration Invariant** to Vision §5 and created a matching **Asymmetric Escalation & Economic Falsification Criterion** in Vision §7. This establishes the non-negotiable architectural requirement: the mechanism must be self-calibrating and maintain the escalation rate within the target band ($\le 0.1$% of interaction volume) without manual per-device tuning.
 
 2. **The Algorithmic Mechanism Belongs in the Strategy Backlog:**  
    Specifying the exact algorithmic formulation—such as whether the decision function uses composite residual relaxation entropy $H_{\text{settle}}(x)$, quorum voting variance $D_{\text{quorum}}(x)$, closed-loop PID controllers, or exponential moving average (EMA) threshold adaptation—belongs strictly in the **Strategic Planning Backlog** (`strategic-planning-backlog-vii.md`, §7.3). Inscribing specific algorithmic formulas or PID tuning parameters into the Vision Document would prematurely lock researchers into a specific heuristic before Phase 1 empirical data is gathered.
@@ -187,6 +194,7 @@ However, in accordance with **Scope Defense**:
 ## 9. Rebuttal 8: Distinguishing Asymptotic Complexity from Empirical Operational Duration
 
 ### Stakeholder Critique Summary (Challenge 1 from `response-vi.md`)
+
 The stakeholder argued that the asymptotic bound $O(T^\alpha)$ ($\alpha \le 1$) is "insufficient" because without a specified operational lifetime, a system could satisfy $\alpha \le 1$ while exhausting memory in 12 hours due to large constant factors. They urged specifying a minimum operational lifetime target.
 
 ### First-Principles Rationale for Rebuttal & Integration

@@ -17,6 +17,7 @@ However, fidelity to our mission requires equal rigor in **defending scope** and
 ## 2. Rebuttal 1: Relaxing the Local Credit Assignment Invariant to Permit Intra-Core Backpropagation
 
 ### Stakeholder Critique Summary (Challenge 3)
+
 The stakeholder argues that prohibiting global backpropagation is an "unforced constraint that kills you." They contend that while backprop across distributed WAN nodes is infeasible, using backprop *locally within an individual micro-core* on a single GPU/CPU is mature, fast, and proven. They urge distinguishing between intra-core and inter-core learning rules, warning that rejecting backprop everywhere forfeits decades of engineering progress.
 
 ### First-Principles Rationale for Rebuttal
@@ -45,6 +46,7 @@ The prohibition of backpropagation—both across the fleet and *within the indiv
 ## 3. Rebuttal 2: Demanding Immediate Financial Cost Models, Revenue Projections, and Monetization Plans
 
 ### Stakeholder Critique Summary (Challenge 5 & Part II Summary)
+
 The stakeholder challenges the absence of a financial cost model, query volume pricing, revenue mechanics ("who pays, for what, and why?"), and commercial business modeling, asserting that without these, the economic advantage is an "article of faith."
 
 ### First-Principles Rationale for Rebuttal
@@ -57,8 +59,8 @@ The stakeholder challenges the absence of a financial cost model, query volume p
 
 3. **Thermodynamic and Effort-Driven Invariance:**  
    What properly belongs in the Vision—and what has been incorporated into Section 4 and Section 5 of `vision-v.md`—is the **effort distribution invariant**:
-   * The edge runtime absorbs $>99\%$ of all continuous temporal byte ingestion, local reflex, and immediate adaptation at the user terminal.
-   * Deliberative fallback to the central collective is strictly an exception mechanism ($\le 0.1\%$ of interactions), preserving thermodynamic viability and guaranteeing that cloud infrastructure scaling is sublinear with respect to active user fleet size.  
+   * The edge runtime absorbs $>99$% of all continuous temporal byte ingestion, local reflex, and immediate adaptation at the user terminal.
+   * Deliberative fallback to the central collective is strictly an exception mechanism ($\le 0.1$% of interactions), preserving thermodynamic viability and guaranteeing that cloud infrastructure scaling is sublinear with respect to active user fleet size.  
    This establishes the architectural foundation for asymmetric economics without fabricating speculative commercial numbers at the pre-prototype stage.
 
 *Outcome:* **Rejected for Vision Document.** Quantitative query escalation modeling and commercial product hypotheses have been deferred to the Strategic Planning Backlog (`strategic-planning-backlog-v.md`, Sections 6 and 7).
@@ -68,6 +70,7 @@ The stakeholder challenges the absence of a financial cost model, query volume p
 ## 4. Rebuttal 3: Embedding Team Sizing, Headcounts, and Organizational Charts in the Vision
 
 ### Stakeholder Critique Summary (Challenge 9 & Addition 6)
+
 The stakeholder calls the absence of team sizing, discipline headcounts, budgets, and operational timelines an existential gap, arguing that "a vision without a resource envelope is a wish, not a plan."
 
 ### First-Principles Rationale for Rebuttal
@@ -85,6 +88,7 @@ The stakeholder calls the absence of team sizing, discipline headcounts, budgets
 ## 5. Rebuttal 4: Pre-emptive Codification of "Escape Hatches" and Constraint Relaxation Protocols
 
 ### Stakeholder Critique Summary (Addition 2)
+
 The stakeholder suggests establishing a pre-agreed "Constraint Relaxation Protocol" in the vision to formally permit abandoning core invariants (specifically local credit assignment) if early empirical progress stalls.
 
 ### First-Principles Rationale for Rebuttal
