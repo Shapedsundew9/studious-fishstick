@@ -19,7 +19,10 @@
 		"NEO4J_DATABASE": "${localEnv:NEO4J_DATABASE}",
 		"HF_READ_TOKEN": "${localEnv:HF_READ_TOKEN}",
 		"PYPI_USERNAME": "${localEnv:PYPI_USERNAME}",
-		"PYPI_TOKEN": "${localEnv:PYPI_TOKEN}"
+		"PYPI_TOKEN": "${localEnv:PYPI_TOKEN}",
+		"EMERGENT_MIND_BASE_URL": "${localEnv:EMERGENT_MIND_BASE_URL}",
+		"EMERGENT_MIND_OPENAPI_SPEC_URL": "${localEnv:EMERGENT_MIND_OPENAPI_SPEC_URL}",
+		"EMERGENT_MIND_TOKEN": "${localEnv:EMERGENT_MIND_TOKEN}"
 	},
 	"postCreateCommand": "bash .devcontainer/post-create.sh",
 	"remoteUser": "vscode",
