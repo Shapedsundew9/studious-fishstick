@@ -1,5 +1,5 @@
 {
-	"name": "Python Template",
+	"name": "Studious Fishstick",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
