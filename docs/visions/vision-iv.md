@@ -1,4 +1,5 @@
 # Project Vision: The Autopoietic Collective
+
 ## From Autonomous Edge Micro-Cores to an Asymmetric Planetary Collective
 
 ---
@@ -79,10 +80,11 @@ The architecture decouples immediate interactive experience from collective plan
 ```mermaid
 flowchart TB
     subgraph Fleet ["Consumer Edge Fleet: Divergent Local Agents"]
-        direction LR
+        direction TB
         subgraph EdgeA ["Device A (Personal Terminal)"]
             direction TB
             subgraph SwarmA ["Local Micro-Core Swarm"]
+                direction TB
                 CoreA1["Micro-Core 1"]
                 CoreA2["Micro-Core 2"]
                 CoreAK["Micro-Core K"]
@@ -97,6 +99,7 @@ flowchart TB
         subgraph EdgeB ["Device B (Personal Terminal)"]
             direction TB
             subgraph SwarmB ["Local Micro-Core Swarm"]
+                direction TB
                 CoreB1["Micro-Core 1"]
                 CoreB2["Micro-Core 2"]
                 CoreBK["Micro-Core K"]
@@ -111,6 +114,7 @@ flowchart TB
         subgraph EdgeN ["Device N (Personal Terminal)"]
             direction TB
             subgraph SwarmN ["Local Micro-Core Swarm"]
+                direction TB
                 CoreN1["Micro-Core 1"]
                 CoreN2["Micro-Core 2"]
                 CoreNK["Micro-Core K"]
@@ -127,7 +131,7 @@ flowchart TB
         direction TB
         UpDeltas["Abstract Structural Invariants & Topological Deltas\n(Zero Raw Context / Zero Keystrokes)"]
         DownPriors["Hardened Architectural Baselines & Seeds\n(Broadcast Priors)"]
-        QueryFallback["Optional High-Entropy Deliberation Fallback\n(Ephemeral Deliberative Compute)"]
+        QueryFallback["Tiered Deliberative Escalation\n(High-Entropy / Abstract Reasoning Fallback)"]
     end
 
     subgraph Central ["Decoupled Central Collective"]
@@ -145,21 +149,21 @@ flowchart TB
     end
 
     %% Edge to Boundary Interactions
-    Fleet -- "Local Capacity Exceeded (Optional)" --> QueryFallback --> Arbiter
+    Fleet -- "High Entropy / Abstract Deliberation" --> QueryFallback --> Arbiter
     Fleet -- "Periodic Invariant Extraction" --> UpDeltas --> Synthesis
     Synthesis -- "Fleet-Wide Broadcast" --> DownPriors --> Fleet
 ```
 
 ### Multi-Tiered Deliberation & Information Routing
 
-1. **Air-Gapped Local Autonomy:**  
-   Every edge terminal is a fully self-contained, generative intelligence engine capable of operating indefinitely in an air-gapped environment. Input bytes are processed locally by the internal micro-core swarm.
+1. **Edge-Native Reflex & Resilient Baseline:**  
+   Every edge terminal runs a local micro-core swarm dedicated to high-bandwidth, ultra-low-latency byte ingestion, continuous experiential plasticity, and immediate interaction. It maintains a resilient, non-blocking baseline that functions autonomously when offline, guaranteeing graceful degradation rather than total capability parity with the collective.
 2. **Local Lateral Quorum:**  
-   Ambiguous inputs and multi-step reasoning are evaluated locally across redundant micro-experts via lateral consensus and debate before any emission occurs.
-3. **Optional Deliberative Fallback:**  
-   When incoming environmental entropy exceeds local structural capacity, the agent may optionally route an ephemeral deliberation query through `QueryFallback` to the central collective's specialized functional modules. If network connectivity is unavailable, the agent gracefully degrades to purely local attractor settling.
+   Ambiguous inputs and immediate multi-step reasoning are evaluated locally across redundant micro-experts via lateral consensus and debate before any emission occurs.
+3. **Tiered Deliberative Escalation:**  
+   Consumer silicon is structurally bounded in thermal dissipation and memory bandwidth. While routine interaction, rapid adaptation, and immediate sensory processing remain strictly local, complex cross-domain relational abstraction and high-entropy deliberation naturally escalate via `QueryFallback` to the central collective's specialized functional modules. This tiered escalation preserves thermodynamic viability and prevents gold-plating the edge runtime, all while maintaining an order-of-magnitude cost advantage over traditional hyperscaler inference.
 4. **Zero-Knowledge Upstream Synchronization:**  
-   Personal keystrokes, raw observations, and private context *never leave the edge device*. Only verified structural deltas (topological additions, rewiring graphs, invariant attractors) are transmitted via `UpDeltas` across the high-latency boundary interface.
+   Personal keystrokes, raw observations, and private context *never leave the edge device*. Only verified structural deltas (topological additions, rewiring graphs, invariant attractors) or ephemeral, privacy-preserving deliberative queries are transmitted across the boundary interface.
 5. **Decoupled Central Synthesis & Broadcast:**  
    The central collective reconciles time-lagged, heterogeneous structural deltas into modular functional domains. Periodically, the synthesis engine distills these into compressed baseline seeds (`DownPriors`) broadcast to elevate the general capability floor of all devices.
 
@@ -174,7 +178,7 @@ To prevent the engineering effort from defaulting to traditional coupled deep le
 
 * **Locality of Credit Assignment Invariant:**  
   Internal parameter updates and state adaptations must depend exclusively on locally accessible signals within the immediate computational neighborhood (presynaptic activations, postsynaptic responses, and local predictive residuals or diffuse scalar modulators). Global backward passes requiring layer-synchronized execution locks, reverse-order graph traversals, or global gradient evaluations are strictly prohibited.  
-  *Candidate mechanisms:* Three-factor predictive coding, local contrastive energy minimization, and localized topological rewiring.
+  *Candidate mechanisms include, but are not limited too:* Three-factor predictive coding, local contrastive energy minimization, and localized topological rewiring.
 
 * **Elastic Pacing & Bounded Relaxation:**  
   The core is not slaved to a rigid wall-clock tick. It interfaces via an elastic pull/backpressure mechanism, consuming variable internal relaxation cycles ($\tau$) per byte depending on input entropy and structural reorganization demands.
@@ -185,8 +189,8 @@ To prevent the engineering effort from defaulting to traditional coupled deep le
 * **Asynchronous Emission Autonomy:**  
   The core independently decides *if* and *when* to emit bytes back into the stream. It may absorb multiple input bytes during internal contemplation before emitting, or stream an emission sequence across continuous observations.
 
-* **Client Autonomy & Absolute Privacy Boundary:**  
-  A terminal agent must remain a fully functioning generative system in an air-gapped environment. Raw interaction logs, private context, or uncompressed observation streams must never leave the client device; the boundary interface permits only abstract structural updates, verified state invariants, or ephemeral deliberation queries.
+* **Client Resilience & Absolute Privacy Boundary:**  
+  A terminal agent must maintain operational resilience in an air-gapped environment, executing local sensorimotor and habituated reasoning loops without crashing, blocking, or stalling. Air-gapped autonomy functions as an operational fail-safe floor, not a ceiling of parity with the collective. When deliberative queries are escalated upstream to resolve complex abstract states, the boundary interface permits only zero-knowledge invariant representations, structural queries, or ephemeral latent states—never raw user logs, keystroke streams, or uncompressed private observations.
 
 * **WAN-Native Interconnect & Latency Tolerance:**  
   The system must remain computationally stable and functional under arbitrary network latency, high packet loss, and intermittent device dropouts. Decentralized nodes communicate through sparse behavioral activations, structural deltas, or consensus votes—never through synchronous, high-bandwidth all-reduce tensor synchronization.
@@ -195,7 +199,7 @@ To prevent the engineering effort from defaulting to traditional coupled deep le
   Execution targets commodity CPU, GPU, and NPU architectures, not specialized neuromorphic silicon. All local dynamical updates, state transitions, lateral consensus votes, and structural graph transformations must compile into cache-coherent, vector-parallel (SIMD/SIMT) execution primitives.
 
 * **Asymmetric Economic Scaling:**  
-  Total infrastructure hosting costs must scale with the rate of *collective capability synthesis*, not with *aggregate user inference volume*. Routine inference, interactive contemplation, and personal adaptation costs are born entirely by client-side silicon.
+  Total infrastructure hosting costs scale with the rate of *macro-deliberative reasoning and collective capability synthesis*, not with *continuous raw stream ingestion*. Because edge devices absorb the overwhelming volume of temporal byte streaming, interactive pacing, and continuous local adaptation, the economic burden of routine, high-cadence operation remains decentralized—delivering an order-of-magnitude efficiency advantage over monolithic hyperscaler architectures.
 
 ---
 
@@ -203,7 +207,7 @@ To prevent the engineering effort from defaulting to traditional coupled deep le
 
 System advancement is measured along a rigorous multi-axis progression combining **Representational Complexity (Levels I–IV)**, **Dynamical Resilience (Nodes 0–D)**, and **Deployment Topology (Phases 0–3)**. Advancement requires earning passage through empirical gating invariants and commercial gating criteria.
 
-```
+```text
 Representation Axis (The Information Ladder):
   Level I (Regular Grammars) ──► Level II (Hierarchical) ──► Level III (Context-Sensitive) ──► Level IV (Natural UTF-8)
 
@@ -247,8 +251,8 @@ Operational & Topological Staged Progression:
 | :--- | :--- | :--- | :--- | :--- |
 | **Phase 0: Isolated Core**<br>*(Nodes 0–C on Single Device)* | Stream micro-tokens; establish settling ceiling $\tau_{\max}$; verify $O(1)$ memory; recall delayed trigger signals across distractor bytes (Node A); adapt to shifted Markov rules (Node B); allocate nodes upon regular state saturation (Node C). | Stream nested byte streams; confirm stack-free stability; Dyck-path resolution separated by long distractor streams; recursive matching with shifting grammar modes; grow dynamic attractor depth when nesting exceeds initial bounds. | Continuous stream of code execution traces; variable binding with distant operational calls; algorithmic execution with mid-stream protocol changes; allocate isolated parallel sub-graphs for disjoint variable scopes. | Sustained multi-gigabyte ingestion of raw UTF-8 text on commodity CPU/GPU; long-range context resolution across thousands of intervening UTF-8 bytes; fluid domain adaptation; expand structural parameter footprint under open-domain entropy. |
 | **Phase 1: Divergent Sandbox**<br>*(Node C+ on Multi-Instance Host)* | Multiple local instances adapt to mutually exclusive Markov transition rules without baseline degradation; lateral majority voting across redundant micro-cores resolves noisy Markov streams (Node C+). | Instances diverge on conflicting delimiter/syntax systems; verify structural isolation; consensus resolution between competing stack-like attractors on ambiguous brackets. | Instances independently debug disjoint code traces; confirm zero cross-contamination; multi-expert quorum resolves branching variable bindings and conflicting execution traces. | Standalone terminal agent demonstrates real-time personal context adaptation on edge hardware ($<4$ GB RAM); dynamic consensus, debate, and verification across decoupled micro-experts synthesize complex text. |
-| **Phase 2: Asymmetric Link**<br>*(WAN/LAN Client-Server)* | Local instance offloads unresolved state transitions to emulated central module; WAN latency tolerance verified. | Central module resolves ambiguous recursive branches; validates latency-tolerant query-response and structural deltas. | Client emits local structural deltas; central engine merges functional graphs without retraining or parameter collisions. | Central collective absorbs time-lagged deltas from multiple edge instances; validates absence of catastrophic interference under asynchronous updates. |
-| **Phase 3: Collective Fleet**<br>*(Node D at Commercial Scale)* | Distributed fleet maps disjoint state spaces; collective unifies them into a minimal baseline seed; generator steering across low-entropy Markov states (Node D). | Central engine extracts common grammar invariants from a fleet exposed to diverse synthetic dialects; active querying resolves grammatical ambiguities. | Distributed fleet resolves large-scale programmatic suites; collective synthesizes optimal execution paths; interactive debugging across distributed worker nodes. | Full autonomous agent dialogue: steering environments, continuous local edge adaptation, and distilling architectural priors across the planetary fleet; asymmetric hosting costs verified. |
+| **Phase 2: Asymmetric Link**<br>*(WAN/LAN Client-Server)* | Local instance executes high-cadence stream; escalates unresolved state transitions to emulated central module; WAN latency tolerance verified. | Central module resolves ambiguous recursive branches; validates fluid, low-overhead deliberative escalation and re-absorption without edge stalls. | Client emits local structural deltas; escalates multi-step variable binding traces to central collective; central engine merges functional graphs without retraining. | Central collective absorbs time-lagged deltas from multiple edge instances and arbitrates complex reasoning queries; validates absence of catastrophic interference under asynchronous updates. |
+| **Phase 3: Collective Fleet**<br>*(Node D at Commercial Scale)* | Distributed fleet maps disjoint state spaces; collective unifies them into a minimal baseline seed; generator steering across low-entropy Markov states (Node D). | Central engine extracts common grammar invariants from a fleet exposed to diverse synthetic dialects; active querying resolves grammatical ambiguities. | Distributed fleet resolves large-scale programmatic suites; collective synthesizes optimal execution paths; interactive debugging across distributed worker nodes. | Full autonomous agent dialogue: steering environments; edge executes high-bandwidth routine inference and continuous adaptation, escalating deep abstract reasoning to the central collective; collective distills global capabilities; asymmetric hosting economics verified. |
 
 ---
 
@@ -274,6 +278,6 @@ Advancement across operational nodes and topological deployment phases requires 
 * **Edge Footprint Feasibility (Phase 0 $\rightarrow$ Phase 1 Gate):**  
   The runtime must operate comfortably within constrained consumer compute envelopes (modern laptop/desktop CPU, integrated GPU, or NPU with $<4$ GB RAM footprint), maintaining responsive settling times without thermal throttling or continuous high-wattage utilization.
 * **Privacy & Bandwidth Viability (Phase 1 $\rightarrow$ Phase 2 Gate):**  
-  Invariant updates sent over the network must be ultra-sparse, requiring bandwidth orders of magnitude lower than transmitting the raw interaction stream, with mathematical guarantees of zero reconstructible private context or user observations.
+  Invariant updates and deliberative queries sent over the network must be ultra-sparse, requiring bandwidth orders of magnitude lower than transmitting the raw interaction stream, with mathematical guarantees of zero reconstructible private context or user observations.
 * **Decoupled Infrastructure Economics (Phase 2 $\rightarrow$ Phase 3 Gate):**  
-  The central infrastructure must prove that compute consumption scales with the rate of *collective model evolution and baseline synthesis*, and does *not* scale linearly with the number of active edge users or aggregate user inference volume.
+  The central infrastructure must prove that compute consumption scales with the rate of *macro-deliberative reasoning and collective model synthesis*, and does *not* scale linearly with the continuous raw streaming volume or total active edge fleet size.
