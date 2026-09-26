@@ -2,9 +2,9 @@
 
 ## From Autonomous Edge Micro-Cores to an Asymmetric Planetary Collective
 
-**Document Version:** IX  
+**Document Version:** X  
 **Status:** Active Architectural Vision  
-**Date:** 2026-09-25  
+**Date:** 2026-09-26  
 
 ---
 
@@ -205,7 +205,7 @@ flowchart TB
         direction TB
         UpDeltas["Privacy-Bounded Structural Invariants & Topological Deltas<br/>(I(X; Δ) ≤ ε, Zero Raw Context / Zero Keystrokes)"]:::primary
         DownPriors["Hardened Architectural Baselines & Seeds<br/>(Broadcast Priors)"]:::tertiary
-        QueryFallback["Self-Calibrating Tiered Escalation<br/>(High-Entropy / Abstract Reasoning Fallback ≤ 0.1%)"]:::tertiary
+        QueryFallback["Self-Calibrating Tiered Escalation<br/>(High-Entropy / Abstract Reasoning Fallback ≤ 0.1%–1.0%)"]:::tertiary
     end
 
     subgraph Central ["Decoupled Central Collective"]
@@ -238,7 +238,7 @@ flowchart TB
    To resolve the fundamental scheduling tension between continuous byte servicing and deeper internal adaptation, the lateral quorum layer supports **Quorum-Rotation Micro-Learning (QRML)**: In a local swarm of $N$ micro-cores, an active quorum of $N_{\min} < N$ cores continuously ingests incoming bytes and participates in consensus voting, while the remaining $N - N_{\min}$ cores temporarily rotate into background-adaptation mode. During background adaptation, rotated cores perform deeper internal consolidation, structural reorganization, or local micro-credit updates over bounded local trajectories without imposing execution locks on the live stream. Upon completing adaptation, returning cores undergo consensus validation against the active quorum before re-admission, ensuring that experimental adaptations enhance rather than degrade collective competency.
 
 3. **Tiered Deliberative Escalation:**  
-   Consumer silicon is structurally bounded in thermal dissipation and memory bandwidth. The architecture establishes a clear effort distribution: the edge runtime absorbs the overwhelming majority (>99%) of continuous temporal byte ingestion, habitual reflex, and localized experiential plasticity. High-entropy, cross-domain relational abstraction escalates via `QueryFallback` to the central collective's specialized functional modules as an exception rather than a continuous stream. This asymmetry preserves thermodynamic viability, avoids linear infrastructure cost scaling with user streaming time, and prevents gold-plating the edge runtime.
+   Consumer silicon is structurally bounded in thermal dissipation and memory bandwidth. The architecture establishes a clear effort distribution: the edge runtime absorbs the overwhelming majority (>99%) of continuous temporal byte ingestion, habitual reflex, and localized experiential plasticity. High-entropy, cross-domain relational abstraction escalates via `QueryFallback` to the central collective's specialized functional modules as an exception rather than a continuous stream, parameterized to maintain an escalation target band of 0.1%–1.0% during early deployment and stabilizing at $\le 0.1$% under mature operation. This asymmetry preserves thermodynamic viability, avoids linear infrastructure cost scaling with user streaming time, and prevents gold-plating the edge runtime.
 
 4. **Privacy-Bounded Upstream Synchronization:**  
    Personal keystrokes, raw observations, and private context *never leave the edge device*. Only verified structural deltas (topological additions, rewiring graphs, invariant attractors) or ephemeral deliberative queries adhering to formal privacy bounds ($I(X; \Delta) \le 10^{-4}$ bits) and computational non-reconstructibility criteria cross the boundary interface into the collective.
@@ -295,7 +295,7 @@ The following invariants are prescriptive constraints chosen to bound the design
   Every edge agent incorporates an unalterable deterministic supervisory watchdog decoupled from experiential learning dynamics. If internal state trajectories enter pathological limit cycles, chaotic divergences, or exceed operational halting budgets ($\tau > \tau_{\max}$), the supervisor immediately clamps the core into a verified quiescent ground state, validated local checkpoint, or broadcast prior (`DownPriors`), isolating pathological sub-graphs to preserve accumulated healthy plasticity and ensure deterministic operational containment.
 
 * **Escalation Calibration Invariant:**  
-  The deliberative escalation mechanism must be self-calibrating—dynamically adapting its trigger threshold based on empirical local prediction confidence and lateral quorum agreement—such that the escalation rate remains within a target band ($\le 0.1$% of total interaction volume under steady-state operation) without manual per-device tuning. If the system cannot maintain the target escalation rate band while preserving output quality, the asymmetric economic premise is invalidated.
+  The deliberative escalation mechanism must be self-calibrating—dynamically adapting its trigger threshold based on empirical local prediction confidence and lateral quorum agreement—such that the escalation rate remains within a controlled target band (parameterized as 0.1%–1.0% during early exploratory and integration phases, stabilizing at $\le 0.1$% of total interaction volume under steady-state commercial operation) without manual per-device tuning. If the system cannot maintain the target escalation rate band while preserving output quality, the asymmetric economic premise is invalidated.
 
 ### 5.2 Foundational Hypotheses (Scientific Bets to De-Risk)
 
@@ -306,7 +306,7 @@ Unlike prescriptive invariants, the following statements represent testable scie
 * **Hypothesis H2 (Settling-Depth & Lateral Composition):**  
   We hypothesize that a single micro-core settling ceiling of $\tau \le 32$ relaxation cycles is sufficient for local reflexive and regular grammar processing, and that higher compositional depth (hierarchical context-free and context-sensitive languages) emerges through *lateral dynamical composition and somatic modular budding* across specialized micro-cores operating in parallel, rather than through unbounded vertical relaxation trajectories within a single monolithic core.
 * **Hypothesis H3 (Asymmetric Escalation & Economic Decoupling):**  
-  We hypothesize that a self-calibrating composite uncertainty metric ($U(x) = w_1 \cdot H_{\text{settle}}(x) + w_2 \cdot D_{\text{quorum}}(x)$) can isolate high-entropy relational reasoning to $\le 0.1$% of total interaction volume, decoupling centralized hosting infrastructure costs from continuous edge streaming hours.
+  We hypothesize that a self-calibrating composite uncertainty metric ($U(x) = w_1 \cdot H_{\text{settle}}(x) + w_2 \cdot D_{\text{quorum}}(x)$) can isolate high-entropy relational reasoning to a controlled exception band ($\le 0.1$%–$1.0$% during staging, achieving $\le 0.1$% in mature operation), decoupling centralized hosting infrastructure costs from continuous edge streaming hours.
 * **Hypothesis H4 (Privacy-Preserving Structural Synthesis):**  
   We hypothesize that abstract invariant attractor topologies and quantized structural deltas can transfer learned capabilities across heterogeneous edge devices while strictly preserving zero-reconstruction privacy ($I(X; \Delta) \le 10^{-4}$ bits) under adversarial auditing.
 * **Hypothesis H5 (Intra-Core Attractor Compaction Efficacy):**  
@@ -329,7 +329,7 @@ To translate inside-out system mechanics into outside-in strategic, commercial, 
 
 In accordance with first-principles prioritization, engineering effort during initial phases (Phases −1 through 1) is focused entirely on proving foundational algorithmic viability—confirming that local credit assignment, dynamic relaxation, and somatic budding operate successfully on isolated edge substrates. Designed-in safety, distributed defense, and cryptographic privacy guarantees become critical at Phase 2, when edge nodes begin transmitting deltas across WAN boundaries to the central collective.
 
-Substantive architectural design and verification for these capabilities are formally scheduled as a gating review prior to Phase 2 entry (see `strategic-planning-backlog-ix.md`, SPB-10). These forward-looking considerations include:
+Substantive architectural design and verification for these capabilities are formally scheduled as a gating review prior to Phase 2 entry (see [strategic-planning-backlog.md](file:///workspaces/studious-fishstick/docs/vision/strategic-planning-backlog.md), SPB-10). These forward-looking considerations include:
 
 * **Byzantine & Adversarial Delta Sanitization:** Zero-trust ingestion protocols in the central collective, employing statistical anomaly filtering, topological outlier rejection, and multi-party quorum verification to prevent poisoned edge updates from destabilizing broadcast priors.
 * **Information-Theoretic Privacy & Non-Reconstructibility Bounds:** Dual-tier privacy defenses establishing:
@@ -451,25 +451,37 @@ These dynamical phenomena are progressively evaluated across four structural reg
 
 ### 6.4 Explicit Scope Boundaries (Out of Scope)
 
-> **Author Action Required:** This section should explicitly declare domains and objectives that are out of scope for this vision to prevent scope creep and clarify boundaries for readers. Refer to the Technical Vision Style Guide authoring checklist.
+To maintain disciplined focus, prevent architectural scope creep, and channel capital and research capacity toward core invariants, the following technical domains and paradigms are explicitly declared **out of scope**:
+
+* **Multimodal Processing (Audio, Vision, Video, Spatial):**  
+  The architecture is strictly committed to raw symbolic and textual UTF-8 byte streams ($\vert{}V\vert{} \le 256$). External tokenizers, image/video patch encoders, audio spectrogram projections, and continuous cross-modal sensory embeddings are out of scope.
+* **Robotics & Embodied Physical Control:**  
+  Physical actuation, kinematics, motor control loops, real-time spatial navigation, and physical embodiment are out of scope. The edge terminal agent operates exclusively within digital software development, writing, and symbolic reasoning workspaces.
+* **Autonomous Embodied / Tool-Using External Agents:**  
+  Unbounded autonomous agents executing open-ended real-world side effects, web automation, headless browser traversal, or unconstrained external API tool-calling loops without direct user supervision are out of scope. The architecture concentrates on real-time, privacy-sovereign predictive reasoning, interactive synthesis, and workspace companion workflows.
+* **Monolithic Frontier Foundation Model Pretraining:**  
+  Dense foundation model pretraining across thousands of clustered GPUs using synchronous backpropagation through time (BPTT) and centralized optimizer states (e.g., AdamW) is out of scope. The project focuses on decentralized local credit assignment, dynamic relaxation, and asynchronous collective synthesis.
+* **Specialized Neuromorphic Silicon Co-Design:**  
+  Custom analog hardware, memristor arrays, or specialized neuromorphic ASIC fabrication are out of scope. All internal dynamics, local learning rules, lateral consensus quorums, and structural transformations must compile into cache-coherent, vector-parallel (SIMD/SIMT) primitives on commodity CPU, GPU, and NPU silicon.
 
 ---
 
 ## 7. Directional Gating & Governance
 
-In alignment with the Technical Vision Style Guide, this section establishes the directional observables, behavioral demonstrations, qualitative falsification criteria, and governance handoff for the program. Precise numerical thresholds, experimental sample sizes, and detailed test rig harnesses are maintained and elaborated in the **Strategic Planning Backlog** (`strategic-planning-backlog-ix.md`, §4.0).
+In alignment with the Technical Vision Style Guide, this section establishes the directional observables, behavioral demonstrations, qualitative falsification criteria, and governance handoff for the program. Precise numerical thresholds, experimental sample sizes, and detailed test rig harnesses are maintained and elaborated in the **Strategic Planning Backlog** ([strategic-planning-backlog.md](file:///workspaces/studious-fishstick/docs/vision/strategic-planning-backlog.md), §4.0).
 
 ### 7.1 Key Observables & Directional Criteria
 
-Passage between development phases is evaluated across seven directional observable categories:
+Passage between development phases is evaluated across eight directional observable categories:
 
 * **Memory Footprint & Lifetime Envelope:** Physical working memory allocation must scale sublinearly to linearly ($O(T^\alpha), \alpha \le 1$) with zero un-reclaimed buffer allocations. Total footprint must remain bounded within the $<4$ GB edge envelope with multi-day continuous operational projections.
 * **Temporal Retention across Distractors:** Preservation of conditional response fidelity between early trigger symbols and distant evaluation probes across expanding distractor horizons, without token replay or history logging.
 * **Adaptation Velocity & Dynamic Plasticity:** Rapid reconfiguration and loss convergence following unannounced environmental distribution shifts, minimizing adaptation sample complexity.
 * **Backward Non-Interference:** Strict containment of performance degradation on previously mastered dynamics when learning novel distributions (bounded within $\le 5$%).
+* **Competitive Performance Anchor:** Relative prediction quality against an incumbent backpropagation-through-time (BPTT) reference ceiling on equivalent byte streams, establishing the empirical accuracy-cost frontier for local credit assignment.
 * **Consensus Coherence & Quorum Deliberation:** Reliable ambiguity resolution via lateral micro-core consensus with bounded error, zero execution deadlocks, and bounded degradation under time-lagged WAN synthesis.
 * **Information-Theoretic Privacy & Non-Reconstructibility:** Upstream structural updates and deliberative queries must adhere to strict information-theoretic upper bounds, precluding input reconstruction under adversarial auditing.
-* **Asymmetric Infrastructure Scaling:** Central infrastructure compute scaling sublinearly ($O(\log N)$ or $O(1)$) with active fleet size, maintaining low-cadence routine escalation ($\le 0.1$%).
+* **Asymmetric Infrastructure Scaling:** Central infrastructure compute scaling sublinearly ($O(\log N)$ or $O(1)$) with active fleet size, maintaining low-cadence routine escalation within the parameterized target band (0.1%–1.0% in early phases, $\le 0.1$% at scale).
 
 ### 7.2 Minimum Viable Demonstrations (MVD) by Phase Gate
 
@@ -477,34 +489,36 @@ Each phase transition requires a concrete, observable behavioral demonstration:
 
 * **Phase −1 $\rightarrow$ Phase 0 MVD (Substrate Existence Proof):**  
   A single isolated micro-core, given a raw continuous byte stream of a periodic 4-to-8 symbol grammar injected with noise, demonstrates monotonic loss convergence to accurate next-byte prediction using strictly local credit assignment, with bounded memory growth ($O(T^\alpha), \alpha \le 1$, zero leakage beyond persistent structural state) over $10^7$ streaming bytes and relaxation settling $\tau \le 32$. In addition, the micro-core must achieve:
-  1. **Short-Range Temporal Recall:** Correctly respond to a trigger-distractor-probe sequence across $K \ge 64$ distractor bytes with mutual information $I(S; R) \ge 0.90$ without token buffering or replay; and
-  2. **Single Distribution Shift Recovery:** Recover to within 10% of steady-state performance within $T_{\text{recover}} \le 2000$ bytes following an unannounced Markov transition shift.
+  1. **Short-Range Temporal Recall:** Correctly respond to a trigger-distractor-probe sequence across $K \ge 64$ distractor bytes with mutual information $I(S; R) \ge 0.90$ without token buffering or replay;
+  2. **Single Distribution Shift Recovery:** Recover to within 10% of steady-state performance within $T_{\text{recover}} \le 2000$ bytes following an unannounced Markov transition shift; and
+  3. **Incumbent Baseline Performance Anchor:** Achieve an explicit accuracy-ceiling ratio threshold ($\ge 0.70$ of prediction accuracy / negative cross-entropy achieved by a parameter-matched RNN trained with standard BPTT on the identical Level I benchmark stream), confirming that the local-credit substrate produces a viable predictive model rather than merely reaching theoretical Markov entropy.
 * **Phase 0 $\rightarrow$ Phase 1 MVD (Edge Swarm, Budding & Compaction Efficacy):**  
   A single-device micro-core swarm running on commodity hardware ($<4$ GB RAM) absorbs competing non-stationary streams; individual cores specialize without cross-interference ($\Delta \le 0.05$); lateral quorum resolves ambiguous test sequences with $\ge 90$% accuracy; capacity saturation autonomously triggers somatic budding of a new micro-core without stalling execution; structural homeostasis prevents budding-apoptosis limit cycles under stationary streams; and continuous memory telemetry establishes an empirical **time-to-ceiling projection of $\ge 7$ consecutive days** of continuous streaming before exhausting the 4 GB envelope. Furthermore, Phase 0 advancement explicitly requires:
   1. **Compaction Efficacy Gate:** Empirical telemetry must demonstrate that intra-core attractor compaction reduces the observed growth exponent $\alpha$ by $\ge 20$% relative to a compaction-disabled baseline, while preserving Backward Non-Interference ($\Delta \le 0.05$) on previously mastered distributions.
   2. **Hierarchical Substrate Diagnostic:** In addition to Level I operational gates, a single micro-core must demonstrate $\ge 70$% bracket-matching accuracy on a continuous Dyck-2 stream (nesting depth $\le 4$, $|V| \le 8$) under the same local credit constraints, confirming rudimentary hierarchical attractor formation prior to multi-core scaling investment.
+  3. **Two-Core Lateral Composition Pilot:** To validate Hypothesis H2 and de-risk hierarchical scaling before multi-core sandbox investment, a minimal 2-core lateral composition experiment within the Phase 0 single-device rig must demonstrate that two cooperating cores under local credit assignment outperform a single micro-core on Dyck-2 bracket matching, proving that lateral composition overcomes single-core settling saturation.
 * **Phase 1 $\rightarrow$ Phase 2 MVD (Asymmetric Structural Sync & Quorum Rotation):**  
   1. Two independent edge instances connected via an emulated 200ms-latency WAN link exchange structural invariant deltas. Device B demonstrably masters a task distribution it has never directly observed, utilizing synthesized deltas from Device A. Zero raw tokens or reconstructible private contexts cross the boundary link ($I(X; \Delta) \le 10^{-4}$ bits).
   2. The multi-core swarm validates Quorum-Rotation Micro-Learning (QRML): while an active quorum $N_{\min}$ sustains continuous, un-stalled byte processing and consensus accuracy ($\ge 90$%), background cores rotate out, perform deeper internal adaptation, and successfully validate against quorum consensus upon re-integration without inducing latency spikes or prediction drops.
 * **Phase 2 $\rightarrow$ Phase 3 MVD (Collective Scale & Asymmetry):**  
-  A deployed network of 100+ heterogeneous edge nodes and a central collective proves: (a) collective model accuracy on multi-step reasoning exceeds any isolated edge node by $\ge 25$%; (b) central infrastructure compute scales sublinearly ($O(\log N)$ or $O(1)$) with active fleet size $N$; (c) self-calibrating deliberative escalation holds average WAN query offload to $\le 0.1$% of total edge interaction volume under benign and adversarial stress tests; and (d) a newly initialized edge node bootstraps from broadcast priors (`DownPriors`) to fleet-average competence within hours.
+  A deployed network of 100+ heterogeneous edge nodes and a central collective proves: (a) collective model accuracy on multi-step reasoning exceeds any isolated edge node by $\ge 25$%; (b) central infrastructure compute scales sublinearly ($O(\log N)$ or $O(1)$) with active fleet size $N$; (c) self-calibrating deliberative escalation holds average WAN query offload within the parameterized target band (0.1%–1.0% during scaling, $\le 0.1$% under steady-state operation) across benign and adversarial stress tests; and (d) a newly initialized edge node bootstraps from broadcast priors (`DownPriors`) to fleet-average competence within hours.
 
 ### 7.3 Falsification & Termination Criteria (Kill Conditions)
 
 A rigorous scientific program gains credibility by identifying what empirical results would prove the foundational thesis incorrect and mandate halting or fundamentally redirecting the program:
 
 1. **Substrate Viability Falsification (Phase −1):**  
-   The local-plasticity hypothesis is the foundational bet of this vision. If systematic hyperparameter exploration and targeted gradient sweeps across all candidate mechanism families (predictive coding, equilibrium propagation, feedback alignment, local contrastive energy) fail to achieve convergent next-byte prediction, short-range temporal recall, and dynamic shift recovery on Level I regular grammars under local credit constraints, the local-plasticity core thesis is falsified and the program should be halted.
+   The local-plasticity hypothesis is the foundational bet of this vision. If systematic hyperparameter exploration and targeted gradient sweeps across all candidate mechanism families (predictive coding, equilibrium propagation, feedback alignment, local contrastive energy) fail to achieve convergent next-byte prediction, short-range temporal recall, dynamic shift recovery, and the required $\ge 0.70$ accuracy-ceiling ratio against a BPTT baseline on Level I regular grammars under local credit constraints, the local-plasticity core thesis is falsified and the program should be halted.
 2. **Dynamic Isolation & Continuous Operation Falsification (Phase 0/1):**  
    If continuous online adaptation inevitably induces catastrophic forgetting across isolated cores despite structural budding and QRML validation; or if intra-core compaction fails to reduce empirical memory growth sufficiently to sustain multi-day continuous operation within the $<4$ GB envelope while maintaining backward non-interference, the premise of sustainable continuous edge operation is falsified.
 3. **Information Leakage Falsification (Phase 2):**  
    If structural invariants or deliberative queries transmitted over the WAN link permit non-trivial reconstruction of private input byte streams under adversarial auditing, upstream synchronization is immediately halted and the privacy-preserving synthesis hypothesis is falsified.
 4. **Asymmetric Escalation & Economic Falsification (Phase 2/3):**  
-   If the self-calibrating deliberative escalation mechanism cannot maintain an escalation rate within the target band ($\le 0.1$% of interaction volume) while preserving output quality, forcing central infrastructure compute to scale linearly with user streaming hours, the asymmetric economic foundation is falsified.
+   If the self-calibrating deliberative escalation mechanism cannot maintain an escalation rate within the target band (0.1%–1.0% during early deployment, $\le 0.1$% under steady-state operation) while preserving output quality, forcing central infrastructure compute to scale linearly with user streaming hours, the asymmetric economic foundation is falsified.
 
 ### 7.4 Governance, Living Document Protocol & Strategic Planning Handoff
 
 This vision is a living document that guides strategic capital allocation and technical execution:
 
-* **Living Evolution:** As empirical discoveries are made in each phase, validated hypotheses are converted into architectural invariants, and falsified hypotheses trigger formal post-mortems and Architectural Decision Records (ADRs) as specified in `strategic-planning-backlog-ix.md`, §5.
-* **Strategic Planning Handoff:** In accordance with the Technical Vision Style Guide elaboration boundary, precise numerical gating thresholds, exact mathematical tolerances, sample size specifications, hyperparameter sweep counts, and detailed test rig harnesses are maintained and elaborated in the companion **Strategic Planning Backlog** (`strategic-planning-backlog-ix.md`, specifically §4.0).
+* **Living Evolution:** As empirical discoveries are made in each phase, validated hypotheses are converted into architectural invariants, and falsified hypotheses trigger formal post-mortems and Architectural Decision Records (ADRs) as specified in [strategic-planning-backlog.md](file:///workspaces/studious-fishstick/docs/vision/strategic-planning-backlog.md), §5.
+* **Strategic Planning Handoff:** In accordance with the Technical Vision Style Guide elaboration boundary, precise numerical gating thresholds, exact mathematical tolerances, sample size specifications, hyperparameter sweep counts, and detailed test rig harnesses are maintained and elaborated in the companion **Strategic Planning Backlog** ([strategic-planning-backlog.md](file:///workspaces/studious-fishstick/docs/vision/strategic-planning-backlog.md), specifically §4.0).

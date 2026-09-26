@@ -1,30 +1,28 @@
 # Strategic Planning Backlog: The Autopoietic Collective
 
-## Tactics, Execution Plans, and Technical Roadmaps Supporting Vision-IX
+## Tactics, Execution Plans, and Technical Roadmaps Supporting Vision-X
 
-**Document Version:** IX  
+**Document Version:** X  
 **Status:** Active Execution Backlog  
-**Date:** 2026-09-25  
-**Context:** Resulting from triage of stakeholder response (`docs/archive/visions/response-viii.md`) and Project Initiator directives regarding `docs/archive/visions/vision-ix.md`.
+**Date:** 2026-09-26  
+**Context:** Resulting from triage of stakeholder response (`docs/vision/response.md`) to Vision IX and Project Initiator directives.
 
 ---
 
 ## 1. Overview & Triage Scope
 
-This document captures vital execution tasks, tactical roadmaps, experimental protocols, governance frameworks, and operational risk registers deferred from the **Vision Document** (`docs/archive/visions/vision-ix.md`).
+This document captures vital execution tasks, tactical roadmaps, experimental protocols, governance frameworks, and operational risk registers deferred from the **Vision Document** ([vision.md](file:///workspaces/studious-fishstick/docs/vision/vision.md)).
 
 In strict adherence to **Scope Defense**, the Vision Document defines the destination, non-negotiable invariants, problem boundaries, and mathematical gating criteria. This Strategic Planning Backlog establishes the concrete engineering, research, and organizational tactics required to realize that vision.
 
-In Version IX, the backlog incorporates substantive resolutions to the challenges raised in Stakeholder Review VIII:
+In Version X, the backlog incorporates substantive resolutions to the challenges raised in Stakeholder Review IX:
 
-1. **Compaction Invariant Gap & Falsification (C1):** Elevates intra-core attractor compaction into a formal Phase 0 MVD gating criterion ($\ge 20$% reduction in growth exponent $\alpha$ relative to an uncompacted baseline, preserving $\Delta \le 0.05$) and couples it to a continuous-operation falsification clause in Vision §7 and SPB-11.
-2. **Settling Saturation Diagnostic & Lateral Composition (C2):** Formulates the settling-depth architectural hypothesis in Vision §5 and institutes the **Settling Saturation Diagnostic** in Suite C (§3.3), establishing an ADR trigger if Level II tasks saturate $\ge 0.9 \cdot \tau_{\max}$ on $>10$% of inputs.
-3. **Auditable Sweeps & Conditional Escalation Protocol (C3):** Refines the Phase −1 falsification protocol in Vision §7 and Backlog §2.2/§2.3 to treat $N \ge 50$ configurations as a necessary due-diligence minimum, mandating a targeted follow-up sweep of $\ge 25$ configurations along identified directional failure gradients before formal falsification.
-4. **Hierarchical Substrate Diagnostic Gate (C4):** Introduces a binding Level II diagnostic gate into the Phase 0 → Phase 1 MVD (Vision §7, Backlog §3.3, §4.2) requiring $\ge 70$% bracket-matching accuracy on a Dyck-2 stream (depth $\le 4$) prior to authorizing multi-core scaling investments.
-5. **Privacy-Utility Feasibility for Topological Deltas (C5):** Expands SPB-10 (§8.2) to formally characterize the privacy-utility frontier for graph-structured topological invariants under differential privacy, identifying secure multi-party aggregation as an architectural fallback if noise injection destroys $\ge 50$% of delta utility.
-6. **Pre-Collective Recovery Protocol & Checkpoint Budget (C6):** Defines a tiered recovery target for Phases −1 through 1 in §8.1 (sub-graph isolation, swarm checkpoint fallback, and initial seed reset) and establishes a dedicated checkpoint storage budget ($\le 10$% of $<4$ GB) governed by structural change rate.
-7. **Intermediate Milestones for Phase 0 Duration Risk (R7):** De-risks the 6–12 month Phase 0 duration by decomposing it into **Phase 0.A** (Months 1–4: single-core Level I, basic compaction, settling profiling) and **Phase 0.B** (Months 4–8+: swarm integration, somatic budding, 7-day telemetry, Level II diagnostic) in §4.2 and §9.2.
-8. **Preserved Prior Foundations:** Preserves all established backlog items, including property-based credit assignment (§2.3), Quiescent Exploitation with hard preemption (SPB-11), Quorum-Rotation Micro-Learning (SPB-12), and self-calibrating escalation defenses (SPB-10, RSK-11).
+1. **Competitiveness Gap & BPTT Baseline Anchor (C1):** Introduces a head-to-head backpropagation through time (BPTT) baseline comparison and a quantitative accuracy-ceiling ratio threshold ($\ge 0.70$ of BPTT reference performance on Level I) into Phase −1 MVD verification (§4.1), and extends the benchmarking protocol to Level II tasks in Phase 0.A (§4.2) to map the empirical accuracy-cost frontier of local credit assignment.
+2. **Composition Hypothesis Gap & 2-Core Lateral Pilot (C2):** Resolves the logical composition deadlock on hierarchical languages by introducing a minimal 2-core lateral composition pilot to Phase 0.B (§4.2), demonstrating that lateral cooperation between local-credit cores outperforms a single core on Dyck-2 and overcomes settling saturation prior to Phase 1 sandbox investment.
+3. **Personnel Dependency & Contingency Trigger (C3):** Mitigates research execution bottleneck risks in Phase −1 (§2.2, §9.2) by instituting a formal 1.5-month timeline extension trigger (to 4.5 months total) if $<2$ candidate mechanism families complete sweeps by Month 2, and establishes a prioritized sequential evaluation strategy focusing on Tier 1 candidate families (predictive coding and equilibrium propagation) before evaluating Tier 2 families.
+4. **Escalation Rate Grounding & Effort Distribution Audit (C4):** Empirically grounds the deliberative escalation assumption by adding an early Effort Distribution Audit to Phase 0.B (§4.2) across 1 week of real-world developer byte streams, and parameterizes the escalation target as a phased band (0.1%–1.0% in early phases, stabilizing at $\le 0.1$% in mature production) across §4.0, §7.2, and §7.3.
+5. **Explicit Scope Boundaries:** Formally confirms and documents explicit scope boundaries (excluding multimodal processing, robotics, embodied physical control, monolithic foundation pretraining, and neuromorphic ASIC fabrication) in Vision §6.4.
+6. **Preserved Prior Foundations:** Preserves all established foundations from prior reviews, including Compaction Efficacy Gate (§4.2, §8.3), Settling Saturation Diagnostic (§3.3), Auditable Sweeps and Conditional Escalation (§2.2), Pre-Collective Recovery Protocol (§8.1), Quorum-Rotation Micro-Learning (§8.4), and Phase 0 staged milestones (§4.2).
 
 Per stakeholder direction, financial cost modeling, currency budgets, and pricing projections remain explicitly omitted at this foundational stage; planning focuses on engineering effort, research sequencing, and technical viability.
 
@@ -51,22 +49,27 @@ Validate the existential premise of the architecture before allocating capital o
   * Integrate single unannounced Markov transition shifts to verify rudimentary dynamic plasticity.
   * **Systematic Evaluation Sweep Protocol:** Conduct an empirically auditable sweep of at least $N \ge 50$ distinct hyperparameter/architectural configurations per candidate family (sweeping learning rates, energy scaling, relaxation dynamics, noise schedules, and state dimensions) to establish definitive empirical bounds.
   * **Conditional Escalation Protocol:** The $N \ge 50$ sweep serves as a necessary minimum due diligence threshold. If all 50 configurations fail for a given candidate family, but empirical results reveal a clustered, directional failure pattern along an identifiable axis (e.g., consistent divergence at a specific energy scale, or saturation at a specific state dimension), an additional targeted sweep of $\ge 25$ configurations along that gradient must be conducted before declaring formal falsification.
+  * **Prioritized Sequential Evaluation Strategy:** To maximize experimental throughput within the 2-person Phase −1 team, candidate mechanisms are evaluated in prioritized tiers rather than unweighted parallel execution:
+    * *Tier 1 (Primary Priority):* Three-Factor Predictive Coding and Equilibrium Propagation (backed by the strongest sequence task track record in the literature) are implemented and swept first.
+    * *Tier 2 (Secondary Priority):* Feedback Alignment and Local Contrastive Energy are evaluated sequentially once Tier 1 sweeps are complete.
+  * **Timeline Extension Contingency Trigger:** Acknowledging that 3 months with 2 people represents an aggressive timeline, a formal extension trigger is instituted: if $<2$ candidate families have completed the $\ge 50$-sweep evaluation by the conclusion of Month 2, a 1.5-month extension is formally authorized (extending Phase −1 to 4.5 months total) before declaring milestone failure or core falsification.
 * **Milestone −1.3 (Month 3): Verification & Gating Evaluation**
   * Instrument physical memory footprint profiling over $10^7$ continuous bytes (verify empirical growth exponent $\alpha \le 1$ with zero un-reclaimed buffer leakage, strictly flat baseline when structural capacity is unperturbed).
   * Measure internal settling cycles ($\tau$) per byte across high- and low-entropy segments (verify 99.9th percentile $\tau \le 32$).
   * Measure loss convergence curve against an analytical Markov baseline.
   * Verify short-range temporal recall: $I(S; R) \ge 0.90$ across $K = 64$ distractor bytes without memory buffers.
   * Verify single distribution shift recovery: $T_{\text{recover}} \le 2000$ bytes to within 10% of steady-state performance.
-  * Deliverable: Empirical Technical Report & Benchmark Suite (`Report-PhaseMinus1.pdf` / reproducibility repo) documenting the 50+ configuration sweeps and any targeted follow-up sweeps across all candidate mechanism families.
+  * **Incumbent Baseline Performance Anchor (BPTT Ceiling Comparison):** Train a parameter-matched recurrent neural network (matching the micro-core's parameter count and layer topology, but trained with standard backpropagation through time) on identical Level I streams as a reference ceiling. Verify that the local-credit substrate achieves an accuracy-ceiling ratio $\ge 0.70$ relative to BPTT cross-entropy performance.
+  * Deliverable: Empirical Technical Report & Benchmark Suite (`Report-PhaseMinus1.pdf` / reproducibility repo) documenting the 50+ configuration sweeps, targeted follow-ups, BPTT baseline comparisons, and any timeline extension triggers across candidate mechanism families.
 
 ### 2.3 Candidate Local Plasticity Mechanisms Matrix
 
-| Mechanism | Spatial Locality | Temporal Locality | Silicon Suitability (SIMD) | Primary Research Risk | Systematic Sweep & Escalation Scope |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Three-Factor Predictive Coding** | High (Layer/Node) | High (Immediate residual) | High (Dense matrix-vector) | Convergence instability under noisy streams | $\ge 50$ baseline runs: error precision gains, prediction decay rates, multi-layer residual depths; $\ge 25$ targeted runs on directional gradients |
-| **Equilibrium Propagation** | High (Energy gradient) | Moderate (Two-phase settle) | High (Vector-parallel relaxation) | Slow settling time under high entropy | $\ge 50$ baseline runs: clamping strengths, energy landscape curvatures, nudging schedules; $\ge 25$ targeted runs on directional gradients |
-| **Feedback Alignment (DFA/RFA)** | High (Random projections) | High (Immediate) | Very High (Standard GEMM) | Weak representation depth on raw bytes | $\ge 50$ baseline runs: projection initialization distributions, rank constraints, residual alignments; $\ge 25$ targeted runs on directional gradients |
-| **Local Contrastive Energy** | High (Free energy basin) | High (Step-wise contrast) | High (SIMD-friendly) | Susceptibility to representation collapse | $\ge 50$ baseline runs: contrastive margin scaling, negative sampling dynamics, basin regularizers; $\ge 25$ targeted runs on directional gradients |
+| Mechanism | Execution Priority | Spatial Locality | Temporal Locality | Silicon Suitability (SIMD) | Primary Research Risk | Systematic Sweep & Escalation Scope |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Three-Factor Predictive Coding** | **Tier 1 (Primary)** | High (Layer/Node) | High (Immediate residual) | High (Dense matrix-vector) | Convergence instability under noisy streams | $\ge 50$ baseline runs: error precision gains, prediction decay rates, multi-layer residual depths; $\ge 25$ targeted runs on directional gradients |
+| **Equilibrium Propagation** | **Tier 1 (Primary)** | High (Energy gradient) | Moderate (Two-phase settle) | High (Vector-parallel relaxation) | Slow settling time under high entropy | $\ge 50$ baseline runs: clamping strengths, energy landscape curvatures, nudging schedules; $\ge 25$ targeted runs on directional gradients |
+| **Feedback Alignment (DFA/RFA)** | **Tier 2 (Secondary)** | High (Random projections) | High (Immediate) | Very High (Standard GEMM) | Weak representation depth on raw bytes | $\ge 50$ baseline runs: projection initialization distributions, rank constraints, residual alignments; $\ge 25$ targeted runs on directional gradients |
+| **Local Contrastive Energy** | **Tier 2 (Secondary)** | High (Free energy basin) | High (Step-wise contrast) | High (SIMD-friendly) | Susceptibility to representation collapse | $\ge 50$ baseline runs: contrastive margin scaling, negative sampling dynamics, basin regularizers; $\ge 25$ targeted runs on directional gradients |
 
 ---
 
@@ -99,10 +102,10 @@ To evaluate the system along true learning gradients rather than static grammar 
 * **Evaluation Ladder:** Verify that internal attractor trajectories reflect depth state without hardcoded stack data structures or explicit push/pop tokenizers.
 * **Hierarchical Substrate Diagnostic (Phase 0 MVD Gate):**
   * *Dataset:* Continuous Dyck-2 bracket stream (nesting depth $D \le 4$, alphabet $\vert{}V\vert{} \le 8$).
-  * *Pass Metric:* Single micro-core must achieve $\ge 70$% bracket-matching accuracy under local credit constraints, verifying rudimentary hierarchical attractor formation prior to multi-core scaling.
+  * *Pass Metric:* Single micro-core must achieve $\ge 70$% bracket-matching accuracy under local credit constraints, verifying rudimentary hierarchical attractor formation prior to multi-core scaling. This single-core baseline is directly paired with the Phase 0.B Two-Core Lateral Composition Pilot to demonstrate that lateral coordination overcomes single-core hierarchical saturation.
 * **Settling Saturation Diagnostic:**
   * For Level II and Level III benchmark suites, continuously track and report the fraction of input bytes for which internal settling reaches $\ge 0.9 \cdot \tau_{\max}$ (i.e., $\tau \ge 29$ when $\tau_{\max} = 32$) without attractor convergence.
-  * If this fraction exceeds **10%** across Level II evaluations, an Architecture Decision Record (ADR) must be formally initiated to evaluate whether $\tau_{\max}$ requires level-dependent parameterization or whether lateral micro-core composition can substitute for deeper single-core relaxation.
+  * If this fraction exceeds **10%** across Level II evaluations, an Architecture Decision Record (ADR) must be formally initiated to evaluate whether $\tau_{\max}$ requires level-dependent parameterization or whether lateral micro-core composition can substitute for deeper single-core relaxation (informed by the Phase 0.B 2-core lateral composition pilot).
 
 ### 3.4 Suite D: Relational Variable Binding
 
@@ -130,6 +133,8 @@ Passage through engineering gates is governed by the following binding numerical
   Upon an unannounced environmental distribution shift ($\Delta E$), the time-to-recovery ($T_{\text{recover}}$) settles into an optimal asymptotic bound ($\le 500$ bytes on Level I benchmarks in Phase 0; $\le 2000$ bytes for single shifts in Phase −1), demonstrating rapid active dynamic reconfiguration to within 10% of steady-state error.
 * **Backward Non-Interference Invariant ($\epsilon$ Degradation Ceiling):**  
   Adapting to novel environmental dynamics $B$ induces performance degradation on previously mastered dynamics $A$ bounded strictly by $\Delta \le 0.05$ (maximum 5% relative accuracy loss).
+* **Competitive Performance Invariant (Accuracy-Ceiling Ratio):**  
+  The local credit assignment substrate must achieve prediction accuracy / negative cross-entropy $\ge 0.70$ of a parameter-matched baseline RNN trained with standard BPTT on Level I streams in Phase −1, extending to empirical Pareto-frontier mapping on Level II in Phase 0.
 * **Consensus Coherence Invariants ($\delta$ Calibration Bounds):**  
   * *Local Lateral Quorum (Phase 1 Gate):* Collective voting across redundant, co-located micro-cores within a single edge agent must resolve ambiguous or noisy sequences with bounded error $\delta_{\text{local}} \le 0.05$ relative to ground truth, with zero deadlock or livelock ($\tau \le \tau_{\max} = 32$).  
   * *Collective Synthesis Coherence (Phase 2+ Gate):* When evaluated across a distributed ensemble of heterogeneous micro-experts receiving out-of-order, time-lagged updates over WAN, collective model synthesis must maintain predictive accuracy and calibration within bounded degradation $\delta_{\text{collective}} \le 0.05$ relative to an un-lagged reference.
@@ -143,18 +148,18 @@ Passage through engineering gates is governed by the following binding numerical
 * **Privacy & Bandwidth Viability (Phase 1 $\rightarrow$ Phase 2 Gate):**  
   Invariant updates and deliberative queries sent over the network must be ultra-sparse, requiring bandwidth orders of magnitude lower than transmitting the raw interaction stream, with formal mathematical guarantees ($I(X; \Delta) \le 10^{-4}$ bits) of zero reconstructible private context or user observations.
 * **Decoupled Infrastructure Economics (Phase 2 $\rightarrow$ Phase 3 Gate):**  
-  The central infrastructure must prove that compute consumption scales with the rate of *macro-deliberative reasoning and collective model synthesis*, maintaining $\le 0.1$% routine escalation, and does *not* scale linearly with continuous raw streaming volume or total active edge fleet size ($O(\log N)$ or $O(1)$).
+  The central infrastructure must prove that compute consumption scales with the rate of *macro-deliberative reasoning and collective model synthesis*, maintaining escalation within the parameterized target band (0.1%–1.0% in early deployment, stabilizing at $\le 0.1$% in mature operation), and does *not* scale linearly with continuous raw streaming volume or total active edge fleet size ($O(\log N)$ or $O(1)$).
 
 #### 4.0.3 Auditable Falsification & Kill Condition Protocols
 
 1. **Substrate Viability Falsification (Phase −1):**  
-   The $\ge 50$ configuration threshold constitutes the minimum systematic sweep required for auditable due diligence across each of the four candidate mechanism families listed in §2.3 (three-factor predictive coding, equilibrium propagation, feedback alignment, and local contrastive energy), plus promising variants. If systematic sweep results reveal a clustered, directional failure pattern across a candidate family, an additional targeted sweep of $\ge 25$ configurations along the identified failure gradient must be conducted before formal falsification is declared. If all candidate families fail to achieve convergent next-byte prediction, short-range temporal recall ($K \ge 64$), and shift recovery ($T_{\text{recover}} \le 2000$) on Level I regular grammars under local credit assignment constraints with bounded memory growth ($O(T^\alpha), \alpha \le 1$) across both systematic and targeted follow-up sweeps, the local-plasticity core thesis is falsified, halting multi-core architectural composition.
+   The $\ge 50$ configuration threshold constitutes the minimum systematic sweep required for auditable due diligence across each of the four candidate mechanism families listed in §2.3 (three-factor predictive coding, equilibrium propagation, feedback alignment, and local contrastive energy), plus promising variants. If systematic sweep results reveal a clustered, directional failure pattern across a candidate family, an additional targeted sweep of $\ge 25$ configurations along the identified failure gradient must be conducted before formal falsification is declared. If all candidate families fail to achieve convergent next-byte prediction, short-range temporal recall ($K \ge 64$), shift recovery ($T_{\text{recover}} \le 2000$), and the required $\ge 0.70$ accuracy-ceiling ratio against a BPTT baseline on Level I regular grammars under local credit assignment constraints with bounded memory growth ($O(T^\alpha), \alpha \le 1$) across both systematic and targeted follow-up sweeps, the local-plasticity core thesis is falsified, halting multi-core architectural composition.
 2. **Dynamic Isolation & Continuous Operation Falsification (Phase 0/1):**  
    If continuous online adaptation inevitably induces catastrophic forgetting ($\Delta > 0.05$) across isolated cores despite structural budding, modular compartmentalization, and QRML validation; or if, after systematic exploration during the Phase 0 sprint, no intra-core compaction strategy can reduce the empirical growth exponent $\alpha$ by $\ge 20$% to project $\ge 7$ consecutive days of continuous operation within the $<4$ GB envelope while maintaining Backward Non-Interference ($\Delta \le 0.05$), the premise of sustainable continuous edge operation is falsified.
 3. **Information Leakage Falsification (Phase 2):**  
    If structural invariants or deliberative queries transmitted over the WAN link permit non-trivial reconstruction of private input byte streams ($I(X; \Delta) > 10^{-4}$ bits) under adversarial auditing, upstream synchronization is immediately halted.
 4. **Asymmetric Escalation & Economic Falsification (Phase 2/3):**  
-   If the self-calibrating deliberative escalation mechanism cannot maintain an escalation rate within the target band ($\le 0.1$% of interaction volume under steady-state load) while preserving output quality, forcing central infrastructure compute to scale linearly with user streaming hours, the asymmetric economic foundation is falsified.
+   If the self-calibrating deliberative escalation mechanism cannot maintain an escalation rate within the target band (0.1%–1.0% during early deployment, $\le 0.1$% under steady-state load) while preserving output quality, forcing central infrastructure compute to scale linearly with user streaming hours, the asymmetric economic foundation is falsified.
 
 ### 4.1 Phase −1 $\rightarrow$ Phase 0 MVD: Single-Core Existence Rig
 
@@ -166,7 +171,8 @@ Passage through engineering gates is governed by the following binding numerical
   3. Settling distribution histogram demonstrating 99.9th percentile $\tau \le 32$.
   4. Short-range temporal recall: $I(S; R) \ge 0.90$ across $K = 64$ distractor bytes.
   5. Dynamic plasticity: $T_{\text{recover}} \le 2000$ bytes following an unannounced Markov transition shift.
-  6. Audit report documenting the $\ge 50$ configuration sweeps and any targeted follow-up sweeps ($\ge 25$ runs) across candidate mechanism families.
+  6. Audit report documenting the $\ge 50$ configuration sweeps and any targeted follow-up sweeps ($\ge 25$ runs) across candidate mechanism families, noting prioritized sequential execution (Tier 1 vs. Tier 2) and any timeline extension triggers invoked.
+  7. **BPTT Reference Ceiling Comparison:** Train a parameter-matched RNN (matching recurrent dimensions, parameter count, and architectural topology) with standard BPTT on the identical Level I benchmark stream. The local-credit micro-core must achieve an accuracy-ceiling ratio $\ge 0.70$ of the BPTT model's predictive performance (cross-entropy / next-byte prediction accuracy).
 
 ### 4.2 Phase 0 $\rightarrow$ Phase 1 MVD: Edge Swarm & Somatic Budding Rig
 
@@ -179,6 +185,7 @@ To manage duration risk across Phase 0 (6–12 months), execution and validation
   1. Single-core achieves $T_{\text{recover}} \le 500$ bytes on Level I shifts and temporal recall $I(S; R) \ge 0.95$ across $K = 10^4$ bytes.
   2. **Compaction Baseline Validation:** Validate intra-core attractor compaction on single-core state space, confirming $\ge 20$% reduction in $\alpha$ with $\Delta \le 0.05$.
   3. **Settling Characterization:** Profile settling distributions across Level I and preliminary Level II streams to establish baseline convergence profiles for the Settling Saturation Diagnostic.
+  4. **Accuracy-Cost Frontier Mapping:** Extend the BPTT comparison from Phase −1 to Level II hierarchical tasks, measuring the empirical accuracy-cost frontier to quantify the exact performance trade-off incurred by local-credit and bounded-memory constraints.
 
 #### Sub-Phase 0.B: Swarm Integration, Budding & Gating Rig (Months 4–8+)
 
@@ -193,6 +200,8 @@ To manage duration risk across Phase 0 (6–12 months), execution and validation
   6. **Time-to-Ceiling Telemetry:** Empirical growth gradient extrapolation projects $\ge 7$ consecutive days of continuous streaming before hitting the 4 GB ceiling.
   7. **Quiescent Maintenance Profiling:** Telemetry confirms that opportunistic attractor compaction (SPB-11) actively runs during inter-arrival gaps with hard preemption ($\le 1$ ms interrupt latency), causing zero latency jitter on subsequent incoming bytes.
   8. **Pre-Collective Recovery Verification:** Diverging micro-core is isolated and clamped to its most recent local checkpoint without stalling unaffected micro-cores, consuming $\le 10$% memory overhead.
+  9. **Two-Core Lateral Composition Pilot:** Execute a constrained 2-core lateral composition experiment within the single-device Phase 0 rig specifically targeting the Dyck-2 task. Demonstrate that two cooperating cores under local credit assignment outperform the single-core baseline on bracket-matching accuracy, empirically validating Hypothesis H2 and de-risking multi-core composition prior to Phase 1.
+  10. **Early Effort Distribution Audit:** Instrument the micro-core swarm on a representative real-world developer byte stream (1 week of continuous software development interactions in an active codebase). Measure the empirical fraction of next-byte predictions falling below a usable confidence threshold, providing the first grounded data point for the escalation rate distribution 12–18 months ahead of Phase 2.
 
 ### 4.3 Phase 1 $\rightarrow$ Phase 2 MVD: Asymmetric Structural Sync & Quorum Rotation Rig
 
@@ -209,7 +218,7 @@ To manage duration risk across Phase 0 (6–12 months), execution and validation
 * **Verification:**
   1. Collective reasoning capability exceeds individual nodes by $\ge 25$%.
   2. Central server CPU/GPU load scales sublinearly ($O(\log N)$ or $O(1)$) with active node count.
-  3. **Self-Calibrating Escalation:** Escalation rates remain within the target band ($\le 0.1$% of total interaction volume) across all nodes without manual per-device threshold adjustments.
+  3. **Self-Calibrating Escalation:** Escalation rates remain within the parameterized target band (0.1%–1.0% during scaling, $\le 0.1$% in steady-state production) across all nodes without manual per-device threshold adjustments.
   4. **Adversarial Escalation Resilience:** Under crafted adversarial distributions attempting flooding or calibration drift, admission rate-limiters and drift clamps protect the central collective from capacity degradation.
   5. Seed broadcast: Fresh node boots, downloads latest seed, and achieves fleet-baseline accuracy within 2 hours of streaming.
 
@@ -241,18 +250,18 @@ To prevent undisciplined architectural drift while providing structured mechanis
 
 | Risk ID | Risk Description | Likelihood | Impact | Detection Mechanism | Tactical Mitigation |
 | :--- | :--- | :---: | :---: | :--- | :--- |
-| **RSK-01** | Local credit assignment fails to learn compositional structure from raw bytes | Medium | Fatal | Phase −1 loss divergence on Level I/II grammar suites across $\ge 50$ configurations per family | Systematic search over three-factor predictive coding, equilibrium propagation, feedback alignment, and local contrastive energy; conditional $\ge 25$ run gradient escalation |
+| **RSK-01** | Local credit assignment fails to learn compositional structure or lacks competitive viability against incumbent baselines | Medium | Fatal | Phase −1 loss divergence on Level I/II grammar suites across $\ge 50$ configurations per family, or failure to achieve $\ge 0.70$ accuracy-ceiling ratio against BPTT baseline | Systematic search over prioritized Tier 1 and Tier 2 candidate families; conditional $\ge 25$ run gradient escalation; parameter-matched BPTT ceiling benchmarking (§4.1) and accuracy-cost frontier mapping (§4.2) |
 | **RSK-02** | Linear memory growth gradient outpaces hardware metabolic envelope under continuous streaming | Medium | Critical | Memory telemetry slope trending toward $<4$ GB ceiling prematurely (<7 days projected lifetime) | Phase 0.A/0.B staged milestones; aggressive somatic pruning / apoptosis; Compaction Efficacy Gate ($\ge 20$% reduction in $\alpha$, SPB-11); targeting sub-linear regime ($\alpha < 1$) |
 | **RSK-03** | Lateral quorum consensus stalls or degrades under heterogeneous core quality | Medium | High | Quorum deliberation timeouts ($\tau > \tau_{\max}$) or accuracy drops | Confidence-weighted majority voting; dynamic micro-core quality scoring; deterministic tie-breaking rules; local consensus bounds ($\delta_{\text{local}} \le 0.05$); QRML validation before re-admission (SPB-12) |
 | **RSK-04** | Structural deltas leak reconstructible private user context across WAN or suffer utility collapse under DP | Medium | Critical | Adversarial audits ($I(X; \Delta) > 10^{-4}$); collective synthesis degradation $\ge 50$% | Information-theoretic mutual information bounding; topological delta DP feasibility study in SPB-10; secure multi-party aggregation fallback |
 | **RSK-05** | Edge hardware thermal throttling under continuous local relaxation | High | High | Hardware telemetry monitoring on edge test rig ($>25$W or thermal throttling) | Elastic pacing backpressure; adaptive idle relaxation; sleeping inactive micro-cores; SIMD kernel optimization |
-| **RSK-06** | Deliberative query escalation flood overloads central collective | High | High | Escalation rate exceeding $\le 0.1$% band; central queue depth spikes | Self-calibrating dynamic escalation threshold mechanism; local quorum caching; central admission control; backpressure quotas; hard per-client circuit breakers (RSK-11) |
+| **RSK-06** | Deliberative query escalation flood overloads central collective or proves economically unviable | High | High | Escalation rate exceeding target band (0.1%–1.0% early, $\le 0.1$% mature); Phase 0.B effort distribution audit indicating excessive low-confidence predictions; central queue spikes | Self-calibrating dynamic escalation threshold mechanism; early empirical effort distribution audit in Phase 0.B (§4.2); parameterized escalation target band; local quorum caching; central admission control; backpressure quotas; hard per-client circuit breakers (RSK-11) |
 | **RSK-07** | Byzantine or corrupted deltas poison collective baseline priors | Medium | Critical | Anomaly detection filter triggers; regression in broadcast baseline capability | Multi-party consensus on deltas; sandboxed verification of candidate priors; cryptographic provenance attestation (evaluated via SPB-10) |
-| **RSK-08** | Interdisciplinary talent bottleneck stalls research execution | High | High | Delayed milestones in Phase −1 / Phase 0 hiring sprints | Staged discipline recruitment; targeted academic advisory partnerships; strict modular interface boundaries; de-risking Phase 0 via strengthened Phase −1 gate |
-| **RSK-09** | Open-ended R&D drift without real-world application discipline | High | Critical | Milestone completion without validated utility metric | Discipline through First Product Hypothesis (Section 7); concrete user interaction telemetry |
+| **RSK-08** | Interdisciplinary talent bottleneck stalls research execution | High | High | Delayed milestones in Phase −1 / Phase 0 hiring sprints; $<2$ candidate families evaluated by Month 2 | Prioritized sequential family evaluation (Tier 1 first); formal 1.5-month Phase −1 timeline extension trigger (to 4.5 months total); staged discipline recruitment; targeted academic advisory partnerships; strict modular interface boundaries |
+| **RSK-09** | Open-ended R&D drift without real-world application discipline | High | Critical | Milestone completion without validated utility metric | Discipline through First Product Hypothesis (Section 7); concrete user interaction telemetry; Phase 0.B effort distribution audit |
 | **RSK-10** | Somatic budding/apoptosis lifecycle instability (oscillatory thrashing, bloat, capacity thrashing) | Medium | High | Cyclic budding and pruning events under stationary streams; monotonic structural overhead accumulation | Hysteresis thresholds on entropy triggers; mandatory maturation refractory periods before apoptosis eligibility; structural overhead memory quotas |
-| **RSK-11** | Adversarial manipulation of escalation calibration (flooding or calibration drift) | Medium | High | Escalation rate spikes above 0.1% under crafted streams, or abnormal rise in $\Theta_t$ hiding degradation | Hard per-device rate budgets; bounded drift velocity on $\Theta_t$; central admission rate-limiters; adversarial red-teaming in SPB-10 |
-| **RSK-12** | Settling budget saturation on hierarchical / context-free languages ($\tau \to \tau_{\max}$) | Medium | High | Settling Saturation Diagnostic exceeding 10% on Level II/III evaluations | Lateral micro-core composition; somatic budding of parallel shallow sub-circuits; formal ADR evaluating lateral composition vs level-dependent $\tau_{\max}$ scaling |
+| **RSK-11** | Adversarial manipulation of escalation calibration (flooding or calibration drift) | Medium | High | Escalation rate spikes above target band under crafted streams, or abnormal rise in $\Theta_t$ hiding degradation | Hard per-device rate budgets; bounded drift velocity on $\Theta_t$; central admission rate-limiters; adversarial red-teaming in SPB-10 |
+| **RSK-12** | Settling budget saturation on hierarchical / context-free languages ($\tau \to \tau_{\max}$) | Medium | High | Settling Saturation Diagnostic exceeding 10% on Level II/III evaluations | Phase 0.B Two-Core Lateral Composition Pilot on Dyck-2 (§4.2); somatic budding of parallel shallow sub-circuits; formal ADR evaluating lateral composition vs level-dependent $\tau_{\max}$ scaling |
 
 ---
 
@@ -274,8 +283,8 @@ To prevent ivory-tower infrastructure development, the architecture will be disc
 * **Interaction Volume Distribution:**
   * **Tier 1 (Local Reflex & Adaptation):** 99.0%–99.5% of total byte interactions (keystrokes, autocomplete, local syntax check, local style adaptation). Handled entirely on-device by the micro-core swarm at zero cloud infrastructure cost.
   * **Tier 2 (Lateral Quorum Deliberation):** 0.4%–0.9% of interactions (multi-step ambiguous logic, conflict resolution across files). Resolved locally via multi-core debate.
-  * **Tier 3 (Collective Fallback & Synthesis):** $\le 0.1$% of interactions (high-entropy cross-domain queries, macro-synthesis). Escalated to the central collective.
-* **Economic Discipline:** Validates that cloud infrastructure hosting requirements scale with macro-deliberative queries rather than user interaction time.
+  * **Tier 3 (Collective Fallback & Synthesis):** Parameterized target band of 0.1%–1.0% during early deployment and staging, stabilizing at $\le 0.1$% of interactions under mature steady-state operations (high-entropy cross-domain queries, macro-synthesis). Escalated to the central collective.
+* **Economic Discipline:** Validates that cloud infrastructure hosting requirements scale with macro-deliberative queries rather than user interaction time. Grounded empirically by the early Effort Distribution Audit in Phase 0.B (§4.2).
 
 ### 7.3 Self-Calibrating Deliberative Escalation Architecture
 
@@ -296,7 +305,7 @@ To satisfy the **Escalation Calibration Invariant** and prevent the failure mode
    \Theta_{t+1} = \Theta_t + \eta \cdot (R_t - R_{\text{target}})
    $$
 
-   where $R_{\text{target}} = 0.001$ ($\le 0.1$%) and $\eta$ is an adaptation rate parameter with hysteresis bounds. If an edge agent encounters a prolonged high-entropy domain, $\Theta_t$ rises gracefully to force local resolution and somatic budding, preventing query flooding.
+   where $R_{\text{target}}$ is parameterized as a phased target band ($R_{\text{target}} \in [0.001, 0.01]$ during exploratory phases, converging to $R_{\text{target}} = 0.001$ ($\le 0.1$%) for commercial steady-state) and $\eta$ is an adaptation rate parameter with hysteresis bounds. If an edge agent encounters a prolonged high-entropy domain, $\Theta_t$ rises gracefully to force local resolution and somatic budding, preventing query flooding.
 3. **Adversarial Defenses & Circuit-Breakers (Phase 2+):**  
    To defend against adversarial escalation flooding and calibration drift (RSK-11):
    * *Hard Per-Device Rate Budgets:* A strict token-bucket limiter enforces an absolute ceiling on escalation queries per unit time (e.g., maximum 10 escalations/hour per client), independent of the internal threshold $\Theta_t$.
@@ -405,11 +414,11 @@ To satisfy the **Escalation Calibration Invariant** and prevent the failure mode
 
 ### 9.2 Staged Discipline Staffing Progression & Intermediate Milestones
 
-* **Phase −1 (3 Months):** 1 Senior Research Scientist (Dynamical Systems / Computational Neuroscience) + 1 Systems Prototyper (Rust/C++).  
-  *De-Risking Note:* The strengthened Phase −1 gate (incorporating $K \ge 64$ temporal recall, single-shift recovery, auditable $N \ge 50$ sweeps, and $\ge 25$ run conditional escalation) confirms foundational viability before authorizing the Phase 0 hiring expansion.
+* **Phase −1 (3 Months Target / 4.5 Months Contingency):** 1 Senior Research Scientist (Dynamical Systems / Computational Neuroscience) + 1 Systems Prototyper (Rust/C++).  
+  *De-Risking Note:* The strengthened Phase −1 gate (incorporating $K \ge 64$ temporal recall, single-shift recovery, auditable $N \ge 50$ sweeps, conditional $\ge 25$-run escalation, BPTT baseline ceiling comparison $\ge 0.70$, sequential candidate family execution [Tier 1 vs. Tier 2], and a 1.5-month extension trigger if $<2$ families complete sweeps by Month 2) confirms foundational viability before authorizing the Phase 0 hiring expansion.
 * **Phase 0 (6–12 Months, Decomposed into Sub-Phases):** 2 Research Scientists + 3 Systems/Performance Engineers (SIMD/GPU kernels, zero-allocation runtime, intra-core compaction, quiescent exploitation).
-  * **Phase 0.A (Months 1–4):** Focus on single-core Level I mastery at Phase 0 standards ($T_{\text{recover}} \le 500$, $K \ge 10^4$), basic compaction validation ($\ge 20$% reduction in $\alpha$), and settling budget characterization across Level I and preliminary Level II streams.
-  * **Phase 0.B (Months 4–8+):** Multi-core swarm integration, somatic budding, structural homeostasis, pre-collective recovery verification, full 7-day memory telemetry, and Hierarchical Substrate Diagnostic ($\ge 70$% on Dyck-2).
+  * **Phase 0.A (Months 1–4):** Focus on single-core Level I mastery at Phase 0 standards ($T_{\text{recover}} \le 500$, $K \ge 10^4$), basic compaction validation ($\ge 20$% reduction in $\alpha$), settling budget characterization across Level I and preliminary Level II streams, and BPTT accuracy-cost frontier mapping on Level II.
+  * **Phase 0.B (Months 4–8+):** Multi-core swarm integration, somatic budding, structural homeostasis, pre-collective recovery verification, full 7-day memory telemetry, Hierarchical Substrate Diagnostic ($\ge 70$% on Dyck-2), Two-Core Lateral Composition Pilot (de-risking lateral composition before Phase 1), and early empirical Effort Distribution Audit across 1 week of real-world developer streams.
 * **Phase 1 (6–12 Months):** Add 2 Distributed Systems Engineers (multi-process IPC, quorum consensus, QRML protocol) + 1 QA/Benchmark Engineer.
 * **Phase 2 (12–18 Months):** Add 2 WAN/Network Engineers + 1 Privacy/Cryptographic Engineer + 2 Product Integration Engineers.
 * **Phase 3 (18–36 Months):** Expansion to full production deployment team (distributed cloud infrastructure, security, operations).
@@ -420,6 +429,11 @@ To satisfy the **Escalation Calibration Invariant** and prevent the failure mode
 
 | Source Feedback / Directive | Triage Action | Strategy Backlog Section | Core Resolution |
 | :--- | :--- | :--- | :--- |
+| **Stakeholder Challenge 1 (Review IX): Competitiveness Gap & BPTT Baseline** | **Adopt into Vision & Backlog** | §1, §2.2, §4.0.1, §4.0.3, §4.1, §4.2 (Phase 0.A), §6 (RSK-01) | Added parameter-matched BPTT baseline comparison and $\ge 0.70$ accuracy-ceiling ratio threshold to Phase −1 MVD; extended to Level II accuracy-cost frontier mapping in Phase 0.A. |
+| **Stakeholder Challenge 2 (Review IX): Composition Hypothesis Gap & 2-Core Lateral Pilot** | **Adopt into Vision & Backlog** | §1, §3.3, §4.2 (Phase 0.B), §6 (RSK-12) | Added minimal 2-core lateral composition pilot to Phase 0.B to demonstrate lateral micro-core cooperation outperforms single-core Dyck-2 baseline before committing to Phase 1 sandbox. |
+| **Stakeholder Challenge 3 (Review IX): Personnel Dependency & Extension Trigger** | **Adopt into Backlog** | §1, §2.2, §2.3, §6 (RSK-08), §9.2 | Instituted formal 1.5-month timeline extension trigger (to 4.5 months) if $<2$ candidate families evaluated by Month 2; established prioritized sequential evaluation (Tier 1 vs Tier 2). |
+| **Stakeholder Challenge 4 (Review IX): Escalation Rate Grounding & Effort Distribution Audit** | **Adopt into Vision & Backlog** | §1, §4.0.1, §4.0.2, §4.2 (Phase 0.B), §6 (RSK-06), §7.2, §7.3 | Added early empirical Effort Distribution Audit in Phase 0.B (1 week of real developer stream); parameterized escalation target band (0.1%–1.0% early, $\le 0.1$% mature). |
+| **Stakeholder Observation (Review IX): Explicit Scope Boundaries (Out of Scope)** | **Adopt into Vision** | §1, Vision §6.4 | Documented explicit scope exclusions (multimodal processing, robotics, embodied physical control, monolithic foundation pretraining, neuromorphic ASIC co-design). |
 | **Stakeholder Challenge 1 (Review VIII): Compaction Invariant Gap** | **Adopt into Vision & Backlog** | §1, §4.2, §6 (RSK-02), §8.3 (SPB-11) | Added Compaction Efficacy Gate ($\ge 20$% $\alpha$ reduction, $\Delta \le 0.05$) to Phase 0 MVD; tied compaction failure directly to Continuous Operation Falsification. |
 | **Stakeholder Challenge 2 (Review VIII): Settling Budget Tension** | **Adopt into Vision & Defer to Strategy** | §1, §3.3, §5.1, §6 (RSK-12) | Added Settling-Depth Hypothesis to Vision §5; added Settling Saturation Diagnostic to Suite C (§3.3); established ADR trigger if Level II saturates $\ge 0.9 \cdot \tau_{\max}$ on $>10$% of bytes. |
 | **Stakeholder Challenge 3 (Review VIII): 50-Config Falsification Threshold** | **Adopt into Vision & Backlog** | §1, §2.2, §2.3, §4.1, §6 (RSK-01) | Clarified $N \ge 50$ as necessary due-diligence minimum; added conditional escalation protocol requiring $\ge 25$ targeted runs along directional failure gradients. |
