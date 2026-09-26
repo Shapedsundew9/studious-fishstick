@@ -96,27 +96,47 @@ Progress is evaluated across a two-dimensional capability space: **Dynamical Res
 
 ### The Representational Complexity Ladder (The Information Axis)
 
-```text
-Level IV: Open-Domain Natural Distributions
-  * Full UTF-8 byte stream (|V| = 256)
-  * Natural language, polysemy, open-ended conversational context, programmatic interaction
-  * Challenge: Compositional semantics, relational reasoning, and cross-domain generalization without an external tokenizer
-        ▲
-Level III: Context-Sensitive Systems & Variable Binding
-  * Structured byte grammars (|V| ~ 64–128)
-  * Dynamic variable binding, cross-serial dependencies (e.g., w w patterns), pseudo-code execution traces
-  * Challenge: Decoupling operators from arguments; dynamic relational reference
-        ▲
-Level II: Hierarchical & Context-Free Languages
-  * Nested byte sequences (|V| ~ 8–32)
-  * Dyck languages, balanced bracket expressions, recursive syntax trees
-  * Challenge: Autonomous formation of internal counter or stack-like attractor dynamics
-        ▲
-Level I: Regular & Markovian Grammars
-  * Sub-byte / Micro-alphabets (|V| ≤ 8)
-  * Local n-grams, parity checks, periodic and finite-state regular languages
-  * Challenge: Establishing fundamental state persistence and deterministic attractor transitions
+```mermaid
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'darkMode': true,
+    'background': '#161922',
+    'mainBkg': '#1e2230',
+    'nodeBorder': '#434c5e',
+    'textColor': '#e2e8f0',
+    'fontFamily': 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    'fontSize': '14px',
+    'lineColor': '#8892b0',
+    'primaryColor': '#422026',
+    'primaryTextColor': '#fde8ec',
+    'primaryBorderColor': '#e06c75',
+    'secondaryColor': '#1b3528',
+    'secondaryTextColor': '#e6f7ee',
+    'secondaryBorderColor': '#73c991',
+    'tertiaryColor': '#1d2c44',
+    'tertiaryTextColor': '#e4f0fc',
+    'tertiaryBorderColor': '#61afef',
+    'clusterBkg': '#13161f',
+    'clusterBorder': '#373e51',
+    'noteBkgColor': '#2e271a',
+    'noteTextColor': '#fdf4db',
+    'noteBorderColor': '#e5c07b',
+    'edgeLabelBackground': '#1a1d27'
+  }
+}}%%
+flowchart TD
+    classDef primary fill:#422026,stroke:#e06c75,stroke-width:1.5px,color:#fde8ec;
+    classDef secondary fill:#1b3528,stroke:#73c991,stroke-width:1.5px,color:#e6f7ee;
+    classDef tertiary fill:#1d2c44,stroke:#61afef,stroke-width:1.5px,color:#e4f0fc;
+    classDef note fill:#2e271a,stroke:#e5c07b,stroke-width:1.5px,color:#fdf4db;
 
+    L1["🎯 Level I: Regular & Markovian Grammars<br/><i>Sub-byte / Micro-alphabets (|V| ≤ 8)<br/>Local n-grams, parity checks, periodic and finite-state regular languages</i>"]:::secondary
+    L2["⚙️ Level II: Hierarchical & Context-Free Languages<br/><i>Nested byte sequences (|V| ~ 8–32)<br/>Dyck languages, balanced bracket expressions, recursive syntax trees</i>"]:::secondary
+    L3["⚙️ Level III: Context-Sensitive Systems & Variable Binding<br/><i>Structured byte grammars (|V| ~ 64–128)<br/>Dynamic variable binding, cross-serial dependencies, pseudo-code execution traces</i>"]:::secondary
+    L4["📦 Level IV: Open-Domain Natural Distributions<br/><i>Full UTF-8 byte stream (|V| = 256)<br/>Natural language, polysemy, open-ended conversational context, programmatic interaction</i>"]:::primary
+
+    L1 --> L2 --> L3 --> L4
 ```
 
 ---
@@ -156,6 +176,7 @@ flowchart TD
     classDef primary fill:#422026,stroke:#e06c75,stroke-width:1.5px,color:#fde8ec;
     classDef secondary fill:#1b3528,stroke:#73c991,stroke-width:1.5px,color:#e6f7ee;
     classDef tertiary fill:#1d2c44,stroke:#61afef,stroke-width:1.5px,color:#e4f0fc;
+    classDef note fill:#2e271a,stroke:#e5c07b,stroke-width:1.5px,color:#fdf4db;
 
     N0["🎯 Node 0: Streaming Baseline<br/><i>Continuous ingestion, elastic backpressure, bounded settling, homeostatic stability</i>"]:::primary
     NA["⚙️ Node A: Temporal Depth<br/><i>Long-range temporal contingencies; gated by Retention Invariant</i>"]:::secondary

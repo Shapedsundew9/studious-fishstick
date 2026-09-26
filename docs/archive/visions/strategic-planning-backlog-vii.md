@@ -211,11 +211,19 @@ To satisfy the **Escalation Calibration Invariant** and prevent the failure mode
 
 1. **Escalation Decision Function:**  
    The decision to escalate an input sequence $x$ to the central collective is governed by a composite local uncertainty metric $U(x)$:
-   $$U(x) = w_1 \cdot H_{\text{settle}}(x) + w_2 \cdot D_{\text{quorum}}(x)$$
+
+   $$
+   U(x) = w_1 \cdot H_{\text{settle}}(x) + w_2 \cdot D_{\text{quorum}}(x)
+   $$
+
    where $H_{\text{settle}}(x)$ is the residual entropy of micro-core relaxation (energy landscape curvature after $\tau_{\max}$ relaxation cycles), $D_{\text{quorum}}(x)$ is the divergence/variance among lateral quorum expert votes, and $w_1, w_2$ are normalized weighting factors.
 2. **Dynamic Threshold Adaptation:**  
    The escalation threshold $\Theta_t$ dynamically adjusts via an exponential moving average (EMA) or closed-loop feedback controller tracking the empirical escalation rate $R_t$:
-   $$\Theta_{t+1} = \Theta_t + \eta \cdot (R_t - R_{\text{target}})$$
+
+   $$
+   \Theta_{t+1} = \Theta_t + \eta \cdot (R_t - R_{\text{target}})
+   $$
+
    where $R_{\text{target}} = 0.001$ ($\le 0.1$%) and $\eta$ is an adaptation rate parameter with hysteresis bounds. If an edge agent encounters a prolonged high-entropy domain, $\Theta_t$ rises gracefully to force local resolution and somatic budding, preventing query flooding.
 3. **Local Admission & Backpressure:**  
    If WAN connectivity is interrupted or central collective queues experience latency degradation, local backpressure dynamically clamps $\Theta_t$, falling back gracefully to sovereign local consensus.

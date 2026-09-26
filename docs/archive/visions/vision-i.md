@@ -38,7 +38,7 @@ To avoid accidental solutioning via arbitrary data representations, the environm
 
 * **Standardized UTF-8 Byte Stream:**
 
-* The environment presents an unbroken sequence of discrete symbols standardized at the raw **UTF-8 byte level** ($\\vert{}V\\vert{} \\le 256$, or constrained subsets during early development).
+* The environment presents an unbroken sequence of discrete symbols standardized at the raw **UTF-8 byte level** ($\vert{}V\vert{} \le 256$, or constrained subsets during early development).
 
 * No external multi-thousand-token vocabularies, BPE tokenizers, or arbitrary high-dimensional embedding projections are permitted at the interface.
 
@@ -60,9 +60,9 @@ The core must operate within strict physical boundary conditions to ensure execu
 
 * **Elastic Pacing & Bounded Relaxation:**
 
-* The core is not slaved to a rigid wall-clock tick. It interfaces via an elastic pull/backpressure mechanism, consuming variable internal relaxation cycles ($\\tau$) per byte depending on input entropy and structural reorganization demands.
+* The core is not slaved to a rigid wall-clock tick. It interfaces via an elastic pull/backpressure mechanism, consuming variable internal relaxation cycles ($\tau$) per byte depending on input entropy and structural reorganization demands.
 
-* **Operational Halting Invariant:** State transitions must guarantee convergence to an attractor, an emission, or a stable quiescent state within a hard maximum computational budget ($\\tau \\le \\tau\_{\\max}$). Unbounded livelocks, dynamic divergences, and silent stalls constitute fatal failure.
+* **Operational Halting Invariant:** State transitions must guarantee convergence to an attractor, an emission, or a stable quiescent state within a hard maximum computational budget ($\tau \le \tau_{\max}$). Unbounded livelocks, dynamic divergences, and silent stalls constitute fatal failure.
 
 * **Asynchronous Emission Autonomy:** The core decides *if* and *when* to emit bytes back into the stream. It may absorb multiple input bytes during internal contemplation before emitting, or stream an emission sequence across continuous observations.
 
@@ -76,37 +76,60 @@ Progress is evaluated across a two-dimensional capability space: **Dynamical Res
 
 ### Gating Invariants
 
-* **Homeostatic Invariant:** Flat physical memory allocation, zero resource leakage, and bounded internal settling ($\\tau \\le \\tau\_{\\max}$) across statistically significant numbers of consecutive streaming bytes.
+* **Homeostatic Invariant:** Flat physical memory allocation, zero resource leakage, and bounded internal settling ($\tau \le \tau_{\max}$) across statistically significant numbers of consecutive streaming bytes.
 
-* **Retention Invariant:** Mutual information between an early trigger signal $S\_{t\_0}$ and a conditional response at $t\_0 \+ K$ remains above threshold $\\gamma$ across distractor intervals without historical caches or replay buffers.
+* **Retention Invariant:** Mutual information between an early trigger signal $S_{t_0}$ and a conditional response at $t_0 + K$ remains above threshold $\gamma$ across distractor intervals without historical caches or replay buffers.
 
-* **Plasticity Recovery Invariant:** Upon an unannounced environmental distribution shift ($\\Delta E$), the time-to-recovery ($T\_{\\text{recover}}$) settles into an optimal asymptotic bound, proving active dynamic reconfiguration.
+* **Plasticity Recovery Invariant:** Upon an unannounced environmental distribution shift ($\Delta E$), the time-to-recovery ($T_{\text{recover}}$) settles into an optimal asymptotic bound, proving active dynamic reconfiguration.
 
-* **Backward Non-Interference Invariant:** Adapting to novel environmental dynamics $B$ induces performance degradation on previously mastered dynamics $A$ bounded strictly by $\\Delta \\le \\epsilon$.
+* **Backward Non-Interference Invariant:** Adapting to novel environmental dynamics $B$ induces performance degradation on previously mastered dynamics $A$ bounded strictly by $\Delta \le \epsilon$.
 
 ---
 
 ### The Representational Complexity Ladder (The Information Axis)
 
-Level IV: Open-Domain Natural Distributions  
-  \* Full UTF-8 byte stream (|V| \= 256\)  
-  \* Natural language, polysemy, open-ended conversational context, programmatic interaction  
-  \* Challenge: Compositional semantics and large-scale relational reasoning without an external tokenizer  
-        ▲  
-Level III: Context-Sensitive Systems & Variable Binding  
-  \* Structured byte grammars (|V| \~ 64–128)  
-  \* Dynamic variable binding, cross-serial dependencies (e.g., w w patterns), pseudo-code execution traces  
-  \* Challenge: Decoupling operators from arguments; dynamic relational reference  
-        ▲  
-Level II: Hierarchical & Context-Free Languages  
-  \* Nested byte sequences (|V| \~ 8–32)  
-  \* Dyck languages, balanced bracket expressions, recursive syntax trees  
-  \* Challenge: Autonomous formation of internal counter or stack-like attractor dynamics  
-        ▲  
-Level I: Regular & Markovian Grammars  
-  \* Sub-byte / Micro-alphabets (|V| ≤ 8\)  
-  \* Local n-grams, parity checks, periodic and finite-state regular languages  
-  \* Challenge: Establishing fundamental state persistence and deterministic attractor transitions
+```mermaid
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'darkMode': true,
+    'background': '#161922',
+    'mainBkg': '#1e2230',
+    'nodeBorder': '#434c5e',
+    'textColor': '#e2e8f0',
+    'fontFamily': 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    'fontSize': '14px',
+    'lineColor': '#8892b0',
+    'primaryColor': '#422026',
+    'primaryTextColor': '#fde8ec',
+    'primaryBorderColor': '#e06c75',
+    'secondaryColor': '#1b3528',
+    'secondaryTextColor': '#e6f7ee',
+    'secondaryBorderColor': '#73c991',
+    'tertiaryColor': '#1d2c44',
+    'tertiaryTextColor': '#e4f0fc',
+    'tertiaryBorderColor': '#61afef',
+    'clusterBkg': '#13161f',
+    'clusterBorder': '#373e51',
+    'noteBkgColor': '#2e271a',
+    'noteTextColor': '#fdf4db',
+    'noteBorderColor': '#e5c07b',
+    'edgeLabelBackground': '#1a1d27'
+  }
+}}%%
+flowchart TD
+    classDef primary fill:#422026,stroke:#e06c75,stroke-width:1.5px,color:#fde8ec;
+    classDef secondary fill:#1b3528,stroke:#73c991,stroke-width:1.5px,color:#e6f7ee;
+    classDef tertiary fill:#1d2c44,stroke:#61afef,stroke-width:1.5px,color:#e4f0fc;
+    classDef note fill:#2e271a,stroke:#e5c07b,stroke-width:1.5px,color:#fdf4db;
+
+    L1["🎯 Level I: Regular & Markovian Grammars<br/><i>Sub-byte / Micro-alphabets (|V| ≤ 8)<br/>Local n-grams, parity checks, periodic and finite-state regular languages</i>"]:::secondary
+    L2["⚙️ Level II: Hierarchical & Context-Free Languages<br/><i>Nested byte sequences (|V| ~ 8–32)<br/>Dyck languages, balanced bracket expressions, recursive syntax trees</i>"]:::secondary
+    L3["⚙️ Level III: Context-Sensitive Systems & Variable Binding<br/><i>Structured byte grammars (|V| ~ 64–128)<br/>Dynamic variable binding, cross-serial dependencies, pseudo-code execution traces</i>"]:::secondary
+    L4["📦 Level IV: Open-Domain Natural Distributions<br/><i>Full UTF-8 byte stream (|V| = 256)<br/>Natural language, polysemy, open-ended conversational context, programmatic interaction</i>"]:::primary
+
+    L1 --> L2 --> L3 --> L4
+```
 
 ---
 
@@ -145,6 +168,7 @@ flowchart TD
     classDef primary fill:#422026,stroke:#e06c75,stroke-width:1.5px,color:#fde8ec;
     classDef secondary fill:#1b3528,stroke:#73c991,stroke-width:1.5px,color:#e6f7ee;
     classDef tertiary fill:#1d2c44,stroke:#61afef,stroke-width:1.5px,color:#e4f0fc;
+    classDef note fill:#2e271a,stroke:#e5c07b,stroke-width:1.5px,color:#fdf4db;
 
     N0["🎯 Node 0: Streaming Baseline<br/><i>Continuous ingestion, elastic backpressure, bounded settling, homeostatic stability</i>"]:::primary
     NA["⚙️ Node A: Temporal Depth<br/><i>Long-range temporal contingencies; gated by Retention Invariant</i>"]:::secondary
@@ -167,7 +191,7 @@ flowchart TD
 
 | Capability Node | Level I (Regular) | Level II (Hierarchical) | Level III (Context-Sensitive) | Level IV (Open UTF-8) |
 | :---- | :---- | :---- | :---- | :---- |
-| **Node 0 (Streaming)** | Stream micro-tokens; establish settling ceiling $\\tau\_{\\max}$ | Stream nested byte streams; confirm stack-free stability | Continuous stream of code-like execution traces | Sustained multi-gigabyte ingestion of raw UTF-8 text |
+| **Node 0 (Streaming)** | Stream micro-tokens; establish settling ceiling $\tau_{\max}$ | Stream nested byte streams; confirm stack-free stability | Continuous stream of code-like execution traces | Sustained multi-gigabyte ingestion of raw UTF-8 text |
 | **Node A (Temporal Depth)** | Parity / delay checks across significant distractor bytes | Dyck-path resolution separated by long distractor streams | Variable assignment with distant operational calls | Long-range context resolution across thousands of intervening UTF-8 characters |
 | **Node B (Non-Stationary)** | Periodic shifting of Markov transition rules | Alternating syntax rules (e.g., swapping delimiter pairs) | Dynamic re-binding of variables and operation primitives | Fluid domain-adaptation across disparate natural language topics/styles |
 | **Node AB (Compound)** | Multi-delay recall under shifting alphabetic rules | Deeply nested recursive matching with shifting grammar modes | Complex algorithmic execution with mid-stream protocol changes | Sustained dialogue/reasoning across fluctuating conversational regimes |

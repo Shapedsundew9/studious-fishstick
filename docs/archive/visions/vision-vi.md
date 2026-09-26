@@ -277,30 +277,64 @@ Substantive architectural design and verification for these capabilities are for
 
 System advancement is measured along a rigorous multi-axis progression combining **Dynamical & Structural Complexity (Levels I–IV)**, **Dynamical Resilience (Nodes 0–D)**, and **Deployment Topology (Phases −1–3)**. Advancement requires earning passage through empirical gating invariants, minimum viable demonstrations, and operational gating criteria.
 
-```text
-Information Axis (Dynamical & Structural Complexity):
-  Level I (Regular Grammars) ──► Level II (Hierarchical) ──► Level III (Context-Sensitive) ──► Level IV (Natural UTF-8)
-  [Cross-cut by: Temporal Depth, Adaptation Velocity, Compositional Depth, Relational Binding]
+```mermaid
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'darkMode': true,
+    'background': '#161922',
+    'mainBkg': '#1e2230',
+    'nodeBorder': '#434c5e',
+    'textColor': '#e2e8f0',
+    'fontFamily': 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    'fontSize': '14px',
+    'lineColor': '#8892b0',
+    'primaryColor': '#422026',
+    'primaryTextColor': '#fde8ec',
+    'primaryBorderColor': '#e06c75',
+    'secondaryColor': '#1b3528',
+    'secondaryTextColor': '#e6f7ee',
+    'secondaryBorderColor': '#73c991',
+    'tertiaryColor': '#1d2c44',
+    'tertiaryTextColor': '#e4f0fc',
+    'tertiaryBorderColor': '#61afef',
+    'clusterBkg': '#13161f',
+    'clusterBorder': '#373e51',
+    'noteBkgColor': '#2e271a',
+    'noteTextColor': '#fdf4db',
+    'noteBorderColor': '#e5c07b',
+    'edgeLabelBackground': '#1a1d27'
+  }
+}}%%
+flowchart TD
+    classDef primary fill:#422026,stroke:#e06c75,stroke-width:1.5px,color:#fde8ec;
+    classDef secondary fill:#1b3528,stroke:#73c991,stroke-width:1.5px,color:#e6f7ee;
+    classDef tertiary fill:#1d2c44,stroke:#61afef,stroke-width:1.5px,color:#e4f0fc;
+    classDef note fill:#2e271a,stroke:#e5c07b,stroke-width:1.5px,color:#fdf4db;
 
-Operational & Topological Staged Progression:
-  [Phase −1: Foundational Existence Proof] (Isolated Micro-Core Substrate)
-    ↳ Validates core mechanism: local credit assignment, bounded memory growth O(T^α, α ≤ 1), and bounded settling on raw bytes
-         │
-         ▼
-  [Phase 0: Isolated Swarm & Dynamical Resilience] (Single Device / Laptop)
-    ↳ Validates Node 0 (Streaming), Node A (Temporal Depth), Node B (Shift), Node AB (Compound), Node C (Expansion)
-         │
-         ▼
-  [Phase 1: Divergent Sandbox & Lateral Quorum] (Multi-Instance / Local Swarm)
-    ↳ Validates local multi-agent divergence, modular budding, and Node C+ (Lateral Quorum & Consensus)
-         │
-         ▼
-  [Phase 2: Asymmetric Edge/Core Link & WAN Federation] (Emulated WAN / LAN)
-    ↳ Validates asynchronous invariant absorption, latency-tolerant query offload fallback, and graph merging
-         │
-         ▼
-  [Phase 3: Decentralized Fleet & Central Collective] (Commercial WAN Scale)
-    ↳ Validates Node D (Collective Agency & Seed Distillation), fleet-wide broadcast, and asymmetric economics
+    subgraph InfoAxis ["Information Axis: Dynamical & Structural Complexity"]
+        direction LR
+        L1["Level I: Regular Grammars<br/><i>(|V| ≤ 8)</i>"]:::secondary
+        L2["Level II: Hierarchical<br/><i>(|V| ≤ 32)</i>"]:::secondary
+        L3["Level III: Context-Sensitive<br/><i>(|V| ~ 128)</i>"]:::secondary
+        L4["Level IV: Natural UTF-8<br/><i>(|V| = 256)</i>"]:::secondary
+
+        L1 --> L2 --> L3 --> L4
+    end
+
+    subgraph StagedProgression ["Operational & Topological Staged Progression"]
+        direction TB
+        P_Minus1["🎯 Phase −1: Foundational Proof<br/><i>(Isolated Micro-Core Substrate)</i><br/>• Local credit assignment<br/>• Bounded memory growth O(T^α), α ≤ 1<br/>• Bounded settling on raw bytes"]:::primary
+        P0["⚙️ Phase 0: Isolated Swarm<br/><i>(Single Device / Laptop)</i><br/>• Nodes 0, A, B, AB, C validation"]:::secondary
+        P1["⚙️ Phase 1: Divergent Sandbox<br/><i>(Multi-Instance / Local Swarm)</i><br/>• Local multi-agent divergence, modular budding<br/>• Node C+ Lateral Quorum & Consensus"]:::secondary
+        P2["📦 Phase 2: Asymmetric Link<br/><i>(Emulated WAN / LAN)</i><br/>• Asynchronous invariant absorption<br/>• Latency-tolerant query offload fallback<br/>• Graph merging"]:::tertiary
+        P3["📦 Phase 3: Collective Fleet<br/><i>(Commercial Scale WAN)</i><br/>• Node D collective agency & seed distillation<br/>• Fleet broadcast & asymmetric economics"]:::tertiary
+
+        P_Minus1 -->|"Passes Existence Proof"| P0
+        P0 -->|"Passes Swarm Gate"| P1
+        P1 -->|"Passes Quorum & Isolation"| P2
+        P2 -->|"Passes WAN Federation"| P3
+    end
 ```
 
 ### The Information Axis: Dynamical Learning Phenomena & Structural Regimes

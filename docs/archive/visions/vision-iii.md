@@ -133,37 +133,58 @@ To prevent the engineering effort from defaulting to traditional coupled deep le
 
 Advancement is measured across two intersecting axes: **Representational Complexity (Levels I–IV)** and **Deployment Topology (Phases 0–3)**. Early technical feasibility is earned entirely on a developer laptop; scaling to later phases introduces the economic and distributed systems constraints.
 
-```text
-[Phase 0: Isolated Core] 
-  ↳ Single runtime on a single machine; validates local credit assignment, 
-    streaming ingestion, and O(1) memory bounds.
-       │
-       ▼
-[Phase 1: Divergent Sandbox]
-  ↳ Multiple isolated instances running on the same host; exposed to divergent 
-    data streams; validates local divergence without catastrophic forgetting.
-       │
-       ▼
-[Phase 2: Asymmetric Edge/Core Link]
-  ↳ Client-server interface over high-latency network; validates asynchronous 
-    invariant absorption and query offloading.
-       │
-       ▼
-[Phase 3: Decentralized Fleet & Central Collective]
-  ↳ Commercial-scale deployment; millions of divergent consumer terminals 
-    asynchronously feeding a decoupled central consensus engine.
+```mermaid
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'darkMode': true,
+    'background': '#161922',
+    'mainBkg': '#1e2230',
+    'nodeBorder': '#434c5e',
+    'textColor': '#e2e8f0',
+    'fontFamily': 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    'fontSize': '14px',
+    'lineColor': '#8892b0',
+    'primaryColor': '#422026',
+    'primaryTextColor': '#fde8ec',
+    'primaryBorderColor': '#e06c75',
+    'secondaryColor': '#1b3528',
+    'secondaryTextColor': '#e6f7ee',
+    'secondaryBorderColor': '#73c991',
+    'tertiaryColor': '#1d2c44',
+    'tertiaryTextColor': '#e4f0fc',
+    'tertiaryBorderColor': '#61afef',
+    'clusterBkg': '#13161f',
+    'clusterBorder': '#373e51',
+    'noteBkgColor': '#2e271a',
+    'noteTextColor': '#fdf4db',
+    'noteBorderColor': '#e5c07b',
+    'edgeLabelBackground': '#1a1d27'
+  }
+}}%%
+flowchart TD
+    classDef primary fill:#422026,stroke:#e06c75,stroke-width:1.5px,color:#fde8ec;
+    classDef secondary fill:#1b3528,stroke:#73c991,stroke-width:1.5px,color:#e6f7ee;
+    classDef tertiary fill:#1d2c44,stroke:#61afef,stroke-width:1.5px,color:#e4f0fc;
+    classDef note fill:#2e271a,stroke:#e5c07b,stroke-width:1.5px,color:#fdf4db;
 
+    P0["🎯 Phase 0: Isolated Core<br/><i>Single runtime on a single machine; validates local credit assignment, streaming ingestion, and O(1) memory bounds</i>"]:::primary
+    P1["⚙️ Phase 1: Divergent Sandbox<br/><i>Multiple isolated instances running on the same host; exposed to divergent data streams; validates local divergence without catastrophic forgetting</i>"]:::secondary
+    P2["📦 Phase 2: Asymmetric Edge/Core Link<br/><i>Client-server interface over high-latency network; validates asynchronous invariant absorption and query offloading</i>"]:::tertiary
+    P3["📦 Phase 3: Decentralized Fleet & Central Collective<br/><i>Commercial-scale deployment; millions of divergent consumer terminals asynchronously feeding a decoupled central consensus engine</i>"]:::tertiary
+
+    P0 --> P1 --> P2 --> P3
 ```
 
 ### The Integrated Execution Matrix
 
-| Topology Phase | Level I: Regular Grammars ($\Vert{}V\Vert{} \le 8$)
+| Topology Phase | Level I: Regular Grammars ($\vert{}V\vert{} \le 8$)
 
- | Level II: Hierarchical Grammars ($\Vert{}V\Vert{} \le 32$)
+ | Level II: Hierarchical Grammars ($\vert{}V\vert{} \le 32$)
 
- | Level III: Context-Sensitive Systems ($\Vert{}V\Vert{} \sim 128$)
+ | Level III: Context-Sensitive Systems ($\vert{}V\vert{} \sim 128$)
 
- | Level IV: Open Natural UTF-8 ($\Vert{}V\Vert{} = 256$)
+ | Level IV: Open Natural UTF-8 ($\vert{}V\vert{} = 256$)
 
  |
 | --- | --- | --- | --- | --- |

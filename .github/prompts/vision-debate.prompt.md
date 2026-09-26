@@ -29,7 +29,7 @@ The Visionary agent is responsible for championing the vision while absorbing St
         * *Defer to Strategy Backlog:* Acknowledged as vital, but classified as an execution/planning task. Update or create `strategic-planning-backlog.md`.
         * *Respectfully Rebut:* Rejected with a clear first-principles rationale explaining why it conflicts with the core premise. Explain in `rebuttal.md` and/or clarify scope concisely in `vision.md` if helpful rather than distracting.
 
-      * Preserve still-valid vision and backlog content. Write `rebuttal.md` fresh, containing only substantive rebuttals to the current `response.md`; do not carry forward prior rebuttals. Change vision and backlog content only as required by the current response and triage rules.
+        * Preserve still-valid vision and backlog content. Write `rebuttal.md` fresh, containing only substantive rebuttals to the current `response.md`; do not carry forward prior rebuttals. Change vision and backlog content only as required by the current response and triage rules.
 
 ---
 
