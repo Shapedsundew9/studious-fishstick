@@ -3,13 +3,13 @@
 **Document Version:** VII  
 **Status:** Active Rebuttal Document  
 **Date:** 2026-09-25  
-**Context:** Formal response to critique and challenges raised in `docs/visions/response-vi.md` regarding `docs/visions/vision-vi.md`, `docs/visions/strategic-planning-backlog-vi.md`, and `docs/visions/rebuttal-vi.md`.
+**Context:** Formal response to critique and challenges raised in `docs/archive/visions/response-vi.md` regarding `docs/archive/visions/vision-vi.md`, `docs/archive/visions/strategic-planning-backlog-vi.md`, and `docs/archive/visions/rebuttal-vi.md`.
 
 ---
 
 ## 1. Executive Summary & Disposition
 
-We welcome the constructive and rigorous pressure-testing provided in `docs/visions/response-vi.md`. The Stakeholder Council's review has materially strengthened the transition from foundational theory to empirical validation.
+We welcome the constructive and rigorous pressure-testing provided in `docs/archive/visions/response-vi.md`. The Stakeholder Council's review has materially strengthened the transition from foundational theory to empirical validation.
 
 In Version VII, all eight challenges and recommendations have been triaged in strict accordance with **Scope Defense**, **First-Principles Prioritization**, and **Triage Discipline**:
 

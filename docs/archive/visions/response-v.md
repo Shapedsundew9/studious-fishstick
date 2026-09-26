@@ -3,7 +3,7 @@
 **Document Version:** V
 **Status:** Active Feedback
 **Date:** 2026-09-25
-**Context:** Constructive critique of `docs/visions/vision-v.md` incorporating the Project Initiator's stated direction regarding the Lifetime Invariance constraint and the placement of Safety & Alignment invariants.
+**Context:** Constructive critique of `docs/archive/visions/vision-v.md` incorporating the Project Initiator's stated direction regarding the Lifetime Invariance constraint and the placement of Safety & Alignment invariants.
 
 ---
 

@@ -2,13 +2,13 @@
 
 **Document Version:** V  
 **Status:** Active Rebuttal Document  
-**Context:** Formal response to critique and challenges raised in `docs/visions/response-iv.md` regarding `docs/visions/vision-v.md`.
+**Context:** Formal response to critique and challenges raised in `docs/archive/visions/response-iv.md` regarding `docs/archive/visions/vision-v.md`.
 
 ---
 
 ## 1. Executive Summary & Disposition
 
-We welcome the stakeholder feedback in `docs/visions/response-iv.md`. The critique is intellectually formidable, constructive, and motivated by a shared desire to see this enterprise succeed. Several crucial challenges—including the imperative for an empirical existence proof (Phase −1), the operational grounding of "autopoiesis," the refinement of the information axis beyond formal Chomsky bounds, formal privacy guarantees, and foundational safety invariants—have been enthusiastically **adopted into the Vision Document** (`docs/visions/vision-v.md`) or **deferred to the Strategic Planning Backlog** (`docs/visions/strategic-planning-backlog-v.md`).
+We welcome the stakeholder feedback in `docs/archive/visions/response-iv.md`. The critique is intellectually formidable, constructive, and motivated by a shared desire to see this enterprise succeed. Several crucial challenges—including the imperative for an empirical existence proof (Phase −1), the operational grounding of "autopoiesis," the refinement of the information axis beyond formal Chomsky bounds, formal privacy guarantees, and foundational safety invariants—have been enthusiastically **adopted into the Vision Document** (`docs/archive/visions/vision-v.md`) or **deferred to the Strategic Planning Backlog** (`docs/archive/visions/strategic-planning-backlog-v.md`).
 
 However, fidelity to our mission requires equal rigor in **defending scope** and **protecting foundational focus**. Where recommendations conflict with the core premise, dilute non-negotiable architectural principles, or conflate long-term *Vision* with near-term *Tactical Strategy*, they are respectfully rebutted below.
 

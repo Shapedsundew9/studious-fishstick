@@ -3,7 +3,7 @@
 **Document Version:** VII  
 **Status:** Constructive Review  
 **Date:** 2026-09-25  
-**Context:** Review of `docs/visions/vision-vii.md`, informed by `docs/visions/rebuttal-vii.md`, `docs/visions/strategic-planning-backlog-vii.md`, and Project Initiator input regarding the persistent backpropagation debate, the practical meaning of "continuous" streaming, and the potential for quorum-based micro-learning rotation.
+**Context:** Review of `docs/archive/visions/vision-vii.md`, informed by `docs/archive/visions/rebuttal-vii.md`, `docs/archive/visions/strategic-planning-backlog-vii.md`, and Project Initiator input regarding the persistent backpropagation debate, the practical meaning of "continuous" streaming, and the potential for quorum-based micro-learning rotation.
 
 ---
 

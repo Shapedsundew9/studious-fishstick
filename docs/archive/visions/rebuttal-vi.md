@@ -3,13 +3,13 @@
 **Document Version:** VI  
 **Status:** Active Rebuttal Document  
 **Date:** 2026-09-25  
-**Context:** Formal response to critique and challenges raised in `docs/visions/response-v.md` and Project Initiator directives regarding `docs/visions/vision-vi.md`.
+**Context:** Formal response to critique and challenges raised in `docs/archive/visions/response-v.md` and Project Initiator directives regarding `docs/archive/visions/vision-vi.md`.
 
 ---
 
 ## 1. Executive Summary & Disposition
 
-We welcome the constructive critique in `docs/visions/response-v.md` alongside the explicit guidance from the Project Initiator. Both inputs have been synthesized into **Version VI** of the Vision and Strategic Planning Backlog:
+We welcome the constructive critique in `docs/archive/visions/response-v.md` alongside the explicit guidance from the Project Initiator. Both inputs have been synthesized into **Version VI** of the Vision and Strategic Planning Backlog:
 
 1. **Lifetime Resource Discipline:** The strict $O(1)$ memory invariance has been relaxed to bounded linear growth ($O(T^\alpha), \alpha \le 1$) with an active objective to minimize the growth gradient toward sub-linear regimes. This addresses the Initiator's concern that strict $O(1)$ was forcing the team to jump through unproductive theoretical hoops, while adopting the Stakeholder Council's recommendation to strictly enforce an anti-buffer clause (prohibiting unrolled activation buffers and growing KV caches) within the $<4$ GB hardware envelope.
 2. **Safety & Alignment Demotion and Triage:** Designed-in multi-agent safety and cryptographic privacy (Byzantine delta sanitization, differential privacy guarantees, fleet alignment) have been demoted from the Vision's core architectural invariants to a concise **Forward-Looking Considerations** note, and deferred to a dedicated Strategic Planning Backlog gating review (**SPB-10: Safety, Alignment & Privacy Architecture Review**) prior to Phase 2 WAN federation. Meanwhile, fundamental operational stability mechanisms (the $\tau \le \tau_{\max}$ halting watchdog and homeostatic memory quotas) are retained in the Vision under an **Operational Correctness & Dynamical Stability** heading, as they represent foundational dynamical stability criteria necessary for Phase −1 and Phase 0 implementation.

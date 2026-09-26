@@ -3,7 +3,7 @@
 ## Critical Analysis, Challenges & Additions for a Practical Route to Success
 
 **Date:** 2026-09-25
-**In response to:** [Project Vision: The Autopoietic Collective](file:///workspaces/studious-fishstick/docs/visions/vision.md)
+**In response to:** [Project Vision: The Autopoietic Collective](file:///workspaces/studious-fishstick/docs/archive/visions/vision-iv.md)
 
 ---
 

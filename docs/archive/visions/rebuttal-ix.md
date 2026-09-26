@@ -5,15 +5,15 @@
 **Document Version:** IX  
 **Status:** Active Rebuttal Document  
 **Date:** 2026-09-25  
-**Context:** Formal response to critique, challenges, and recommendations raised by the Stakeholder Review in `docs/visions/response-viii.md` regarding `docs/visions/vision-ix.md`, `docs/visions/strategic-planning-backlog-ix.md`, and `docs/visions/rebuttal-ix.md`.
+**Context:** Formal response to critique, challenges, and recommendations raised by the Stakeholder Review in `docs/archive/visions/response-viii.md` regarding `docs/archive/visions/vision-ix.md`, `docs/archive/visions/strategic-planning-backlog-ix.md`, and `docs/archive/visions/rebuttal-ix.md`.
 
 ---
 
 ## 1. Executive Summary & Disposition
 
-This rebuttal document addresses exclusively the challenges, critiques, and recommendations raised in `docs/visions/response-viii.md`. In accordance with operating instructions, historical debates from prior iterations (IV through VII)—including commercial financial modeling, property-based credit assignment reframing, algorithm-name dogmatism, and the initial formalization of Quorum-Rotation Micro-Learning—have been retired from this active document to preserve sharp focus on active architectural boundaries.
+This rebuttal document addresses exclusively the challenges, critiques, and recommendations raised in `docs/archive/visions/response-viii.md`. In accordance with operating instructions, historical debates from prior iterations (IV through VII)—including commercial financial modeling, property-based credit assignment reframing, algorithm-name dogmatism, and the initial formalization of Quorum-Rotation Micro-Learning—have been retired from this active document to preserve sharp focus on active architectural boundaries.
 
-In Version IX, all seven items from `docs/visions/response-viii.md` have been triaged in strict accordance with **Scope Defense**, **First-Principles Prioritization**, and **Triage Discipline**:
+In Version IX, all seven items from `docs/archive/visions/response-viii.md` have been triaged in strict accordance with **Scope Defense**, **First-Principles Prioritization**, and **Triage Discipline**:
 
 1. **Compaction Invariant Gap & Falsification (Challenge 1):** Adopted the Compaction Efficacy Gate ($\ge 20$% reduction in growth exponent $\alpha$, $\Delta \le 0.05$) into the Phase 0 → Phase 1 MVD (Vision §7) and Backlog SPB-11; coupled compaction failure to the continuous-operation falsification clause in Vision §7. Rebutted any attempt to mandate specific compaction algorithms into the foundational Vision.
 2. **Settling Budget Ceiling vs. Level-Dependent Parameterization (Challenge 2):** Adopted the Settling-Depth Architectural Hypothesis into Vision §5 (clarifying that compositional depth emerges from lateral multi-core composition rather than vertical relaxation depth) and adopted the Settling Saturation Diagnostic into Backlog Suite C (§3.3). Rebutted relaxing or parameterizing the $\tau \le 32$ ceiling in the Vision Document.

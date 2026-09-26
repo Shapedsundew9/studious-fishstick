@@ -3,7 +3,7 @@
 **Document Version:** VI  
 **Status:** Constructive Review  
 **Date:** 2026-09-25  
-**Context:** Formal stakeholder review of `docs/visions/vision-vi.md`, informed by `docs/visions/rebuttal-vi.md` and `docs/visions/strategic-planning-backlog-vi.md`.
+**Context:** Formal stakeholder review of `docs/archive/visions/vision-vi.md`, informed by `docs/archive/visions/rebuttal-vi.md` and `docs/archive/visions/strategic-planning-backlog-vi.md`.
 
 ---
 

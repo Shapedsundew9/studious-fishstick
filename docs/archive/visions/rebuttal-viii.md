@@ -3,15 +3,15 @@
 **Document Version:** VIII  
 **Status:** Active Rebuttal Document  
 **Date:** 2026-09-25  
-**Context:** Formal response to critique and challenges raised in `docs/visions/response-vii.md` and Project Initiator directives regarding `docs/visions/vision-viii.md`, `docs/visions/strategic-planning-backlog-viii.md`, and `docs/visions/rebuttal-viii.md`.
+**Context:** Formal response to critique and challenges raised in `docs/archive/visions/response-vii.md` and Project Initiator directives regarding `docs/archive/visions/vision-viii.md`, `docs/archive/visions/strategic-planning-backlog-viii.md`, and `docs/archive/visions/rebuttal-viii.md`.
 
 ---
 
 ## 1. Executive Summary & Disposition
 
-This rebuttal document addresses exclusively the challenges, critiques, and recommendations raised by the Stakeholder Council in `docs/visions/response-vii.md` and the guiding directives provided by the Project Initiator. Historical rebuttals from prior iterations (IV through VI)—including commercial financial modeling, organizational headcounts, constraint relaxation escape hatches, and earlier debates regarding asymptotic vs. operational metrics—have been retired from this active document to preserve sharp focus on active architectural boundaries.
+This rebuttal document addresses exclusively the challenges, critiques, and recommendations raised by the Stakeholder Council in `docs/archive/visions/response-vii.md` and the guiding directives provided by the Project Initiator. Historical rebuttals from prior iterations (IV through VI)—including commercial financial modeling, organizational headcounts, constraint relaxation escape hatches, and earlier debates regarding asymptotic vs. operational metrics—have been retired from this active document to preserve sharp focus on active architectural boundaries.
 
-In Version VIII, all items from `docs/visions/response-vii.md` have been triaged in strict accordance with **Scope Defense**, **First-Principles Prioritization**, and **Triage Discipline**:
+In Version VIII, all items from `docs/archive/visions/response-vii.md` have been triaged in strict accordance with **Scope Defense**, **First-Principles Prioritization**, and **Triage Discipline**:
 
 1. **Rebuttal & Resolution 1: Global Optimization Coupling vs. Localized Micro-Updates (Challenges 1 & 2):** Adopted the property-based framing in Vision (§5); Rebutted/clarified the boundary to ensure that relaxing algorithm-name dogmatism is not misinterpreted as license for unbounded Backpropagation Through Time (BPTT), batch-boundary resets, or live-stream forward-backward locks.
 2. **Rebuttal & Scope Defense 2: Worst-Case Saturated Invariance vs. Quiescent Exploitation (Challenge 3):** Adopted Quiescent Exploitation into Vision (§5) and Backlog (SPB-11); Rebutted any architectural dependency on idle pauses for operational correctness or dynamical stability.

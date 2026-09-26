@@ -3,7 +3,7 @@
 **Document Version:** VIII  
 **Status:** Stakeholder Review Response  
 **Date:** 2026-09-25  
-**Context:** Constructive critique, challenges, and proposed additions regarding `docs/visions/vision-viii.md`, informed by `docs/visions/rebuttal-viii.md` and `docs/visions/strategic-planning-backlog-viii.md`.
+**Context:** Constructive critique, challenges, and proposed additions regarding `docs/archive/visions/vision-viii.md`, informed by `docs/archive/visions/rebuttal-viii.md` and `docs/archive/visions/strategic-planning-backlog-viii.md`.
 
 ---
 

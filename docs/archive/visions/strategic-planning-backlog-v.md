@@ -4,13 +4,13 @@
 
 **Document Version:** V  
 **Status:** Active Execution Backlog  
-**Context:** Resulting from triage of stakeholder response (`docs/visions/response-iv.md`) to `docs/visions/vision-v.md`.
+**Context:** Resulting from triage of stakeholder response (`docs/archive/visions/response-iv.md`) to `docs/archive/visions/vision-v.md`.
 
 ---
 
 ## 1. Overview & Triage Scope
 
-This document captures vital execution tasks, tactical roadmaps, experimental protocols, governance frameworks, and operational risk registers deferred from the **Vision Document** (`docs/visions/vision-v.md`).
+This document captures vital execution tasks, tactical roadmaps, experimental protocols, governance frameworks, and operational risk registers deferred from the **Vision Document** (`docs/archive/visions/vision-v.md`).
 
 In strict adherence to **Scope Defense**, the Vision Document defines the destination, non-negotiable invariants, problem boundaries, and mathematical gating criteria. This Strategic Planning Backlog establishes the concrete engineering, research, and organizational tactics required to realize that vision.
 
