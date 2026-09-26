@@ -112,7 +112,49 @@ To evaluate the system along true learning gradients rather than static grammar 
 
 ---
 
-## 4. Minimum Viable Demonstration (MVD) Protocols & Test Rigs
+## 4. Formal Gating Specifications, Minimum Viable Demonstration (MVD) Protocols & Test Rigs
+
+### 4.0 Formal Multi-Tier Numerical Gating Invariants & Acceptance Thresholds
+
+In accordance with the Technical Vision Style Guide elaboration boundary, precise numerical gating thresholds, exact mathematical tolerances, and empirical audit protocols are maintained and elaborated in this Strategic Planning Backlog. While the Vision Document defines qualitative boundaries, directional observables, and behavioral demonstration goals, this section governs auditable acceptance testing and milestone verification across all development phases.
+
+#### 4.0.1 Tier 1: Mathematical & Dynamical Gating Invariants
+
+Passage through engineering gates is governed by the following binding numerical criteria:
+
+* **Homeostatic Invariant (Bounded Memory Growth & Settling Ceiling):**  
+  Physical working memory allocation is strictly bounded by growth function $f(T) = O(T^\alpha)$ with $\alpha \le 1$ (zero unbounded resource leakage, strictly conforming to the $<4$ GB metabolic envelope with a minimum continuous operational lifetime projection of $\ge 7$ consecutive days of streaming at $\ge 10^7$ bytes/day) and bounded internal settling ($\tau \le 32$ relaxation cycles per byte) sustained across $\ge 10^7$ consecutive streaming bytes.
+* **Retention Invariant ($\gamma$ Retention across Distractors):**  
+  Mutual information between an early trigger signal $S_{t_0}$ and a conditional response at $t_0 + K$ must satisfy $I(S_{t_0}; R_{t_0+K}) \ge 0.95$ across distractor intervals of $K \ge 10^4$ bytes without historical caches, replay buffers, or token re-ingestion. (In Phase −1, anchored at $K \ge 64$ with $I(S_{t_0}; R_{t_0+K}) \ge 0.90$).
+* **Plasticity Recovery Invariant ($T_{\text{recover}}$ Bound):**  
+  Upon an unannounced environmental distribution shift ($\Delta E$), the time-to-recovery ($T_{\text{recover}}$) settles into an optimal asymptotic bound ($\le 500$ bytes on Level I benchmarks in Phase 0; $\le 2000$ bytes for single shifts in Phase −1), demonstrating rapid active dynamic reconfiguration to within 10% of steady-state error.
+* **Backward Non-Interference Invariant ($\epsilon$ Degradation Ceiling):**  
+  Adapting to novel environmental dynamics $B$ induces performance degradation on previously mastered dynamics $A$ bounded strictly by $\Delta \le 0.05$ (maximum 5% relative accuracy loss).
+* **Consensus Coherence Invariants ($\delta$ Calibration Bounds):**  
+  * *Local Lateral Quorum (Phase 1 Gate):* Collective voting across redundant, co-located micro-cores within a single edge agent must resolve ambiguous or noisy sequences with bounded error $\delta_{\text{local}} \le 0.05$ relative to ground truth, with zero deadlock or livelock ($\tau \le \tau_{\max} = 32$).  
+  * *Collective Synthesis Coherence (Phase 2+ Gate):* When evaluated across a distributed ensemble of heterogeneous micro-experts receiving out-of-order, time-lagged updates over WAN, collective model synthesis must maintain predictive accuracy and calibration within bounded degradation $\delta_{\text{collective}} \le 0.05$ relative to an un-lagged reference.
+* **Information-Theoretic Privacy Invariant ($I(X; \Delta) \le \epsilon$ — Phase 1 $\rightarrow$ Phase 2 Gate):**  
+  Prior to enabling WAN synchronization, structural deltas and upstream queries must have provably bounded mutual information with private observation streams ($I(X; \Delta) \le 10^{-4}$ bits) and satisfy $(\epsilon, \delta)$-differential privacy guarantees against reconstruction (evaluated per SPB-10).
+
+#### 4.0.2 Tier 2: Commercial & Operational Gating Specifications
+
+* **Edge Footprint Feasibility (Phase 0 $\rightarrow$ Phase 1 Gate):**  
+  The runtime must operate comfortably within constrained consumer compute envelopes (modern laptop/desktop CPU, integrated GPU, or NPU with $<4$ GB RAM footprint), demonstrating a projected continuous operational lifetime of $\ge 7$ consecutive days of streaming ($\ge 10^7$ bytes/day) without memory ceiling exhaustion, thermal throttling ($>25$W package power), or continuous high-wattage utilization, with intra-core compaction actively reducing steady-state growth ($\ge 20$% reduction in growth exponent $\alpha$).
+* **Privacy & Bandwidth Viability (Phase 1 $\rightarrow$ Phase 2 Gate):**  
+  Invariant updates and deliberative queries sent over the network must be ultra-sparse, requiring bandwidth orders of magnitude lower than transmitting the raw interaction stream, with formal mathematical guarantees ($I(X; \Delta) \le 10^{-4}$ bits) of zero reconstructible private context or user observations.
+* **Decoupled Infrastructure Economics (Phase 2 $\rightarrow$ Phase 3 Gate):**  
+  The central infrastructure must prove that compute consumption scales with the rate of *macro-deliberative reasoning and collective model synthesis*, maintaining $\le 0.1$% routine escalation, and does *not* scale linearly with continuous raw streaming volume or total active edge fleet size ($O(\log N)$ or $O(1)$).
+
+#### 4.0.3 Auditable Falsification & Kill Condition Protocols
+
+1. **Substrate Viability Falsification (Phase −1):**  
+   The $\ge 50$ configuration threshold constitutes the minimum systematic sweep required for auditable due diligence across each of the four candidate mechanism families listed in §2.3 (three-factor predictive coding, equilibrium propagation, feedback alignment, and local contrastive energy), plus promising variants. If systematic sweep results reveal a clustered, directional failure pattern across a candidate family, an additional targeted sweep of $\ge 25$ configurations along the identified failure gradient must be conducted before formal falsification is declared. If all candidate families fail to achieve convergent next-byte prediction, short-range temporal recall ($K \ge 64$), and shift recovery ($T_{\text{recover}} \le 2000$) on Level I regular grammars under local credit assignment constraints with bounded memory growth ($O(T^\alpha), \alpha \le 1$) across both systematic and targeted follow-up sweeps, the local-plasticity core thesis is falsified, halting multi-core architectural composition.
+2. **Dynamic Isolation & Continuous Operation Falsification (Phase 0/1):**  
+   If continuous online adaptation inevitably induces catastrophic forgetting ($\Delta > 0.05$) across isolated cores despite structural budding, modular compartmentalization, and QRML validation; or if, after systematic exploration during the Phase 0 sprint, no intra-core compaction strategy can reduce the empirical growth exponent $\alpha$ by $\ge 20$% to project $\ge 7$ consecutive days of continuous operation within the $<4$ GB envelope while maintaining Backward Non-Interference ($\Delta \le 0.05$), the premise of sustainable continuous edge operation is falsified.
+3. **Information Leakage Falsification (Phase 2):**  
+   If structural invariants or deliberative queries transmitted over the WAN link permit non-trivial reconstruction of private input byte streams ($I(X; \Delta) > 10^{-4}$ bits) under adversarial auditing, upstream synchronization is immediately halted.
+4. **Asymmetric Escalation & Economic Falsification (Phase 2/3):**  
+   If the self-calibrating deliberative escalation mechanism cannot maintain an escalation rate within the target band ($\le 0.1$% of interaction volume under steady-state load) while preserving output quality, forcing central infrastructure compute to scale linearly with user streaming hours, the asymmetric economic foundation is falsified.
 
 ### 4.1 Phase −1 $\rightarrow$ Phase 0 MVD: Single-Core Existence Rig
 
