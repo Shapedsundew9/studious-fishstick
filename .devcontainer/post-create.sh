@@ -21,6 +21,10 @@ if [[ -f pyproject.toml ]]; then
     .venv/bin/python -m pip install --editable .
 fi
 
+if [[ -x .shared/tools/scripts/configure-subtree.sh ]]; then
+    .shared/tools/scripts/configure-subtree.sh
+fi
+
 ANTIGRAVITY_SETTINGS="$HOME/.gemini/antigravity-cli/settings.json"
 if [[ ! -f "$ANTIGRAVITY_SETTINGS" ]]; then
         mkdir -p "$(dirname "$ANTIGRAVITY_SETTINGS")"
