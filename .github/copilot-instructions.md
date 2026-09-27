@@ -48,5 +48,5 @@
 ## Documentation
 
 - Keep `README.md` aligned with the install, usage, development, and publishing workflows.
-- Always run `npx markdownlint-cli2 --fix "**/*.md"` after markdown changes but do not address issues that cannot be fixed without explicit permission.
+- Always run `npx markdownlint-cli2 --fix [filename].md` for markdown changes but do not address issues that are not fixable with this command without explicit permission.
 - Never modify `.markdownlint-cli2.jsonc`. Ask the user first if a change is necessary.
