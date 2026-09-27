@@ -1,5 +1,7 @@
 # Project Guidelines
 
+Read `.shared/ai/core/service-instructions.md`.
+
 ## Repository Layout
 
 - This is a Python-only package repository.
@@ -34,16 +36,6 @@
 - Prefer well-established, maintained packages when a dependency is genuinely needed.
 - Add every new dependency to the appropriate section of `pyproject.toml` and install it in `.venv` before validating.
 - Avoid introducing a dependency for functionality that is small and clear to implement with the standard library.
-
-## Services Available
-
-- Postgres `$DATABASE_URL`
-- Neo4j `$NEO4J_URI`, `$NEO4J_USER`, `$NEO4J_PASSWORD`
-- Pypi `$PYPI_USERNAME`, `$PYPI_PASSWORD`
-- GitHub `$GITHUB_TOKEN`
-- Arc AGI `$ARC_AGI_API`
-- Hugging Face `$HF_READ_TOKEN`
-- Emergent Mind `$EMERGENT_MIND_BASE_URL`, `$EMERGENT_MIND_OPENAPI_SPEC_URL`, `$EMERGENT_MIND_TOKEN`
 
 ## Documentation
 
