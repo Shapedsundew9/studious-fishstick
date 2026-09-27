@@ -13,6 +13,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest",
+    "PyYAML",
 ]
 
 [project.scripts]
